@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 
-class TextImage extends Component {
+class Header extends Component {
     state = {  }
     render() { 
-        return(
+        return ( 
             <div></div>
-        )
+        );
     }
 }
  
-export default TextImage;
+export default Header;
