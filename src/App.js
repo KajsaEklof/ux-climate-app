@@ -15,20 +15,7 @@ class App extends Component {
     const response = await fetch(url);
     const data = await response.json();
 
-    let co2data = [];
-    data.map(data =>
-      co2data.push({
-        Year: data.Year,
-        Total: data.Total,
-        GasFuel: data["Gas Fuel"],
-        LiquidFuel: data["Liquid Fuel"],
-        SolidFuel: data["Solid Fuel"],
-        Cement: data.Cement,
-        GasFlaring: data["Gas Flaring"]
-      })
-    );
-
-    co2data = co2data.filter(x => x.Year > 1944 && x.Year < 2014);
+    const co2data = data.filter(x => x.Year > 1944 && x.Year < 2014);
     this.setState({ CO2Emission: co2data });
   }
 
