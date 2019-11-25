@@ -1,25 +1,46 @@
-import React from "react";
-import logo from "./logo.svg";
+import React, { Component } from "react";
+import Header from "./components/Header";
+import TextImage from "./components/TextImage";
+import Co2Diagram from "./components/Co2Diagram";
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>It's WORKING!!</p>
-        <p>Working very well!</p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  state = {
+    CO2Emission: []
+  };
+
+  async componentDidMount() {
+    const url = "https://my.api.mockaroo.com/co2.json?key=8eb9e6f0";
+    const response = await fetch(url);
+    const data = await response.json();
+
+    let co2data = [];
+    data.map(data =>
+      co2data.push({
+        Year: data.Year,
+        Total: data.Total,
+        GasFuel: data["Gas Fuel"],
+        LiquidFuel: data["Liquid Fuel"],
+        SolidFuel: data["Solid Fuel"],
+        Cement: data.Cement,
+        GasFlaring: data["Gas Flaring"]
+      })
+    );
+
+    co2data = co2data.filter(x => x.Year > 1944 && x.Year < 2014);
+    this.setState({ CO2Emission: co2data });
+  }
+
+  render() {
+    return (
+      <div id="App">
+        <Header />
+        <TextImage />
+        <Co2Diagram CO2Emission={this.state.CO2Emission} />
+      </div>
+    );
+  }
 }
 
 export default App;
