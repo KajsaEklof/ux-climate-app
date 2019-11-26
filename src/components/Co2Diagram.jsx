@@ -20,7 +20,7 @@ class Co2Diagram extends Component {
       return <p>There is no data.</p>;
     }
 
-    const COLORS = ["#EF0E7C", "#00A99D", "#FFD400", "#BaE2F0", "#EF4726"];
+    const COLORS = ["#EF0E7C", "#00A99D", "#F6A2B6", "#87D8D6", "#B4E2F0"];
 
     let dataBarChart = [];
     co2.map(x =>
@@ -58,12 +58,12 @@ class Co2Diagram extends Component {
               <YAxis />
               <Tooltip content={dataBarChart.Year} />
               <Legend />
-              <Bar dataKey="GasFuel" stackId="a" fill="#8884d8" />
-              <Bar dataKey="GasFlaring" stackId="a" fill="yellow" />
-              <Bar dataKey="LiquidFuel" stackId="a" fill="#82ca9d" />
-              <Bar dataKey="Cement" stackId="a" fill="blue" />
-              <Bar dataKey="SolidFuel" stackId="a" fill="red" />
-              <Line type="monotone" dataKey="Total" stroke="#ff7300" />
+              <Bar dataKey="GasFuel" stackId="a" fill={COLORS[0]} />
+              <Bar dataKey="GasFlaring" stackId="a" fill={COLORS[1]} />
+              <Bar dataKey="LiquidFuel" stackId="a" fill={COLORS[2]} />
+              <Bar dataKey="Cement" stackId="a" fill={COLORS[3]} />
+              <Bar dataKey="SolidFuel" stackId="a" fill={COLORS[4]} />
+              <Line type="monotone" dataKey="Total" stroke="#EF4726" />
             </ComposedChart>
           </Row>
         </Container>
