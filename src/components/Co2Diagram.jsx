@@ -37,7 +37,7 @@ class Co2Diagram extends Component {
 
     return (
       <div className="Diagram">
-        <Container>
+        <Container className="container main">
           <Row>
             <p id="label">Million Metric Tons of CO2 Emission</p>
           </Row>

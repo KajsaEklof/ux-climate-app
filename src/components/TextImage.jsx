@@ -11,7 +11,7 @@ class TextImage extends Component {
       <div>
         <Container className="container main">
           <Row>
-            <h2 className="container">Heading</h2>
+            <h2 className="container heading">Heading</h2>
           </Row>
           <Row>
             <Col className="container" xs={6}>

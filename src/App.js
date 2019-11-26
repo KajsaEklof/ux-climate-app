@@ -25,6 +25,7 @@ class App extends Component {
         <Header />
         <TextImage />
         <Co2Diagram CO2Emission={this.state.CO2Emission} />
+        <TextImage />
       </div>
     );
   }

@@ -1,7 +1,24 @@
+/* These are CSS varibles for our colors in the application.
+Reference them by typing for example var(--light-pink) */
+:root {
+  --bright-pink: #EF0E7C;
+  --middle-pink: #F6A2B6;
+  --light-pink: #FFF5F2;
+  --cosmo-red: #EF4726;
+  --turquoise: #00A99D;
+  --light-turquoise: #87D8D6;
+  --light-blue: #B4E2F0;
+  --yellow:#FFD400;
+}
+ /*Setting the background color of the application id is in index.html*/
+#ux-app {
+  background-color: var(--light-pink);
+}
+
+
 #App {
   width: 90%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 2% auto;
   text-align: center;
 }
 
@@ -16,8 +33,14 @@
   margin-bottom: 5%;
 }
 
-h2 {
+h2.heading {
   text-align: left;
+  font-family: "futura-pt", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: lowercase;
+  letter-spacing: .5rem;
+  font-size: 3.5rem;
 }
 
 #label {
@@ -34,6 +57,15 @@ p {
   text-align: left;
 }
 
-.Diagram {
+/*This makes the diagaram stick to the bottom of the page in a strange way*/
+/* .Diagram {
   height: 50vh;
+} */
+
+p {
+  font-family: "source-serif-pro", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.1875rem;
+  line-height: 1.6;
 }
