@@ -22,6 +22,7 @@ class App extends Component {
   render() {
     return (
       <div id="App">
+        <h1>Funkar detta?</h1>
         <Header />
         <TextImage />
         <Co2Diagram CO2Emission={this.state.CO2Emission} />
