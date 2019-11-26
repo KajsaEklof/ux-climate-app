@@ -13,7 +13,7 @@ class App extends Component {
       textData: content,
     CO2Emission: []
   }
-  console.log(this.state.textData)
+  console.log(content)
   };
 
   async componentDidMount() {

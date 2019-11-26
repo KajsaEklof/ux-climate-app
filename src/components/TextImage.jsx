@@ -23,12 +23,19 @@ import introImage from "./images/introImage.png";
           </Row>
           <Row>
             <Col className="container" xs={6}>
-              <p>
-               Text
-                <br />
-                <br />
-               Text
+             
+            {
+              this.state.data2 && this.state.data2.slice(0,1).map((textInfo, index) =>
+              <p>{textInfo.info1}
+              <br/>
+              <br/>
+            
+              {textInfo.info2}
               </p>
+
+               )
+    }
+     
             </Col>
             <Col className="container" xs={6}>
               <img
