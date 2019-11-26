@@ -4,10 +4,16 @@ import TextImage from "./components/TextImage";
 import Co2Diagram from "./components/Co2Diagram";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
+import content from "./components/content.json"
 
 class App extends Component {
-  state = {
+  constructor(props) {
+    super(props)
+    this.state = {
+      textData: content,
     CO2Emission: []
+  }
+  console.log(this.state.textData)
   };
 
   async componentDidMount() {
@@ -23,8 +29,11 @@ class App extends Component {
     return (
       <div id="App">
         <Header />
-        <TextImage />
-        <Co2Diagram CO2Emission={this.state.CO2Emission} />
+        <TextImage 
+        textData={this.state.textData}/>
+
+        <Co2Diagram 
+        CO2Emission={this.state.CO2Emission} />
         <TextImage />
       </div>
     );
