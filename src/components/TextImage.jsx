@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
-import introImage from "./images/introImage.png";
 
 class TextImage extends Component {
   constructor(props) {
@@ -17,7 +16,7 @@ class TextImage extends Component {
       <img
         style={{ maxWidth: "25vw" }}
         src={this.props.picture}
-        alt="Three women talk about climate change."
+        alt={this.props.altText}
       />
     );
 
@@ -37,7 +36,7 @@ class TextImage extends Component {
       box1 = textTag;
       box2 = imageTag;
     } else {
-      box1 = imageTag
+      box1 = imageTag;
       box2 = textTag;
     }
 

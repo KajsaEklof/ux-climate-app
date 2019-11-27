@@ -21,11 +21,13 @@ class App extends Component {
   }
 
   async componentDidMount() {
-    const url = "https://my.api.mockaroo.com/co2.json?key=8eb9e6f0"; /* This is the Co2 Emission API */
+    const url =
+      "https://my.api.mockaroo.com/co2.json?key=8eb9e6f0"; /* This is the Co2 Emission API */
     const response = await fetch(url);
     const data = await response.json();
 
-    const url2 = "https://my.api.mockaroo.com/temp.json?key=8eb9e6f0"; /* This is the Global Temperature API */
+    const url2 =
+      "https://my.api.mockaroo.com/temp.json?key=8eb9e6f0"; /* This is the Global Temperature API */
     const response2 = await fetch(url2);
     const data2 = await response2.json();
 
@@ -61,56 +63,62 @@ class App extends Component {
         <Header />
         <TextImage
           layout={2}
-          heading={this.state.textData[0].heading}
-          textData1={this.state.textData[0].info1}
-          textData2={this.state.textData[0].info2}
-          picture={this.state.textData[0].picture}
+          heading={this.state.textData.introduction.heading}
+          textData1={this.state.textData.introduction.info1}
+          textData2={this.state.textData.introduction.info2}
+          picture={this.state.textData.introduction.picture}
+          altText={this.state.textData.introduction.altText}
         />
 
         <Co2Diagram
-          heading={this.state.textData[1].heading}
+          heading={this.state.textData.co2Diagram.heading}
           CO2Emission={this.state.CO2Emission}
         />
 
         <TextImage
           layout={1}
-          heading={this.state.textData[2].heading}
-          textData1={this.state.textData[2].info1}
-          textData2={this.state.textData[2].info2}
-          picture={this.state.textData[2].picture}
+          heading={this.state.textData.co2Food.heading}
+          textData1={this.state.textData.co2Food.info1}
+          textData2={this.state.textData.co2Food.info2}
+          picture={this.state.textData.co2Food.picture}
+          altText={this.state.textData.co2Food.altText}
         />
 
         <TextImage
           layout={2}
-          heading={this.state.textData[3].heading}
-          textData1={this.state.textData[3].info1}
-          textData2={this.state.textData[3].info2}
-          picture={this.state.textData[3].picture}
+          heading={this.state.textData.co2Clothes.heading}
+          textData1={this.state.textData.co2Clothes.info1}
+          textData2={this.state.textData.co2Clothes.info2}
+          picture={this.state.textData.co2Clothes.picture}
+          altText={this.state.textData.co2Clothes.altText}
         />
 
         <LineCharts
-          heading={this.state.textData[4].heading}
+          heading={this.state.textData.co2vsTemp.heading}
           CO2Emission={this.state.CO2Emission}
           globalTemp={this.state.globalTemp}
         />
+        <h2>What happens when the earth gets warmer?</h2>
         <TextImage
           layout={1}
-          heading={this.state.textData[5].heading}
-          textData1={this.state.textData[5].info1}
-          textData2={this.state.textData[5].info2}
-          picture={this.state.textData[5].picture}
+          heading={this.state.textData.glaciers.heading}
+          textData1={this.state.textData.glaciers.info1}
+          textData2={this.state.textData.glaciers.info2}
+          picture={this.state.textData.glaciers.picture}
+          altText={this.state.textData.glaciers.altText}
         />
         {/*<SingleLineChart
-        heading={this.state.textData[6].heading}
+        heading={this.state.textData.icevsSea.heading}
         seaLevel={this.state.seaLevel}
         iceVolume={this.state.iceVolume}
         />*/}
         <TextImage
           layout={2}
-          heading={this.state.textData[7].heading}
-          textData1={this.state.textData[7].info1}
-          textData2={this.state.textData[7].info2}
-          picture={this.state.textData[7].picture}
+          heading={this.state.textData.seaLevel.heading}
+          textData1={this.state.textData.seaLevel.info1}
+          textData2={this.state.textData.seaLevel.info2}
+          picture={this.state.textData.seaLevel.picture}
+          altText={this.state.textData.seaLevel.altText}
         />
       </div>
     );
