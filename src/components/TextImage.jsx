@@ -4,45 +4,55 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import introImage from "./images/introImage.png";
 
-  class TextImage extends Component {
-    constructor(props) {
-      super(props)
-      this.state = {
-        data2: this.props.textData
-      }
-      console.log(this.state.data2)
-    }
-    render() {
+class TextImage extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      data2: this.props.textData
+    };
+    console.log(this.state.data2);
+  }
+  render() {
+    let imageTag = (
+      <img
+        style={{ maxWidth: "25vw" }}
+        src={this.props.picture}
+        alt="Three women talk about climate change."
+      />
+    );
 
-      return (
-        
+    let textTag = (
+      <p>
+        {this.props.textData1}
+        <br />
+        <br />
+        {this.props.textData2}
+      </p>
+    );
+
+    let box1 = imageTag;
+    let box2 = textTag;
+
+    if (this.props.layout === 2) {
+      box1 = textTag;
+      box2 = imageTag;
+    } else {
+      box1 = imageTag
+      box2 = textTag;
+    }
+
+    return (
       <div>
         <Container className="container main">
           <Row>
-            <h2 className="container heading">Heading</h2>
+            <h2 className="container heading">{this.props.heading}</h2>
           </Row>
           <Row>
             <Col className="container" xs={6}>
-             
-            {
-              this.state.data2 && this.state.data2.slice(0,1).map((textInfo, index) =>
-              <p>{textInfo.info1}
-              <br/>
-              <br/>
-            
-              {textInfo.info2}
-              </p>
-
-               )
-    }
-     
+              {box1}
             </Col>
             <Col className="container" xs={6}>
-              <img
-                style={{ maxWidth: "25vw" }}
-                src={introImage}
-                alt="Three women talk about climate change."
-              />
+              {box2}
             </Col>
           </Row>
         </Container>

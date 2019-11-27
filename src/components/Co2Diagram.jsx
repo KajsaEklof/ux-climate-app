@@ -37,7 +37,9 @@ class Co2Diagram extends Component {
 
     return (
       <div className="Diagram">
+     
         <Container className="container main">
+        <h2 className="heading">{this.props.heading}</h2>
           <Row>
             <p id="label">Million Metric Tons of CO2 Emission</p>
           </Row>
@@ -58,7 +60,8 @@ class Co2Diagram extends Component {
               <YAxis />
               <Tooltip content={dataBarChart.Year} />
               <Legend />
-              <Bar dataKey="GasFuel" stackId="a" fill={COLORS[0]} />
+              
+              <Bar dataKey="GasFuel" stackId="a" fill={COLORS[0]}/>
               <Bar dataKey="GasFlaring" stackId="a" fill={COLORS[1]} />
               <Bar dataKey="LiquidFuel" stackId="a" fill={COLORS[2]} />
               <Bar dataKey="Cement" stackId="a" fill={COLORS[3]} />
