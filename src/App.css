@@ -1,20 +1,19 @@
 /* These are CSS varibles for our colors in the application.
 Reference them by typing for example var(--light-pink) */
 :root {
-  --bright-pink: #EF0E7C;
-  --middle-pink: #F6A2B6;
-  --light-pink: #FFF5F2;
-  --cosmo-red: #EF4726;
-  --turquoise: #00A99D;
-  --light-turquoise: #87D8D6;
-  --light-blue: #B4E2F0;
-  --yellow:#FFD400;
+  --bright-pink: #ef0e7c;
+  --middle-pink: #f6a2b6;
+  --light-pink: #fff5f2;
+  --cosmo-red: #ef4726;
+  --turquoise: #00a99d;
+  --light-turquoise: #87d8d6;
+  --light-blue: #b4e2f0;
+  --yellow: #ffd400;
 }
- /*Setting the background color of the application id is in index.html*/
+/*Setting the background color of the application id is in index.html*/
 #ux-app {
   background-color: var(--light-pink);
 }
-
 
 #App {
   width: 90%;
@@ -33,13 +32,32 @@ Reference them by typing for example var(--light-pink) */
   margin-bottom: 5%;
 }
 
+/* This is the header image */
+div.jumbotron-fluid {
+  padding: 0rem 0rem 1rem 0rem;
+  background-color: var(--light-blue);
+}
+
+img.header-image {
+  padding: 0px 0px 0px 0px;
+}
+
+h1.heading {
+  font-family: "futura-pt", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: lowercase;
+  letter-spacing: 0.5rem;
+  font-size: 50px; /*CHANGE TO EM*/
+}
+
 h2.heading {
   text-align: left;
   font-family: "futura-pt", sans-serif;
   font-weight: 700;
   font-style: normal;
   text-transform: lowercase;
-  letter-spacing: .5rem;
+  letter-spacing: 0.5rem;
   font-size: 3.5rem;
 }
 
