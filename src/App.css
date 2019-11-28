@@ -24,7 +24,7 @@ Reference them by typing for example var(--light-pink) */
   border-style: solid;
 }
 
-.beforeafter {
+.centeredContent {
   margin-left: auto;
   margin-right: auto;
   justify-content: center;
@@ -42,7 +42,6 @@ div.jumbotron-fluid {
 
 img.header-image {
   padding: 0em;
-  
 }
 
 h1.heading {
@@ -50,7 +49,7 @@ h1.heading {
   font-weight: 700;
   font-style: normal;
   letter-spacing: 0.2em;
-  font-size: 4.5em; 
+  font-size: 4.5em;
 }
 
 h2.heading {
@@ -59,7 +58,7 @@ h2.heading {
   font-weight: 700;
   font-style: normal;
   letter-spacing: 0.2em;
-  font-size: 3.125em; 
+  font-size: 3.125em;
 }
 
 h3.heading {
@@ -96,7 +95,6 @@ p {
   font-style: normal;
   font-size: 1.1875em;
   line-height: 1.6;
-
 }
 
 .infoP {
@@ -105,4 +103,10 @@ p {
   border-style: solid;
   padding: 2%;
   margin-top: 1%;
+}
+
+.borderImage {
+  border-color: pink;
+  border-width: 0.2em;
+  border-style: solid;
 }

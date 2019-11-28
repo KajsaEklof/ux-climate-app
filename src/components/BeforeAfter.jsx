@@ -13,7 +13,7 @@ class BeforeAfter extends Component {
     const after = afterImage;
     return (
       <Container className="container main">
-        <Row className="beforeafter">
+        <Row className="centeredContent">
           <BeforeAfterSlider
             before={before}
             after={after}
@@ -21,7 +21,7 @@ class BeforeAfter extends Component {
             height={480}
           />
         </Row>
-        <Row className="beforeafter">
+        <Row className="centeredContent">
           <p className="infoP">{this.props.text}</p>
         </Row>
       </Container>

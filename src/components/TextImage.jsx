@@ -12,11 +12,12 @@ class TextImage extends Component {
     console.log(this.state.data2);
   }
   render() {
-    let heading1 = ( <h3 className="heading">{this.props.heading}</h3> );
-    let heading2 = ( <h3></h3> );
+    let heading1 = <h3 className="heading">{this.props.heading}</h3>;
+    let heading2 = <h3></h3>;
 
     let imageTag = (
       <img
+        className="borderImage"
         style={{ maxWidth: "25vw" }}
         src={this.props.picture}
         alt={this.props.altText}
@@ -54,10 +55,10 @@ class TextImage extends Component {
         <Container className="container main">
           <Row>
             <Col className="container" xs={6}>
-            {hbox1}
+              {hbox1}
             </Col>
             <Col className="container" xs={6}>
-            {hbox2}
+              {hbox2}
             </Col>
           </Row>
           <Row>

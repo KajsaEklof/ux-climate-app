@@ -23,13 +23,13 @@ export default class SingleLineChart extends Component {
       return <p>There is no data.</p>;
     }
 
-    let dataLine1 = [];
+    /* let dataLine1 = [];
     ice.map(x =>
       dataLine1.push({
         Year: x.Year,
         Mean: x["Mean cumulative mass balance"]
       })
-    );
+    ); */
 
     let dataLine2 = [];
     sea.map(x =>
@@ -39,8 +39,14 @@ export default class SingleLineChart extends Component {
       })
     );
 
+    ice.map(x =>
+      dataLine2.splice(x, 0, {
+        Mean: x["Mean cumulative mass balance"]
+      })
+    );
+
+    /*let dataLine3 = dataLine1.concat(dataLine2);*/
     console.log(dataLine2);
-    let dataLine3 = dataLine1.concat(dataLine2);
 
     return (
       <div className="Diagram">
@@ -48,9 +54,10 @@ export default class SingleLineChart extends Component {
           <h2 className="heading">{this.props.heading}</h2>
           <Row>
             <LineChart
+              className="centeredContent"
               width={600}
               height={300}
-              data={dataLine3}
+              data={dataLine2}
               margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
             >
               <XAxis dataKey="Year" />
@@ -68,7 +75,9 @@ export default class SingleLineChart extends Component {
             </LineChart>
           </Row>
           <Row>
-            <p id="label">Sea Levels vs Ice Volume</p>
+            <p id="label">
+              Change in Sea Levels vs average thickness of Glaciers
+            </p>
           </Row>
         </Container>
       </div>

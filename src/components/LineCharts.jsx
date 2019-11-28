@@ -29,7 +29,7 @@ class LineCharts extends Component {
     co2.map(x =>
       dataLineChart1.push({
         Year: x.Year,
-        Total: x.Total
+        "Total CO2 Emission": x.Total
       })
     );
 
@@ -37,7 +37,7 @@ class LineCharts extends Component {
     temp.map(x =>
       dataLineChart2.push({
         Year: x.Year,
-        Mean: x.Mean
+        "Average Temperature": x.Mean
       })
     );
 
@@ -63,6 +63,7 @@ class LineCharts extends Component {
                 height={300}
                 data={dataLineChart1}
                 margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
+                activeDot={{ r: 8 }}
               >
                 <XAxis dataKey="Year" />
                 <YAxis />
@@ -71,9 +72,8 @@ class LineCharts extends Component {
                 <Legend />
                 <Line
                   type="monotone"
-                  dataKey="Total"
+                  dataKey="Total CO2 Emission"
                   stroke="#EF0E7C"
-                  activeDot={{ r: 8 }}
                 />
               </LineChart>
             </Col>
@@ -83,6 +83,7 @@ class LineCharts extends Component {
                 height={300}
                 data={dataLineChart2}
                 margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
+                activeDot={{ r: 8 }}
               >
                 <XAxis dataKey="Year" />
                 <YAxis />
@@ -91,9 +92,8 @@ class LineCharts extends Component {
                 <Legend />
                 <Line
                   type="monotone"
-                  dataKey="Mean"
+                  dataKey="Average Temperature"
                   stroke="#00A99D"
-                  activeDot={{ r: 8 }}
                 />
               </LineChart>
             </Col>

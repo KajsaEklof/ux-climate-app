@@ -3,7 +3,7 @@ import Header from "./components/Header";
 import TextImage from "./components/TextImage";
 import Co2Diagram from "./components/Co2Diagram";
 import LineCharts from "./components/LineCharts";
-import SingleLineChart from "./components/SingleLineChart";
+import AreaCharts from "./components/AreaCharts";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import data from "./components/Content.json"; /*This is the json file with all our content and copy text for the applicaiton*/
@@ -44,26 +44,17 @@ class App extends Component {
 
     const co2data = data.filter(x => x.Year > 1944 && x.Year < 2014);
     const tempData = data2.filter(x => x.Year > 1944 && x.Year < 2014);
+
     const seaData = data3.filter(
       x =>
-        Date.parse(x.Time) > Date.parse("1945-01-01") &&
+        Date.parse(x.Time) > Date.parse("1990-01-01") &&
         Date.parse(x.Time) < Date.parse("2014-01-01")
     );
-    const iceData = data4.filter(x => x.Year > 1944 && x.Year < 2014);
 
-    let seaDataSlice = seaData.Time;
-    seaDataSlice = seaData.map(x => x.Time.substring(0, 4));
-    console.log(seaDataSlice);
+    const iceData = data4.filter(x => x.Year > 1989 && x.Year < 2014);
 
-    let seaDataNew = [];
-    seaData.map(x =>
-      seaDataNew.push({
-        Year: seaDataSlice,
-        GMSL: x.GMSL
-      })
-    );
-
-    console.log(seaDataNew);
+    seaData.map(x => (x.Time = x.Time.substring(0, 4)));
+    console.log(seaData);
 
     this.setState({
       globalTemp: tempData,
@@ -128,7 +119,7 @@ class App extends Component {
         />
         <BeforeAfter text={content.beforeAfter.info1} />
 
-        <SingleLineChart
+        <AreaCharts
           heading={content.icevsSea.heading}
           seaLevel={this.state.seaLevel}
           iceVolume={this.state.iceVolume}
