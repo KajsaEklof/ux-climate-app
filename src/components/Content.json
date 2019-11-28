@@ -33,6 +33,9 @@
     "picture": "https://raw.githubusercontent.com/KajsaEklof/ux-climate-app/implementation1/src/components/images/introImage.png",
     "altText": "Three women talk about melting glaciers."
   },
+  "beforeAfter": {
+    "info1": "Information about melting glaciers that altered to match the convolutions of the room"
+  },
   "icevsSea": {
     "heading": "Ice vs Sea Heading"
   },

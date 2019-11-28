@@ -12,6 +12,9 @@ class TextImage extends Component {
     console.log(this.state.data2);
   }
   render() {
+    let heading1 = ( <h3 className="heading">{this.props.heading}</h3> );
+    let heading2 = ( <h3></h3> );
+
     let imageTag = (
       <img
         style={{ maxWidth: "25vw" }}
@@ -29,13 +32,19 @@ class TextImage extends Component {
       </p>
     );
 
+    let hbox1 = heading1;
+    let hbox2 = heading2;
     let box1 = imageTag;
     let box2 = textTag;
 
     if (this.props.layout === 2) {
+      hbox1 = heading1;
+      hbox2 = heading2;
       box1 = textTag;
       box2 = imageTag;
     } else {
+      hbox1 = heading2;
+      hbox2 = heading1;
       box1 = imageTag;
       box2 = textTag;
     }
@@ -44,7 +53,12 @@ class TextImage extends Component {
       <div>
         <Container className="container main">
           <Row>
-            <h2 className="container heading">{this.props.heading}</h2>
+            <Col className="container" xs={6}>
+            {hbox1}
+            </Col>
+            <Col className="container" xs={6}>
+            {hbox2}
+            </Col>
           </Row>
           <Row>
             <Col className="container" xs={6}>

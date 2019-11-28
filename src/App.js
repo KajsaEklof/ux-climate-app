@@ -3,10 +3,12 @@ import Header from "./components/Header";
 import TextImage from "./components/TextImage";
 import Co2Diagram from "./components/Co2Diagram";
 import LineCharts from "./components/LineCharts";
-/*import SingleLineChart from "./components/SingleLineChart";*/
+import SingleLineChart from "./components/SingleLineChart";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import data from "./components/Content.json"; /*This is the json file with all our content and copy text for the applicaiton*/
+import BeforeAfter from "./components/BeforeAfter";
+import seajsonData from ".components/Dataset.json";
 
 class App extends Component {
   constructor(props) {
@@ -30,33 +32,28 @@ class App extends Component {
       "https://my.api.mockaroo.com/temp.json?key=8eb9e6f0"; /* This is the Global Temperature API */
     const response2 = await fetch(url2);
     const data2 = await response2.json();
+    console.log(data2);
 
-    const co2data = data.filter(x => x.Year > 1944 && x.Year < 2014);
-
-    const tempData = data2.filter(x => x.Year > 1944 && x.Year < 2014);
-    this.setState({
-      globalTemp: tempData,
-      CO2Emission: co2data
-    });
-
-    {
-      /*
-
-    const url3 = "https://my.api.mockaroo.com/glaciersize.json?key=8eb9e6f0"; This is the Glacier Size API 
+    const url3 = "https://my.api.mockaroo.com/glaciersize.json?key=8eb9e6f0"; 
     const response3 = await fetch(url3);
     const data3 = await response3;
+    console.log(data3);
 
-    const url4 = "https://my.api.mockaroo.com/sealevel.json?key=8eb9e6f0"; This is the Sea Level API
-    const response4 = await fetch(url4);
-    const data4 = await response4.json();
-  
+    /* const url4 = "https://my.api.mockaroo.com/sealevel.json?key=8eb9e6f0"; 
+    const response4 = await fetch(url4); */
+    const data4 = seajsonData;
 
-    const iceData = data3.filter(x => x.Year > 1944 && x.Year < 2014);
-    this.setState({ iceVolume: iceData })
-
-    const seaData = data4.filter(x => x.Year > 1944 && x.Year < 2014);
-    this.setState({ seaLevel: seaData })*/
-    }
+    const co2data = data.filter(x => x.Year > 1944 && x.Year < 2014);
+    const tempData = data2.filter(x => x.Year > 1944 && x.Year < 2014);
+    const iceData = data3.filter(x => x.Year < 2014);
+    const seaData = data4.filter(x => x.Time.slice(0,3) > 1944 && x.Time.slice(0,3) < 2014);
+    
+    this.setState({
+      globalTemp: tempData,
+      CO2Emission: co2data,
+      iceVolume: iceData,
+      seaLevel: seaData
+    });
   }
 
   render() {
@@ -103,7 +100,7 @@ class App extends Component {
           CO2Emission={this.state.CO2Emission}
           globalTemp={this.state.globalTemp}
         />
-        <h2>What happens when the earth gets warmer?</h2>
+        <h2 className="heading">What happens when the earth gets warmer?</h2>
         <TextImage
           layout={1}
           heading={content.glaciers.heading}
@@ -112,11 +109,14 @@ class App extends Component {
           picture={content.glaciers.picture}
           altText={content.glaciers.altText}
         />
-        {/*<SingleLineChart
+        <BeforeAfter text={content.beforeAfter.info1} />
+
+        <SingleLineChart
         heading={content.icevsSea.heading}
         seaLevel={this.state.seaLevel}
         iceVolume={this.state.iceVolume}
-        />*/}
+        />
+
         <TextImage
           layout={2}
           heading={content.seaLevel.heading}

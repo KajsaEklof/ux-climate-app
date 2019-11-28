@@ -10,22 +10,24 @@ Reference them by typing for example var(--light-pink) */
   --light-blue: #b4e2f0;
   --yellow: #ffd400;
 }
-/*Setting the background color of the application id is in index.html*/
-#ux-app {
-  background-color: var(--light-pink);
-}
 
 #App {
   width: 90%;
-  margin: 2% auto;
+  margin: 0% auto;
   text-align: center;
+  background-color: var(--light-pink);
 }
 
 .container {
-  width: 90%;
   border-color: red;
-  border-width: 2px;
+  border-width: 0.2em;
   border-style: solid;
+}
+
+.beforeafter {
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
 }
 
 .main {
@@ -34,21 +36,21 @@ Reference them by typing for example var(--light-pink) */
 
 /* This is the header image */
 div.jumbotron-fluid {
-  padding: 0rem 0rem 1rem 0rem;
+  padding: 0em 0em 1em 0em;
   background-color: var(--light-blue);
 }
 
 img.header-image {
-  padding: 0px 0px 0px 0px;
+  padding: 0em;
+  
 }
 
 h1.heading {
   font-family: "futura-pt", sans-serif;
   font-weight: 700;
   font-style: normal;
-  text-transform: lowercase;
-  letter-spacing: 0.5rem;
-  font-size: 50px; /*CHANGE TO EM*/
+  letter-spacing: 0.2em;
+  font-size: 4.5em; 
 }
 
 h2.heading {
@@ -56,9 +58,17 @@ h2.heading {
   font-family: "futura-pt", sans-serif;
   font-weight: 700;
   font-style: normal;
-  text-transform: lowercase;
-  letter-spacing: 0.5rem;
-  font-size: 3.5rem;
+  letter-spacing: 0.2em;
+  font-size: 3.125em; 
+}
+
+h3.heading {
+  text-align: left;
+  font-family: "futura-pt", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 0.2em;
+  font-size: 2.25em;
 }
 
 #label {
@@ -84,6 +94,15 @@ p {
   font-family: "source-serif-pro", serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 1.1875rem;
+  font-size: 1.1875em;
   line-height: 1.6;
+
+}
+
+.infoP {
+  border-color: pink;
+  border-width: 0.2em;
+  border-style: solid;
+  padding: 2%;
+  margin-top: 1%;
 }

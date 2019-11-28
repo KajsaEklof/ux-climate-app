@@ -28,15 +28,15 @@ export default class SingleLineChart extends Component {
     ice.map(x =>
       dataLine1.push({
         Year: x.Year,
-        Total: x.Total
+        Mean: x["Mean cumulative mass balance"]
       })
     );
 
     let dataLine2 = [];
     sea.map(x =>
       dataLine2.push({
-        Year: x.Year,
-        Mean: x.Mean
+        Time: x.Time,
+        GMSL: x.GMSL
       })
     );
 
@@ -50,7 +50,7 @@ export default class SingleLineChart extends Component {
             <LineChart
               width={600}
               height={300}
-              data={data}
+              data={dataLine1}
               margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
             >
               <XAxis dataKey="Year" />
