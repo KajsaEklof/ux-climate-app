@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 
 import {
   LineChart,
@@ -35,22 +34,23 @@ export default class SingleLineChart extends Component {
     let dataLine2 = [];
     sea.map(x =>
       dataLine2.push({
-        Time: x.Time,
+        Year: x.Time,
         GMSL: x.GMSL
       })
     );
+
+    console.log(dataLine2);
+    let dataLine3 = dataLine1.concat(dataLine2);
 
     return (
       <div className="Diagram">
         <Container className="container main">
           <h2 className="heading">{this.props.heading}</h2>
           <Row>
-            <p id="label">Sea Levels vs Ice Volume</p>
-
             <LineChart
               width={600}
               height={300}
-              data={dataLine1}
+              data={dataLine3}
               margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
             >
               <XAxis dataKey="Year" />
@@ -60,12 +60,15 @@ export default class SingleLineChart extends Component {
               <Legend />
               <Line
                 type="monotone"
-                dataKey="pv"
+                dataKey="Mean"
                 stroke="#8884d8"
                 activeDot={{ r: 8 }}
               />
-              <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
+              <Line type="monotone" dataKey="GMSL" stroke="#82ca9d" />
             </LineChart>
+          </Row>
+          <Row>
+            <p id="label">Sea Levels vs Ice Volume</p>
           </Row>
         </Container>
       </div>

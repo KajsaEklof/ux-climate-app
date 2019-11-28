@@ -8,7 +8,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import data from "./components/Content.json"; /*This is the json file with all our content and copy text for the applicaiton*/
 import BeforeAfter from "./components/BeforeAfter";
-import seajsonData from ".components/Dataset.json";
+import icejsonData from "./components/iceData.json";
+import seajsonData from "./components/seaData.json";
 
 class App extends Component {
   constructor(props) {
@@ -32,22 +33,38 @@ class App extends Component {
       "https://my.api.mockaroo.com/temp.json?key=8eb9e6f0"; /* This is the Global Temperature API */
     const response2 = await fetch(url2);
     const data2 = await response2.json();
-    console.log(data2);
 
-    const url3 = "https://my.api.mockaroo.com/glaciersize.json?key=8eb9e6f0"; 
-    const response3 = await fetch(url3);
-    const data3 = await response3;
-    console.log(data3);
+    /* const url3 = "https://my.api.mockaroo.com/glaciersize.json?key=8eb9e6f0";
+    const response3 = await fetch(url3); */
+    const data3 = seajsonData;
 
     /* const url4 = "https://my.api.mockaroo.com/sealevel.json?key=8eb9e6f0"; 
     const response4 = await fetch(url4); */
-    const data4 = seajsonData;
+    const data4 = icejsonData;
 
     const co2data = data.filter(x => x.Year > 1944 && x.Year < 2014);
     const tempData = data2.filter(x => x.Year > 1944 && x.Year < 2014);
-    const iceData = data3.filter(x => x.Year < 2014);
-    const seaData = data4.filter(x => x.Time.slice(0,3) > 1944 && x.Time.slice(0,3) < 2014);
-    
+    const seaData = data3.filter(
+      x =>
+        Date.parse(x.Time) > Date.parse("1945-01-01") &&
+        Date.parse(x.Time) < Date.parse("2014-01-01")
+    );
+    const iceData = data4.filter(x => x.Year > 1944 && x.Year < 2014);
+
+    let seaDataSlice = seaData.Time;
+    seaDataSlice = seaData.map(x => x.Time.substring(0, 4));
+    console.log(seaDataSlice);
+
+    let seaDataNew = [];
+    seaData.map(x =>
+      seaDataNew.push({
+        Year: seaDataSlice,
+        GMSL: x.GMSL
+      })
+    );
+
+    console.log(seaDataNew);
+
     this.setState({
       globalTemp: tempData,
       CO2Emission: co2data,
@@ -57,8 +74,8 @@ class App extends Component {
   }
 
   render() {
-
-    const content = this.state.textData; /* Saves this.state.textData in a constent */
+    const content = this.state
+      .textData; /* Saves this.state.textData in a constent */
 
     return (
       <div id="App">
@@ -112,9 +129,9 @@ class App extends Component {
         <BeforeAfter text={content.beforeAfter.info1} />
 
         <SingleLineChart
-        heading={content.icevsSea.heading}
-        seaLevel={this.state.seaLevel}
-        iceVolume={this.state.iceVolume}
+          heading={content.icevsSea.heading}
+          seaLevel={this.state.seaLevel}
+          iceVolume={this.state.iceVolume}
         />
 
         <TextImage
