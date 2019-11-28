@@ -32,10 +32,12 @@ class App extends Component {
     const data2 = await response2.json();
 
     const co2data = data.filter(x => x.Year > 1944 && x.Year < 2014);
-    this.setState({ CO2Emission: co2data });
 
     const tempData = data2.filter(x => x.Year > 1944 && x.Year < 2014);
-    this.setState({ globalTemp: tempData });
+    this.setState({
+      globalTemp: tempData,
+      CO2Emission: co2data
+    });
 
     {
       /*
@@ -58,67 +60,70 @@ class App extends Component {
   }
 
   render() {
+
+    const content = this.state.textData; /* Saves this.state.textData in a constent */
+
     return (
       <div id="App">
         <Header />
         <TextImage
           layout={2}
-          heading={this.state.textData.introduction.heading}
-          textData1={this.state.textData.introduction.info1}
-          textData2={this.state.textData.introduction.info2}
-          picture={this.state.textData.introduction.picture}
-          altText={this.state.textData.introduction.altText}
+          heading={content.introduction.heading}
+          textData1={content.introduction.info1}
+          textData2={content.introduction.info2}
+          picture={content.introduction.picture}
+          altText={content.introduction.altText}
         />
 
         <Co2Diagram
-          heading={this.state.textData.co2Diagram.heading}
+          heading={content.co2Diagram.heading}
           CO2Emission={this.state.CO2Emission}
         />
 
         <TextImage
           layout={1}
-          heading={this.state.textData.co2Food.heading}
-          textData1={this.state.textData.co2Food.info1}
-          textData2={this.state.textData.co2Food.info2}
-          picture={this.state.textData.co2Food.picture}
-          altText={this.state.textData.co2Food.altText}
+          heading={content.co2Food.heading}
+          textData1={content.co2Food.info1}
+          textData2={content.co2Food.info2}
+          picture={content.co2Food.picture}
+          altText={content.co2Food.altText}
         />
 
         <TextImage
           layout={2}
-          heading={this.state.textData.co2Clothes.heading}
-          textData1={this.state.textData.co2Clothes.info1}
-          textData2={this.state.textData.co2Clothes.info2}
-          picture={this.state.textData.co2Clothes.picture}
-          altText={this.state.textData.co2Clothes.altText}
+          heading={content.co2Clothes.heading}
+          textData1={content.co2Clothes.info1}
+          textData2={content.co2Clothes.info2}
+          picture={content.co2Clothes.picture}
+          altText={content.co2Clothes.altText}
         />
 
         <LineCharts
-          heading={this.state.textData.co2vsTemp.heading}
+          heading={content.co2vsTemp.heading}
           CO2Emission={this.state.CO2Emission}
           globalTemp={this.state.globalTemp}
         />
         <h2>What happens when the earth gets warmer?</h2>
         <TextImage
           layout={1}
-          heading={this.state.textData.glaciers.heading}
-          textData1={this.state.textData.glaciers.info1}
-          textData2={this.state.textData.glaciers.info2}
-          picture={this.state.textData.glaciers.picture}
-          altText={this.state.textData.glaciers.altText}
+          heading={content.glaciers.heading}
+          textData1={content.glaciers.info1}
+          textData2={content.glaciers.info2}
+          picture={content.glaciers.picture}
+          altText={content.glaciers.altText}
         />
         {/*<SingleLineChart
-        heading={this.state.textData.icevsSea.heading}
+        heading={content.icevsSea.heading}
         seaLevel={this.state.seaLevel}
         iceVolume={this.state.iceVolume}
         />*/}
         <TextImage
           layout={2}
-          heading={this.state.textData.seaLevel.heading}
-          textData1={this.state.textData.seaLevel.info1}
-          textData2={this.state.textData.seaLevel.info2}
-          picture={this.state.textData.seaLevel.picture}
-          altText={this.state.textData.seaLevel.altText}
+          heading={content.seaLevel.heading}
+          textData1={content.seaLevel.info1}
+          textData2={content.seaLevel.info2}
+          picture={content.seaLevel.picture}
+          altText={content.seaLevel.altText}
         />
       </div>
     );
