@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
-import popupCard from "./popupCard";
+import PopupCard from "./PopupCard";
+import Button from "react-bootstrap/Button"
+
 
 import {
   ComposedChart,
@@ -15,8 +17,25 @@ import {
 } from "recharts";
 
 class Co2Diagram extends Component {
-  state = {};
+  constructor(){
+    super();
+    this.state = {
+      showPopup: false
+    };
+  }
+
+
+  togglePopUp() {
+    this.setState({
+      showPopup: !this.state.showPopup
+    });
+  }
+  
   render() {
+    
+    let textData = this.props.textData;
+    
+
     let co2 = this.props.CO2Emission;
     if (co2 === undefined) {
       return <p>There is no data.</p>;
@@ -40,19 +59,26 @@ class Co2Diagram extends Component {
     let filterData = (arr, nth) => arr.filter((e, i) => i % nth === nth - 1);
 
     dataBarChart = filterData(dataBarChart, 3);
-
-    alert(<popupCard />)
-
     return (
-
         <div className="Diagram">
+        {this.state.showPopup ?
+          <PopupCard
+          closePopup={this.togglePopUp.bind(this)}
+          cardTitle={textData.cardTitle}
+          cardText={textData.cardText}
+          />
+          : null
+        }
           <Container className="container main">
             <Row>
-            <popupCard />
               <h2 className="heading">{this.props.heading}</h2>
             </Row>
             <Row className="alignRight">
-              <p className="popup">What does this mean?</p>
+            <Button variant="info"
+            className="popup"
+              onClick={this.togglePopUp.bind(this)}
+              >What does this mean?</Button> 
+           
             </Row>
             <Row className="centeredContent">
               <ComposedChart
@@ -84,6 +110,8 @@ class Co2Diagram extends Component {
               <p id="label">Million Metric Tons of CO2 Emission</p>
             </Row>
           </Container>
+         
+          
         </div>
     );
   }

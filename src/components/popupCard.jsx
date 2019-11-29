@@ -1,29 +1,24 @@
 import React, { Component } from "react";
 import Card from "react-bootstrap/Card";
-import Container from "react-bootstrap/Container";
 
-class popupCard extends Component {
+class PopupCard extends Component {
   state = {};
   render() {
     return (
-      <Container>
+      <div className="popup_inner">
         <Card style={{ width: "18rem" }}>
           <Card.Body>
-            <Card.Title>Card Title</Card.Title>
-            <Card.Subtitle className="mb-2 text-muted">
-              <p>This is a subtitle</p>
-            </Card.Subtitle>
+            <Card.Title>{this.props.cardTitle}</Card.Title>
             <Card.Text>
-              <p>Some quick example text to build on the card title and make up the
-              bulk of the card's content.</p>
+             {this.props.cardText}
             </Card.Text>
-            <Card.Link href="#">Card Link</Card.Link>
-            <Card.Link href="#">Another Link</Card.Link>
+
+            <button onClick={this.props.closePopup}>close me</button>
           </Card.Body>
         </Card>
-      </Container>
+      </div>
     );
   }
 }
 
-export default popupCard;
+export default PopupCard;

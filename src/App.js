@@ -83,6 +83,7 @@ class App extends Component {
         <Co2Diagram
           heading={content.co2Diagram.heading}
           CO2Emission={this.state.CO2Emission}
+          textData={content.co2Popup}
         />
 
         <TextImage
