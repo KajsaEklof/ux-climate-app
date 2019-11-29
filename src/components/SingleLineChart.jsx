@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
+import PopupCard from "./PopupCard";
+import Button from "react-bootstrap/Button"
 
 import {
   LineChart,
@@ -13,6 +15,20 @@ import {
 } from "recharts";
 
 export default class SingleLineChart extends Component {
+  constructor(){
+    super();
+    this.state = {
+      showPopup: false
+    };
+  }
+
+
+  togglePopUp() {
+    this.setState({
+      showPopup: !this.state.showPopup
+    });
+  }
+  
   render() {
     let ice = this.props.iceVolume;
     let sea = this.props.seaLevel;
@@ -50,6 +66,13 @@ export default class SingleLineChart extends Component {
 
     return (
       <div className="Diagram">
+        {this.state.showPopup ? (
+          <PopupCard
+            closePopup={this.togglePopUp.bind(this)}
+            cardTitle={textData.cardTitle}
+            cardText={textData.cardText}
+          />
+        ) : null}
         <Container className="container main">
           <h2 className="heading">{this.props.heading}</h2>
           <Row>
@@ -79,6 +102,13 @@ export default class SingleLineChart extends Component {
               Change in Sea Levels vs average thickness of Glaciers
             </p>
           </Row>
+          <Row className="alignRight">
+            <Button variant="info"
+            className="popup"
+              onClick={this.togglePopUp.bind(this)}
+              >What does this mean?</Button> 
+           
+            </Row>
         </Container>
       </div>
     );

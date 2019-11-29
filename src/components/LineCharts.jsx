@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import PopupCard from "./PopupCard";
+import Button from "react-bootstrap/Button"
 
 import {
   LineChart,
@@ -14,8 +16,23 @@ import {
 } from "recharts";
 
 class LineCharts extends Component {
-  state = {};
+  constructor(){
+    super();
+    this.state = {
+      showPopup: false
+    };
+  }
+
+
+  togglePopUp() {
+    this.setState({
+      showPopup: !this.state.showPopup
+    });
+  }
+
   render() {
+    let textData = this.props.textData;
+
     let co2 = this.props.CO2Emission;
     let temp = this.props.globalTemp;
     if (co2 === undefined) {
@@ -45,17 +62,24 @@ class LineCharts extends Component {
 
     return (
       <div className="Diagram">
+      {this.state.showPopup ?
+        <PopupCard
+        closePopup={this.togglePopUp.bind(this)}
+        cardTitle={textData.cardTitle}
+        cardText={textData.cardText}
+        />
+        : null
+      }
         <Container className="container main">
           <h2 className="heading">{this.props.heading}</h2>
-          <Row>
-            <Col className="container" xs={6}>
-              <p id="label">Million Metric Tons of CO2 Emission</p>
-            </Col>
-
-            <Col className="container" xs={6}>
-              <p id="label">Global Temperature </p>
-            </Col>
+          <Row className="alignRight">
+          <Button variant="info"
+          className="popup"
+            onClick={this.togglePopUp.bind(this)}
+            >What does this mean?</Button> 
+         
           </Row>
+          
           <Row>
             <Col className="container" xs={6}>
               <LineChart
@@ -96,6 +120,15 @@ class LineCharts extends Component {
                   stroke="#00A99D"
                 />
               </LineChart>
+            </Col>
+          </Row>
+          <Row className="centeredContent">
+            <Col className="container" xs={6}>
+              <p className="label">Million Metric Tons of CO2 Emission</p>
+            </Col>
+
+            <Col className="container" xs={6}>
+              <p className="label">Global Temperature </p>
             </Col>
           </Row>
         </Container>

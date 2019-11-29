@@ -10,6 +10,7 @@ import data from "./components/Content.json"; /*This is the json file with all o
 import BeforeAfter from "./components/BeforeAfter";
 import icejsonData from "./components/iceData.json";
 import seajsonData from "./components/seaData.json";
+import CompareHabits from "./components/CompareHabits";
 
 class App extends Component {
   constructor(props) {
@@ -108,6 +109,7 @@ class App extends Component {
           heading={content.co2vsTemp.heading}
           CO2Emission={this.state.CO2Emission}
           globalTemp={this.state.globalTemp}
+          textData={content.co2vsTempPopup}
         />
         <h2 className="heading">What happens when the earth gets warmer?</h2>
         <TextImage
@@ -124,6 +126,7 @@ class App extends Component {
           heading={content.icevsSea.heading}
           seaLevel={this.state.seaLevel}
           iceVolume={this.state.iceVolume}
+          textData={content.icevsSeaPopup}
         />
 
         <TextImage
@@ -134,6 +137,7 @@ class App extends Component {
           picture={content.seaLevel.picture}
           altText={content.seaLevel.altText}
         />
+        <CompareHabits />
       </div>
     );
   }
