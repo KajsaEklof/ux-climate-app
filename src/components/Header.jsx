@@ -11,7 +11,7 @@ class Header extends Component {
     return (
       <Jumbotron fluid className="jumbo-header">
       <Image className="header-image" src={headerImage} fluid/>
-          <h1 className="heading">Climate Change Data Story</h1>
+      <h1 className="heading">Climate Change Data Story</h1>
       </Jumbotron>
 
       // <Jumbotron>

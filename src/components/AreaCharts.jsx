@@ -8,9 +8,7 @@ import {
   Area,
   XAxis,
   YAxis,
-  CartesianGrid,
-  Tooltip,
-  Legend
+  Tooltip
 } from "recharts";
 
 class AreaCharts extends Component {

@@ -13,7 +13,7 @@ class TextImage extends Component {
   }
   render() {
     let heading1 = <h3 className="heading">{this.props.heading}</h3>;
-    let heading2 = <h3></h3>;
+    let heading2 = <h3> </h3>;
 
     let imageTag = (
       <img
