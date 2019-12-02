@@ -13,7 +13,7 @@
     "heading": "Choose Wisely!",
     "info1": " Eating beef 1-2 times a week contributes to 604 kg of greenhouse gas emissions per year. That's more than four times as much as choosing chicken. And guess what, vegetarian options like beans have almost no climate impact at all! How about a varied, well thought out diet?",
     "info2": "...and what about wine? 3-5 glasses of wine per week gives half as much climate impact as the same amount of beer. In addition, wine has a lower climate impact than coffee. Skip the extra cup of coffee, and have a glass of wine on Friday! PS. Don't forget to choose organic.",
-    "picture": "https://raw.githubusercontent.com/KajsaEklof/ux-climate-app/implementation1/src/components/images/introImage.png",
+    "picture": "images/fooodImage.png",
     "altText": "Three women talk about food."
   },
   "co2Clothes": {
@@ -34,8 +34,8 @@
     "altText": "Three women talk about melting glaciers."
   },
   "beforeAfter": {
-    "heading": "beforeAfter Heading",
-    "info1": "Information about melting glaciers that altered to match the convolutions of the room"
+    "heading": "1km of ice melting every year",
+    "info1": "Glaciers all over the world are reducing in size as the ice is melting away faster and faster each year. The Columbia Glacier in Alaska has shrunk by about 6.5 km (4 miles) between 2009 and 2015. It’s difficult to understand how much ice this actually is, but when comparing the images taken of the glacier in 2009 and 20015 it’s easy to see the enormous difference that’s happened in only 6 years. That’s a lot of ice that’s melted into the sea!"
   },
   "icevsSea": {
     "heading": "When the glaciers melt... Sea Levels Rise"

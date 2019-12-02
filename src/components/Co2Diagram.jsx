@@ -66,11 +66,6 @@ class Co2Diagram extends Component {
           />
         ) : null}
         <Container className="container main">
-          <Row>
-            <h2 className="heading">
-              <span>{this.props.heading}</span>
-            </h2>
-          </Row>
           <div className="diagram">
             <Row className="alignRight">
               <Button

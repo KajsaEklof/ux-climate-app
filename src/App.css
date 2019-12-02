@@ -17,6 +17,15 @@ Reference them by typing for example var(--light-pink) */
   text-align: center;
   background-color: var(--light-pink);
 }
+p::selection {
+  color: black;
+  background: var(--middle-pink);
+}
+span::selection,
+h4::selection {
+  color: white;
+  background: var(--middle-pink);
+}
 
 /* .container {
   border-color: red;
@@ -84,6 +93,7 @@ h3.heading {
   font-size: 2.25em;
   color: var(--cosmo-red);
   width: 100%;
+  text-transform: capitalize;
 }
 
 h4.heading {

@@ -68,6 +68,7 @@ class LineCharts extends Component {
             cardText={textData.cardText}
           />
         ) : null}
+        
         <Container className="container main">
           <div className="diagram">
             <Row className="alignRight">

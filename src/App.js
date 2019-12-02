@@ -82,7 +82,9 @@ class App extends Component {
           altText={content.introduction.altText}
           border={content.introduction.border}
         />
-
+        <h2 className="heading separate">
+        <span>What increased emissions?</span>
+      </h2>
         <Co2Diagram
           heading={content.co2Diagram.heading}
           CO2Emission={this.state.CO2Emission}
@@ -110,8 +112,8 @@ class App extends Component {
         />
 
         <h2 className="heading separate">
-          <span>CO2 vs Temperature Heading</span>
-        </h2>
+            <span>CO2 vs Temperature Heading</span>
+          </h2>
         <LineCharts
           CO2Emission={this.state.CO2Emission}
           globalTemp={this.state.globalTemp}
