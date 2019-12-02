@@ -18,11 +18,11 @@ Reference them by typing for example var(--light-pink) */
   background-color: var(--light-pink);
 }
 
-.container {
+/* .container {
   border-color: red;
   border-width: 0.2em;
   border-style: solid;
-}
+} */
 
 .centeredContent {
   margin-left: auto;
@@ -36,7 +36,7 @@ Reference them by typing for example var(--light-pink) */
 
 /* This is the header image */
 div.jumbotron-fluid {
-  padding: 0em 0em 1em 0em;
+  padding: 0em 0em 3em 0em;
   background-color: var(--light-blue);
 }
 
@@ -51,8 +51,10 @@ h1.heading {
   letter-spacing: 0.2em;
   font-size: 4.5em;
   color: var(--bright-pink);
-  background-color: white;
-  padding: 0.2em;
+}
+
+h1 span {
+  padding: 1%;
 }
 
 div#headerHeading {
@@ -66,9 +68,9 @@ h2.heading {
   font-weight: 700;
   font-style: normal;
   letter-spacing: 0.2em;
+  line-height: 2em;
   font-size: 3.125em;
   color: var(--bright-pink);
-  background-color: white;
 }
 
 h3.heading {
@@ -77,12 +79,24 @@ h3.heading {
   font-weight: 700;
   font-style: normal;
   letter-spacing: 0.2em;
+  line-height: 2em;
   font-size: 2.25em;
   color: var(--cosmo-red);
-  background-color: white;
 }
 
+span {
+  background-color: white;
+  padding: 2%;
+}
 
+h2.separate {
+  margin-left: 5%;
+  line-height: 2.5em;
+}
+
+.headerRow {
+  margin-bottom: 2%;
+}
 
 p.label {
   margin-left: auto;
@@ -92,27 +106,15 @@ p.label {
   text-align: center;
 }
 
-img,
-p {
-  padding-top: 5%;
-  padding-bottom: 10%;
-  text-align: left;
-}
-
 p {
   font-family: "source-serif-pro", serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 1.1875em;
+  font-size: 135%;
   line-height: 1.6;
-}
-
-.infoP {
-  border-color: var(--middle-pink);
-  border-width: 0.2em;
-  border-style: solid;
-  padding: 2%;
-  margin-top: 1%;
+  background-color: white;
+  text-align: left;
+  padding: 3%;
 }
 
 .borderImage {
@@ -127,45 +129,79 @@ p {
   padding: 0 5% 0 0;
 }
 
+div.card-title {
+  font-weight: bold;
+}
+
 div.alignRight {
   display: block;
   padding: 0 5% 0 0;
   text-align: right;
-
 }
 
-.diagram {
+.diagram,
+.infoP {
   border-width: 0.6em;
   border-style: solid;
   border-color: var(--light-blue);
   padding: 3%;
   margin-top: 3%;
+  background-color: white;
+}
+
+.beforeAfter {
+  max-width: 80%;
+}
+
+.infoP {
+  border-width: 0.4em;
+  border-color: var(--bright-pink);
+  font-weight: bold;
+  padding: 2%;
+  margin-top: 2% !important;
+}
+
+.checkList {
+  text-align: left;
 }
 
 .doubleDiagram {
   padding-top: 3%;
 }
 
-button.btn-info {
+.popupBtn {
+  border-radius: 0.25rem;
+}
+
+button.btn-info,
+.popupBtn {
   color: black;
   background-color: var(--yellow);
   border-color: var(--yellow);
   font-weight: bold;
 }
 
-button.btn-info:hover, button.btn-info:active, button.btn-info:focus {
+button.btn-info:hover,
+button.btn-info:active,
+button.btn-info:focus,
+.popupBtn:hover,
+.popupBtn:active,
+.popupBtn:focus {
   color: black;
   background-color: var(--middle-pink);
   border-color: var(--middle-pink);
   font-weight: bold;
 }
 
-div.popup_inner{
+div.popup_inner {
   position: absolute;
-  left: 70%;
+  left: 50%;
   margin: auto;
   background: white;
   z-index: 99999;
+  border-width: 0.6em;
+  border-style: solid;
+  border-color: var(--bright-pink);
 }
 
 li {

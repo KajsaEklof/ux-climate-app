@@ -6,14 +6,17 @@ class PopupCard extends Component {
   render() {
     return (
       <div className="popup_inner">
-        <Card style={{ width: "18rem" }}>
+        <Card style={{ width: "36rem" }}>
           <Card.Body>
-            <Card.Title>{this.props.cardTitle}</Card.Title>
-            <Card.Text>
-             {this.props.cardText}
-            </Card.Text>
+            <Card.Title className="popupTitle">
+              {this.props.cardTitle}
+            </Card.Title>
+            <Card.Text>{this.props.cardText1}</Card.Text>
+            <Card.Text>{this.props.cardText2}</Card.Text>
 
-            <button onClick={this.props.closePopup}>close me</button>
+            <button className="popupBtn" onClick={this.props.closePopup}>
+              close me
+            </button>
           </Card.Body>
         </Card>
       </div>

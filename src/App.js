@@ -4,13 +4,13 @@ import TextImage from "./components/TextImage";
 import Co2Diagram from "./components/Co2Diagram";
 import LineCharts from "./components/LineCharts";
 import AreaCharts from "./components/AreaCharts";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "./App.css";
-import data from "./components/Content.json"; /*This is the json file with all our content and copy text for the applicaiton*/
 import BeforeAfter from "./components/BeforeAfter";
+import CompareHabits from "./components/CompareHabits";
+import data from "./components/Content.json"; /*This is the json file with all our content and copy text for the applicaiton*/
 import icejsonData from "./components/iceData.json";
 import seajsonData from "./components/seaData.json";
-import CompareHabits from "./components/CompareHabits";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
 
 class App extends Component {
   constructor(props) {
@@ -74,7 +74,6 @@ class App extends Component {
         <Header />
         <TextImage
           layout={2}
-          
           heading={content.introduction.heading}
           textData1={content.introduction.info1}
           textData2={content.introduction.info2}
@@ -107,13 +106,17 @@ class App extends Component {
           altText={content.co2Clothes.altText}
         />
 
+        <h2 className="heading separate">
+          <span>CO2 vs Temperature Heading</span>
+        </h2>
         <LineCharts
-          heading={content.co2vsTemp.heading}
           CO2Emission={this.state.CO2Emission}
           globalTemp={this.state.globalTemp}
           textData={content.co2vsTempPopup}
         />
-        <h2 className="heading">What happens when the earth gets warmer?</h2>
+        <h2 className="heading separate">
+          <span>What happens when the earth gets warmer?</span>
+        </h2>
         <TextImage
           layout={1}
           heading={content.glaciers.heading}

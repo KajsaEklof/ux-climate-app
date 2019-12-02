@@ -3,31 +3,24 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import PopupCard from "./PopupCard";
-import Button from "react-bootstrap/Button"
+import Button from "react-bootstrap/Button";
 
-import {
-  AreaChart,
-  Area,
-  XAxis,
-  YAxis,
-  Tooltip
-} from "recharts";
+import { AreaChart, Area, XAxis, YAxis, Tooltip } from "recharts";
 
 class AreaCharts extends Component {
-  constructor(){
+  constructor() {
     super();
     this.state = {
       showPopup: false
     };
   }
 
-
   togglePopUp() {
     this.setState({
       showPopup: !this.state.showPopup
     });
   }
-  
+
   render() {
     let textData = this.props.textData;
     let ice = this.props.iceVolume;
@@ -57,93 +50,86 @@ class AreaCharts extends Component {
 
     return (
       <div className="Diagram">
-      {this.state.showPopup ?
-        <PopupCard
-        closePopup={this.togglePopUp.bind(this)}
-        cardTitle={textData.cardTitle}
-        cardText={textData.cardText}
-        />
-        : null
-      }
+        {this.state.showPopup ? (
+          <PopupCard
+            closePopup={this.togglePopUp.bind(this)}
+            cardTitle={textData.cardTitle}
+            cardText={textData.cardText}
+          />
+        ) : null}
         <Container className="container main">
-          <h3 className="heading">{this.props.heading}</h3>
-          <Row className="alignRight">
-          <Button variant="info"
-          className="popup"
-            onClick={this.togglePopUp.bind(this)}
-            >What does this mean?</Button> 
-         
-          </Row>
-          
-          <Row>
-            <Col className="container" xs={6}>
-              <AreaChart
-                width={500}
-                height={400}
-                data={dataLineChart1}
-                style={{
-                  backgroundColor: "white",
-                  borderColor: "green",
-                  borderStyle: "solid",
-                  borderWidth: "0,2em"
-                }}
-                margin={{
-                  top: 5,
-                  right: 30,
-                  left: 20,
-                  bottom: 5
-                }}
+          <h3 className="heading">
+            <span>{this.props.heading}</span>
+          </h3>
+          <div className="diagram">
+            <Row className="alignRight">
+              <Button
+                variant="info"
+                className="popup"
+                onClick={this.togglePopUp.bind(this)}
               >
-                <XAxis dataKey="Year" />
-                <YAxis />
-                <Tooltip />
-                <Area
-                  type="monotone"
-                  dataKey="Average Glacier Thickness"
-                  stroke="#87d8d6"
-                  fill="#87d8d6"
-                />
-              </AreaChart>
-            </Col>
-            <Col className="container" xs={6}>
-              <AreaChart
-                width={500}
-                height={400}
-                data={dataLineChart2}
-                style={{
-                  backgroundColor: "white",
-                  borderColor: "green",
-                  borderStyle: "solid",
-                  borderWidth: "0,2em"
-                }}
-                margin={{
-                  top: 5,
-                  right: 30,
-                  left: 20,
-                  bottom: 5
-                }}
-              >
-                <XAxis dataKey="Year" />
-                <YAxis />
-                <Tooltip />
+                What does this mean?
+              </Button>
+            </Row>
 
-                <Area
-                  type="monotone"
-                  dataKey="Average Sea Level"
-                  stroke="#b4e2f0"
-                  fill="#b4e2f0"
-                />
-              </AreaChart>
-            </Col>
-          </Row>
-          <Row>
-            <Col className="container" xs={6}>
-              <p className="label">Average Glacier Thickness</p>
-            </Col>
-            <Col className="container" xs={6}>
-              <p className="label">Average Sea Level</p>
-            </Col>
-          </Row>
+            <Row className="doubleDiagram">
+              <Col className="container" xs={6}>
+                <AreaChart
+                  width={500}
+                  height={400}
+                  data={dataLineChart1}
+                  margin={{
+                    top: 5,
+                    right: 30,
+                    left: 20,
+                    bottom: 5
+                  }}
+                >
+                  <XAxis dataKey="Year" />
+                  <YAxis />
+                  <Tooltip />
+                  <Area
+                    type="monotone"
+                    dataKey="Average Glacier Thickness"
+                    stroke="#87d8d6"
+                    fill="#87d8d6"
+                  />
+                </AreaChart>
+              </Col>
+              <Col className="container" xs={6}>
+                <AreaChart
+                  width={500}
+                  height={400}
+                  data={dataLineChart2}
+                  margin={{
+                    top: 5,
+                    right: 30,
+                    left: 20,
+                    bottom: 5
+                  }}
+                >
+                  <XAxis dataKey="Year" />
+                  <YAxis />
+                  <Tooltip />
+
+                  <Area
+                    type="monotone"
+                    dataKey="Average Sea Level"
+                    stroke="#b4e2f0"
+                    fill="#b4e2f0"
+                  />
+                </AreaChart>
+              </Col>
+            </Row>
+            <Row>
+              <Col className="container" xs={6}>
+                <p className="label">Average Glacier Thickness</p>
+              </Col>
+              <Col className="container" xs={6}>
+                <p className="label">Average Sea Level</p>
+              </Col>
+            </Row>
+          </div>
         </Container>
       </div>
     );

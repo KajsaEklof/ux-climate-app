@@ -2,8 +2,7 @@ import React, { Component } from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import PopupCard from "./PopupCard";
-import Button from "react-bootstrap/Button"
-
+import Button from "react-bootstrap/Button";
 
 import {
   ComposedChart,
@@ -17,24 +16,21 @@ import {
 } from "recharts";
 
 class Co2Diagram extends Component {
-  constructor(){
+  constructor() {
     super();
     this.state = {
       showPopup: false
     };
   }
 
-
   togglePopUp() {
     this.setState({
       showPopup: !this.state.showPopup
     });
   }
-  
+
   render() {
-    
     let textData = this.props.textData;
-    
 
     let co2 = this.props.CO2Emission;
     if (co2 === undefined) {
@@ -60,26 +56,30 @@ class Co2Diagram extends Component {
 
     dataBarChart = filterData(dataBarChart, 3);
     return (
-        <div>
-        {this.state.showPopup ?
+      <div>
+        {this.state.showPopup ? (
           <PopupCard
-          closePopup={this.togglePopUp.bind(this)}
-          cardTitle={textData.cardTitle}
-          cardText={textData.cardText}
+            closePopup={this.togglePopUp.bind(this)}
+            cardTitle={textData.cardTitle}
+            cardText1={textData.cardText1}
+            cardText2={textData.cardText2}
           />
-          : null
-        }
-          <Container className="container main">
-            <Row>
-              <h2 className="heading">{this.props.heading}</h2>
-            </Row>
-            <div className="diagram">
+        ) : null}
+        <Container className="container main">
+          <Row>
+            <h2 className="heading">
+              <span>{this.props.heading}</span>
+            </h2>
+          </Row>
+          <div className="diagram">
             <Row className="alignRight">
-            <Button variant="info"
-            className="popup"
-              onClick={this.togglePopUp.bind(this)}
-              >What does this mean?</Button> 
-           
+              <Button
+                variant="info"
+                className="popup"
+                onClick={this.togglePopUp.bind(this)}
+              >
+                What does this mean?
+              </Button>
             </Row>
             <Row className="centeredContent">
               <ComposedChart
@@ -110,11 +110,9 @@ class Co2Diagram extends Component {
             <Row>
               <p className="label">Million Metric Tons of CO2 Emission</p>
             </Row>
-            </div>
-          </Container>
-         
-          
-        </div>
+          </div>
+        </Container>
+      </div>
     );
   }
 }

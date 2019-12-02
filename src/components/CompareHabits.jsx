@@ -9,11 +9,8 @@ import {
   Legend
 } from "recharts";
 import Container from "react-bootstrap/Container";
-import InputGroup from "react-bootstrap/InputGroup";
-import FormControl from "react-bootstrap/FormControl";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-
 
 const CheckBox = props => {
   return (
@@ -89,88 +86,92 @@ export default class CompareHabits extends Component {
     return (
       <Container>
         <Row>
-          <h2 className="heading">Test your habits!!</h2>
+          <h2 className="heading">
+            <span>Test your habits!!</span>
+          </h2>
         </Row>
-        <Row>
-          <Col xs={2}>
-            <p>Test text</p>
-          </Col>
-          <Col className="container" xs={2}>
-            {checkList}
-          </Col>
+        <div className="diagram">
+          <Row>
+            <Col xs={2}>
+              <p>Test text</p>
+            </Col>
 
-          <Col className="container" xs={8}>
-            <BarChart
-              width={600}
-              height={300}
-              data={data}
-              margin={{ top: 20, right: 30, left: 20, bottom: 5 }}
-            >
-              <CartesianGrid strokeDasharray="3 3" />
-              <XAxis dataKey="Habits" />
-              <YAxis type="number" domain={[0, 4]} />
-              <Tooltip />
-              <Legend />
-              {!this.state.habits[0].isChecked ? (
-                <Bar
-                  dataKey="Veggie"
-                  stackId="a"
-                  fill="#ef0e7c"
-                  isAnimationActive={false}
-                />
-              ) : null}
-              {!this.state.habits[1].isChecked ? (
-                <Bar
-                  dataKey="Recycle"
-                  stackId="a"
-                  fill="#00a99d"
-                  isAnimationActive={false}
-                />
-              ) : null}
-              {!this.state.habits[2].isChecked ? (
-                <Bar
-                  dataKey="LED Lights"
-                  stackId="a"
-                  fill="#ffd400"
-                  isAnimationActive={false}
-                />
-              ) : null}
-              {!this.state.habits[3].isChecked ? (
-                <Bar
-                  dataKey="Zero Food Waste"
-                  stackId="a"
-                  fill="#b4e2f0"
-                  isAnimationActive={false}
-                />
-              ) : null}
-              {!this.state.habits[4].isChecked ? (
-                <Bar
-                  dataKey="Reusable Shopping Bag"
-                  stackId="a"
-                  fill="#ef4726"
-                  isAnimationActive={false}
-                />
-              ) : null}
-              {!this.state.habits[5].isChecked ? (
-                <Bar
-                  dataKey="Local Food"
-                  stackId="a"
-                  fill="#f6a2b6"
-                  isAnimationActive={false}
-                />
-              ) : null}
-              {!this.state.habits[6].isChecked ? (
-                <Bar
-                  dataKey="Car Free"
-                  stackId="a"
-                  fill="#87d8d6"
-                  isAnimationActive={false}
-                />
-              ) : null}
+            <Col className="container checkList" xs={2}>
+              {checkList}
+            </Col>
 
-            </BarChart>
-          </Col>
-        </Row>
+            <Col className="container" xs={8}>
+              <BarChart
+                width={600}
+                height={300}
+                data={data}
+                margin={{ top: 20, right: 30, left: 20, bottom: 5 }}
+              >
+                <CartesianGrid strokeDasharray="3 3" />
+                <XAxis dataKey="Habits" />
+                <YAxis type="number" domain={[0, 4]} />
+                <Tooltip />
+                <Legend />
+                {!this.state.habits[0].isChecked ? (
+                  <Bar
+                    dataKey="Veggie"
+                    stackId="a"
+                    fill="#ef0e7c"
+                    isAnimationActive={false}
+                  />
+                ) : null}
+                {!this.state.habits[1].isChecked ? (
+                  <Bar
+                    dataKey="Recycle"
+                    stackId="a"
+                    fill="#00a99d"
+                    isAnimationActive={false}
+                  />
+                ) : null}
+                {!this.state.habits[2].isChecked ? (
+                  <Bar
+                    dataKey="LED Lights"
+                    stackId="a"
+                    fill="#ffd400"
+                    isAnimationActive={false}
+                  />
+                ) : null}
+                {!this.state.habits[3].isChecked ? (
+                  <Bar
+                    dataKey="Zero Food Waste"
+                    stackId="a"
+                    fill="#b4e2f0"
+                    isAnimationActive={false}
+                  />
+                ) : null}
+                {!this.state.habits[4].isChecked ? (
+                  <Bar
+                    dataKey="Reusable Shopping Bag"
+                    stackId="a"
+                    fill="#ef4726"
+                    isAnimationActive={false}
+                  />
+                ) : null}
+                {!this.state.habits[5].isChecked ? (
+                  <Bar
+                    dataKey="Local Food"
+                    stackId="a"
+                    fill="#f6a2b6"
+                    isAnimationActive={false}
+                  />
+                ) : null}
+                {!this.state.habits[6].isChecked ? (
+                  <Bar
+                    dataKey="Car Free"
+                    stackId="a"
+                    fill="#87d8d6"
+                    isAnimationActive={false}
+                  />
+                ) : null}
+              </BarChart>
+            </Col>
+          </Row>
+        </div>
       </Container>
     );
   }

@@ -1,25 +1,25 @@
 {
   "introduction": {
-    "heading": "OMG CLIMATE CHANGE",
-    "info1": "First introduction to match the convolutions of the room where Case waited. Case felt the edge of the spherical chamber. A graphic representation of data abstracted from the banks of every computer in the coffin for Armitage’s call. Case felt the edge of the Flatline as a construct, a hardwired ROM cassette replicating a dead man’s skills, obsessions, kneejerk responses. The two surviving.",
-    "info2": "Second introduction altered to match the convolutions of the room where Case waited. Case felt the edge of the spherical chamber. A graphic representation of data abstracted from the banks of every computer in the coffin for Armitage’s call. Case felt the edge of the Flatline as a construct, a hardwired ROM cassette replicating a dead man’s skills, obsessions, kneejerk responses. The two surviving.",
+    "heading": "Wanna get climate smart?",
+    "info1": "The earth's average temperature rises, as does the water level that threatens to drown parts of the planet. It's burning and everywhere we see pictures of dying polar bears… Are you also starting to get frightened by recent climate change updates? And do you want to stop this negative trend?",
+    "info2": "In this article, we will explain a few different concepts in climate change and give you tips on concrete changes you can make for a better climate yourself. Where to start, you wonder and when? Here and now, we say!",
     "picture": "https://raw.githubusercontent.com/KajsaEklof/ux-climate-app/implementation1/src/components/images/introImage.png",
     "altText": "Three women talk about climate change."
   },
   "co2Diagram": {
-    "heading": "CO2 Heading"
+    "heading": "What increased emissions?"
   },
   "co2Food": {
-    "heading": "CO2 heading Food",
-    "info1": "First information about food that altered to match the convolutions of the room where Case waited. Case felt the edge of the spherical chamber. A graphic representation of data abstracted from the banks of every computer in the coffin for Armitage’s call. Case felt the edge of the Flatline as a construct, a hardwired ROM cassette replicating a dead man’s skills, obsessions, kneejerk responses. The two surviving.",
-    "info2": "Second information about food that altered to match the convolutions of the room where Case waited. Case felt the edge of the spherical chamber. A graphic representation of data abstracted from the banks of every computer in the coffin for Armitage’s call. Case felt the edge of the Flatline as a construct, a hardwired ROM cassette replicating a dead man’s skills, obsessions, kneejerk responses. The two surviving.",
+    "heading": "Choose Wisely!",
+    "info1": " Eating beef 1-2 times a week contributes to 604 kg of greenhouse gas emissions per year. That's more than four times as much as choosing chicken. And guess what, vegetarian options like beans have almost no climate impact at all! How about a varied, well thought out diet?",
+    "info2": "...and what about wine? 3-5 glasses of wine per week gives half as much climate impact as the same amount of beer. In addition, wine has a lower climate impact than coffee. Skip the extra cup of coffee, and have a glass of wine on Friday! PS. Don't forget to choose organic.",
     "picture": "https://raw.githubusercontent.com/KajsaEklof/ux-climate-app/implementation1/src/components/images/introImage.png",
     "altText": "Three women talk about food."
   },
   "co2Clothes": {
-    "heading": "CO2 heading Clothes",
-    "info1": "First information about clothes that altered to match the convolutions of the room where Case waited. Case felt the edge of the spherical chamber. A graphic representation of data abstracted from the banks of every computer in the coffin for Armitage’s call. Case felt the edge of the Flatline as a construct, a hardwired ROM cassette replicating a dead man’s skills, obsessions, kneejerk responses. The two surviving.",
-    "info2": "Second information about clothes that altered to match the convolutions of the room where Case waited. Case felt the edge of the spherical chamber. A graphic representation of data abstracted from the banks of every computer in the coffin for Armitage’s call. Case felt the edge of the Flatline as a construct, a hardwired ROM cassette replicating a dead man’s skills, obsessions, kneejerk responses. The two surviving.",
+    "heading": "Your t-shirt = 2700 liters of water",
+    "info1": "Clothes contain materials that require large resources to produce. They have gone through several manufacturing steps and often crossed several countries. The cotton in a t-shirt, for example, may have been grown in India, the fabric is knit in Pakistan, dyed in Bangladesh and sewn up in Turkey before finally reaching the store in England.",
+    "info2": "…and on top of that, 2700 liters of water are needed to make one cotton shirt. So next time you might consider buying your t-shirt second hand instead…",
     "picture": "https://raw.githubusercontent.com/KajsaEklof/ux-climate-app/implementation1/src/components/images/introImage.png",
     "altText": "Three women talk about clothes."
   },
@@ -47,16 +47,18 @@
     "altText": "Three women talk about sea level rising."
   },
   "co2Popup": {
-    "cardTitle": "Title 1",
-    "cardText": "Card text 1"
+    "cardTitle": "CO2 = Carbon dioxide.",
+    "cardText1": "This diagram shows how much carbon dioxide is emitted using various fossil fuels. It is difficult to understand what the different fuels are, but one thing becomes quite clear. Emissions are increasing. Increased greenhouse gas emissions lead to an enhanced greenhouse effect. You have heard that. But what does that mean?",
+    "cardText2": "This means that the more carbon dioxide we release, the more heat is absorbed into the Earth's atmosphere, which means that the planet is warming up. A heated planet in turn causes animals to become endangered and an increased number of natural disasters! Ouch!"
   },
   "co2vsTempPopup": {
     "cardTitle": "Title 2",
-    "cardText": "Card text 2"
+    "cardText1": "This diagram shows how much carbon dioxide is emitted using various fossil fuels. It is difficult to understand what the different fuels are, but one thing becomes quite clear. Emissions are increasing. Increased greenhouse gas emissions lead to an enhanced greenhouse effect. You have heard that. But what does that mean?",
+    "cardText2": "This means that the more carbon dioxide we release, the more heat is absorbed into the Earth's atmosphere, which means that the planet is warming up. A heated planet in turn causes animals to become endangered and an increased number of natural disasters! Ouch!"
   },
   "icevsSeaPopup": {
     "cardTitle": "Title 3",
-    "cardText": "Card text 3!"
+    "cardText1": "Card text 1",
+    "cardText2": "Card text 2"
   }
 }
-
