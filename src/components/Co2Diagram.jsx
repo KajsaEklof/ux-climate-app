@@ -60,7 +60,7 @@ class Co2Diagram extends Component {
 
     dataBarChart = filterData(dataBarChart, 3);
     return (
-        <div className="Diagram">
+        <div>
         {this.state.showPopup ?
           <PopupCard
           closePopup={this.togglePopUp.bind(this)}
@@ -73,6 +73,7 @@ class Co2Diagram extends Component {
             <Row>
               <h2 className="heading">{this.props.heading}</h2>
             </Row>
+            <div className="diagram">
             <Row className="alignRight">
             <Button variant="info"
             className="popup"
@@ -109,6 +110,7 @@ class Co2Diagram extends Component {
             <Row>
               <p className="label">Million Metric Tons of CO2 Emission</p>
             </Row>
+            </div>
           </Container>
          
           

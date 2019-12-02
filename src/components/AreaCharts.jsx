@@ -66,7 +66,7 @@ class AreaCharts extends Component {
         : null
       }
         <Container className="container main">
-          <h2 className="heading">{this.props.heading}</h2>
+          <h3 className="heading">{this.props.heading}</h3>
           <Row className="alignRight">
           <Button variant="info"
           className="popup"

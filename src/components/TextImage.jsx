@@ -14,11 +14,12 @@ class TextImage extends Component {
   render() {
     let heading1 = <h3 className="heading">{this.props.heading}</h3>;
     let heading2 = <h3> </h3>;
-
+    let thisStyle = this.props.border;
+    
     let imageTag = (
       <img
         className="borderImage"
-        style={{ maxWidth: "25vw" }}
+        style={{ color: thisStyle }}
         src={this.props.picture}
         alt={this.props.altText}
       />

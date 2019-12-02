@@ -74,11 +74,13 @@ class App extends Component {
         <Header />
         <TextImage
           layout={2}
+          
           heading={content.introduction.heading}
           textData1={content.introduction.info1}
           textData2={content.introduction.info2}
           picture={content.introduction.picture}
           altText={content.introduction.altText}
+          border={content.introduction.border}
         />
 
         <Co2Diagram

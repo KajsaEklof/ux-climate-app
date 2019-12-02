@@ -61,7 +61,7 @@ class LineCharts extends Component {
     dataLineChart2.reverse();
 
     return (
-      <div className="Diagram">
+      <div>
       {this.state.showPopup ?
         <PopupCard
         closePopup={this.togglePopUp.bind(this)}
@@ -72,6 +72,7 @@ class LineCharts extends Component {
       }
         <Container className="container main">
           <h2 className="heading">{this.props.heading}</h2>
+          <div className="diagram">
           <Row className="alignRight">
           <Button variant="info"
           className="popup"
@@ -80,7 +81,7 @@ class LineCharts extends Component {
          
           </Row>
           
-          <Row>
+          <Row className="doubleDiagram">
             <Col className="container" xs={6}>
               <LineChart
                 width={500}
@@ -121,6 +122,7 @@ class LineCharts extends Component {
                 />
               </LineChart>
             </Col>
+           
           </Row>
           <Row className="centeredContent">
             <Col className="container" xs={6}>
@@ -131,6 +133,7 @@ class LineCharts extends Component {
               <p className="label">Global Temperature </p>
             </Col>
           </Row>
+          </div>
         </Container>
       </div>
     );

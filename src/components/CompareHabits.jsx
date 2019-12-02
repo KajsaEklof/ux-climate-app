@@ -20,7 +20,7 @@ const CheckBox = props => {
     <li>
       <input
         key={props.id}
-        onChange={props.handleCheckChieldElement}
+        onChange={props.handleCheckedElement}
         type="checkbox"
         checked={props.isChecked}
         value={props.value}
@@ -46,7 +46,7 @@ export default class CompareHabits extends Component {
     };
   }
 
-  handleCheckChieldElement = event => {
+  handleCheckedElement = event => {
     let habits = this.state.habits;
     habits.forEach(habit => {
       if (habit.value === event.target.value)
@@ -77,7 +77,7 @@ export default class CompareHabits extends Component {
             return (
               <CheckBox
                 key={index}
-                handleCheckChieldElement={this.handleCheckChieldElement}
+                handleCheckedElement={this.handleCheckedElement}
                 {...habit}
               />
             );
@@ -89,7 +89,7 @@ export default class CompareHabits extends Component {
     return (
       <Container>
         <Row>
-          <h2 className="heading">Test your habits!</h2>
+          <h2 className="heading">Test your habits!!</h2>
         </Row>
         <Row>
           <Col xs={2}>
@@ -115,7 +115,7 @@ export default class CompareHabits extends Component {
                 <Bar
                   dataKey="Veggie"
                   stackId="a"
-                  fill="#00a99d"
+                  fill="#ef0e7c"
                   isAnimationActive={false}
                 />
               ) : null}
@@ -131,7 +131,7 @@ export default class CompareHabits extends Component {
                 <Bar
                   dataKey="LED Lights"
                   stackId="a"
-                  fill="#00a99d"
+                  fill="#ffd400"
                   isAnimationActive={false}
                 />
               ) : null}
@@ -139,7 +139,7 @@ export default class CompareHabits extends Component {
                 <Bar
                   dataKey="Zero Food Waste"
                   stackId="a"
-                  fill="#00a99d"
+                  fill="#b4e2f0"
                   isAnimationActive={false}
                 />
               ) : null}
@@ -147,7 +147,7 @@ export default class CompareHabits extends Component {
                 <Bar
                   dataKey="Reusable Shopping Bag"
                   stackId="a"
-                  fill="#00a99d"
+                  fill="#ef4726"
                   isAnimationActive={false}
                 />
               ) : null}
@@ -155,7 +155,7 @@ export default class CompareHabits extends Component {
                 <Bar
                   dataKey="Local Food"
                   stackId="a"
-                  fill="#00a99d"
+                  fill="#f6a2b6"
                   isAnimationActive={false}
                 />
               ) : null}
@@ -163,7 +163,7 @@ export default class CompareHabits extends Component {
                 <Bar
                   dataKey="Car Free"
                   stackId="a"
-                  fill="#00a99d"
+                  fill="#87d8d6"
                   isAnimationActive={false}
                 />
               ) : null}

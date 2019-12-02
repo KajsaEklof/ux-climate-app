@@ -52,7 +52,7 @@ h1.heading {
   font-size: 4.5em;
   color: var(--bright-pink);
   background-color: white;
-padding: 0.2em;
+  padding: 0.2em;
 }
 
 div#headerHeading {
@@ -67,6 +67,8 @@ h2.heading {
   font-style: normal;
   letter-spacing: 0.2em;
   font-size: 3.125em;
+  color: var(--bright-pink);
+  background-color: white;
 }
 
 h3.heading {
@@ -76,6 +78,8 @@ h3.heading {
   font-style: normal;
   letter-spacing: 0.2em;
   font-size: 2.25em;
+  color: var(--cosmo-red);
+  background-color: white;
 }
 
 
@@ -95,11 +99,6 @@ p {
   text-align: left;
 }
 
-/*This makes the diagaram stick to the bottom of the page in a strange way*/
-/* .Diagram {
-  height: 50vh;
-} */
-
 p {
   font-family: "source-serif-pro", serif;
   font-weight: 400;
@@ -109,7 +108,7 @@ p {
 }
 
 .infoP {
-  border-color: pink;
+  border-color: var(--middle-pink);
   border-width: 0.2em;
   border-style: solid;
   padding: 2%;
@@ -117,9 +116,10 @@ p {
 }
 
 .borderImage {
-  border-color: pink;
-  border-width: 0.2em;
+  max-width: 25vw;
+  border-width: 0.6em;
   border-style: solid;
+  border-color: var(--turquoise);
 }
 
 .popup {
@@ -134,13 +134,38 @@ div.alignRight {
 
 }
 
+.diagram {
+  border-width: 0.6em;
+  border-style: solid;
+  border-color: var(--light-blue);
+  padding: 3%;
+  margin-top: 3%;
+}
+
+.doubleDiagram {
+  padding-top: 3%;
+}
+
+button.btn-info {
+  color: black;
+  background-color: var(--yellow);
+  border-color: var(--yellow);
+  font-weight: bold;
+}
+
+button.btn-info:hover, button.btn-info:active, button.btn-info:focus {
+  color: black;
+  background-color: var(--middle-pink);
+  border-color: var(--middle-pink);
+  font-weight: bold;
+}
 
 div.popup_inner{
   position: absolute;
   left: 70%;
   margin: auto;
   background: white;
-z-index: 99999;
+  z-index: 99999;
 }
 
 li {
