@@ -32,13 +32,13 @@ export default class CompareHabits extends Component {
     super(props);
     this.state = {
       habits: [
-        { id: 1, value: "veggie", isChecked: false },
-        { id: 2, value: "recycle", isChecked: false },
-        { id: 3, value: "ledlights", isChecked: false },
-        { id: 4, value: "foodwaste", isChecked: false },
-        { id: 5, value: "shoppingbag", isChecked: false },
-        { id: 6, value: "localfood", isChecked: false },
-        { id: 7, value: "carfree", isChecked: false }
+        { id: 1, value: "Go vegetarian", isChecked: false },
+        { id: 2, value: "Recycle all waste", isChecked: false },
+        { id: 3, value: "Only using LED lights", isChecked: false },
+        { id: 4, value: "Get down to zero foodwaste", isChecked: false },
+        { id: 5, value: "Use reusable shoppnig bags", isChecked: false },
+        { id: 6, value: "Eat locally produced food", isChecked: false },
+        { id: 7, value: "Minimise your driving to max 30km a day", isChecked: false }
       ]
     };
   }
@@ -57,13 +57,13 @@ export default class CompareHabits extends Component {
     const data = [
       {
         name: "Habits",
-        Veggie: 0.9,
-        Recycle: 0.21,
-        "LED Lights": 0.06,
-        "Zero Food Waste": 0.37,
-        "Reusable Shopping Bag": 0.005,
-        "Local Food": 0.36,
-        "Car Free": 1.33
+        "Go vegetarian": 0.9,
+        "Recycle all waste": 0.21,
+        "Only using LED lights": 0.06,
+        "Get down to zero foodwaste": 0.37,
+        "Use reusable shoppnig bags": 0.005,
+        "Eat locally produced food": 0.36,
+        "Minimise your driving to max 30km a day": 1.33
       }
     ];
 
@@ -87,16 +87,17 @@ export default class CompareHabits extends Component {
       <Container className="spacing">
         <Row>
           <h2 className="heading">
-            <span>Test your habits!!</span>
+            <span>{this.props.heading}</span>
           </h2>
         </Row>
         <div className="diagram">
-          <Row>
-            <Col xs={4}>
-              <p>Test text</p>
+          <Row className="alignMiddle">
+            <Col xs={3}>
+            <h4 className="heading"><span>{this.props.subHeading}</span></h4>
+              <p>{this.props.text}</p>
             </Col>
 
-            <Col className="container checkList" xs={2}>
+            <Col className="container checkList" xs={3}>
               {checkList}
             </Col>
 
@@ -114,7 +115,7 @@ export default class CompareHabits extends Component {
                 {!this.state.habits[0].isChecked ? (
                   <Bar
                   barSize={80}
-                    dataKey="Veggie"
+                    dataKey="Go vegetarian for a year"
                     stackId="a"
                     fill="#ef0e7c"
                     isAnimationActive={false}
@@ -123,7 +124,7 @@ export default class CompareHabits extends Component {
                 {!this.state.habits[1].isChecked ? (
                   <Bar
                   barSize={80}
-                    dataKey="Recycle"
+                    dataKey="Recycle all your waste"
                     stackId="a"
                     fill="#00a99d"
                     isAnimationActive={false}
@@ -132,7 +133,7 @@ export default class CompareHabits extends Component {
                 {!this.state.habits[2].isChecked ? (
                   <Bar
                   barSize={50}
-                    dataKey="LED Lights"
+                    dataKey="Only using LED lights at home"
                     stackId="a"
                     fill="#ffd400"
                     isAnimationActive={false}
@@ -141,7 +142,7 @@ export default class CompareHabits extends Component {
                 {!this.state.habits[3].isChecked ? (
                   <Bar
                   barSize={80}
-                    dataKey="Zero Food Waste"
+                    dataKey="Get down to zero foodwaste"
                     stackId="a"
                     fill="#b4e2f0"
                     isAnimationActive={false}
@@ -150,7 +151,7 @@ export default class CompareHabits extends Component {
                 {!this.state.habits[4].isChecked ? (
                   <Bar
                   barSize={80}
-                    dataKey="Reusable Shopping Bag"
+                    dataKey="Only use reusable shoppnig bags"
                     stackId="a"
                     fill="#ef4726"
                     isAnimationActive={false}
@@ -159,7 +160,7 @@ export default class CompareHabits extends Component {
                 {!this.state.habits[5].isChecked ? (
                   <Bar
                   barSize={80}
-                    dataKey="Local Food"
+                    dataKey="Eat locally produced food"
                     stackId="a"
                     fill="#f6a2b6"
                     isAnimationActive={false}
@@ -168,7 +169,7 @@ export default class CompareHabits extends Component {
                 {!this.state.habits[6].isChecked ? (
                   <Bar
                     barSize={80}
-                    dataKey="Car Free"
+                    dataKey="Minimise your driving to max 30km a day"
                     stackId="a"
                     fill="#87d8d6"
                     isAnimationActive={false}

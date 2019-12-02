@@ -13,14 +13,14 @@
     "heading": "Choose Wisely!",
     "info1": " Eating beef 1-2 times a week contributes to 604 kg of greenhouse gas emissions per year. That's more than four times as much as choosing chicken. And guess what, vegetarian options like beans have almost no climate impact at all! How about a varied, well thought out diet?",
     "info2": "...and what about wine? 3-5 glasses of wine per week gives half as much climate impact as the same amount of beer. In addition, wine has a lower climate impact than coffee. Skip the extra cup of coffee, and have a glass of wine on Friday! PS. Don't forget to choose organic.",
-    "picture": "images/fooodImage.png",
+    "picture": "https://raw.githubusercontent.com/KajsaEklof/ux-climate-app/implementation1/src/components/images/foodImage.png",
     "altText": "Three women talk about food."
   },
   "co2Clothes": {
     "heading": "Your t-shirt = 2700 liters of water",
     "info1": "Clothes contain materials that require large resources to produce. They have gone through several manufacturing steps and often crossed several countries. The cotton in a t-shirt, for example, may have been grown in India, the fabric is knit in Pakistan, dyed in Bangladesh and sewn up in Turkey before finally reaching the store in England.",
     "info2": "…and on top of that, 2700 liters of water are needed to make one cotton shirt. So next time you might consider buying your t-shirt second hand instead…",
-    "picture": "https://raw.githubusercontent.com/KajsaEklof/ux-climate-app/implementation1/src/components/images/introImage.png",
+    "picture": "https://raw.githubusercontent.com/KajsaEklof/ux-climate-app/implementation1/src/components/images/clothesImage.png",
     "altText": "Three women talk about clothes."
   },
   "co2vsTemp": {
@@ -58,8 +58,13 @@
     "cardText2": "This means that the more carbon dioxide we release, the more heat is absorbed into the Earth's atmosphere, which means that the planet is warming up. A heated planet in turn causes animals to become endangered and an increased number of natural disasters! Ouch!"
   },
   "icevsSeaPopup": {
-    "cardTitle": "Title 3",
-    "cardText1": "Card text 1",
-    "cardText2": "Card text 2"
+    "cardTitle": "Consequences of sea levels rising",
+    "cardText1": "Even a small change in sea levels can have a disastrous effect on those living close to the sea but also everyone else. Higher sea levels can bring on more dangerous hurricanes and typhoons that move slower than usual and drop more rain. There are already millions of people around the world who are at risk of floods and many are being forced to move to higher ground. Already people on the coast of Wales in Great Britain are at risk of becoming climate refugees in the next few years, and most likely not the last. You might think this is only a problem in countries far away but this is a problem which will have consequences all over the world.",
+    "cardText2": "Rising sea levels could impact your internet access since much of our communications infrastructure is in places where the sea is rising!"
+  }, 
+  "habits" :{
+    "heading": "How much does your everyday habits impact the climate?",
+    "subheading": "Check how your choices measures up",
+    "info1": "Here you can see the total of an average adults yearly carbon emissions for these chosen lifestyle choices. See what changes you can make to lower your environmental impact!"
   }
 }

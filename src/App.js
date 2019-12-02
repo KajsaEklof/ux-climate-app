@@ -152,7 +152,11 @@ class App extends Component {
           picture={content.seaLevel.picture}
           altText={content.seaLevel.altText}
         />
-        <CompareHabits />
+        <CompareHabits
+        heading={content.habits.heading}
+        subHeading={content.habits.subheading}
+        text={content.habits.info1}
+        />
 
         <Footer />
       </div>

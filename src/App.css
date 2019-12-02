@@ -198,6 +198,11 @@ div.styles_handle__33IZp {
 
 .checkList {
   text-align: left;
+
+}
+
+.alignMiddle{
+  align-items: flex-end;
 }
 
 .doubleDiagram {
@@ -260,5 +265,8 @@ div.recharts-legend-wrapper  {
   letter-spacing: -0.1em;
 }
 
-
+li  {
+  font-family: "futura-pt", sans-serif;
+  font-size: 105%;
+}
 
