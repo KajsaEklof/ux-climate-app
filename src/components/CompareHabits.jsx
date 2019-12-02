@@ -115,7 +115,7 @@ export default class CompareHabits extends Component {
                 {!this.state.habits[0].isChecked ? (
                   <Bar
                   barSize={80}
-                    dataKey="Go vegetarian for a year"
+                    dataKey="Go vegetarian"
                     stackId="a"
                     fill="#ef0e7c"
                     isAnimationActive={false}
@@ -124,7 +124,7 @@ export default class CompareHabits extends Component {
                 {!this.state.habits[1].isChecked ? (
                   <Bar
                   barSize={80}
-                    dataKey="Recycle all your waste"
+                    dataKey="Recycle all waste"
                     stackId="a"
                     fill="#00a99d"
                     isAnimationActive={false}
@@ -133,7 +133,7 @@ export default class CompareHabits extends Component {
                 {!this.state.habits[2].isChecked ? (
                   <Bar
                   barSize={50}
-                    dataKey="Only using LED lights at home"
+                    dataKey="Only using LED lights"
                     stackId="a"
                     fill="#ffd400"
                     isAnimationActive={false}
@@ -151,7 +151,7 @@ export default class CompareHabits extends Component {
                 {!this.state.habits[4].isChecked ? (
                   <Bar
                   barSize={80}
-                    dataKey="Only use reusable shoppnig bags"
+                    dataKey="Use reusable shoppnig bags"
                     stackId="a"
                     fill="#ef4726"
                     isAnimationActive={false}
