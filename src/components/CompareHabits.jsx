@@ -84,7 +84,7 @@ export default class CompareHabits extends Component {
     );
 
     return (
-      <Container>
+      <Container className="spacing">
         <Row>
           <h2 className="heading">
             <span>Test your habits!!</span>
@@ -114,6 +114,7 @@ export default class CompareHabits extends Component {
                 <Legend />
                 {!this.state.habits[0].isChecked ? (
                   <Bar
+                    width="0.5"
                     dataKey="Veggie"
                     stackId="a"
                     fill="#ef0e7c"
@@ -122,6 +123,7 @@ export default class CompareHabits extends Component {
                 ) : null}
                 {!this.state.habits[1].isChecked ? (
                   <Bar
+                    width="0.5"
                     dataKey="Recycle"
                     stackId="a"
                     fill="#00a99d"
@@ -130,6 +132,7 @@ export default class CompareHabits extends Component {
                 ) : null}
                 {!this.state.habits[2].isChecked ? (
                   <Bar
+                    width="0.5"
                     dataKey="LED Lights"
                     stackId="a"
                     fill="#ffd400"
@@ -138,6 +141,7 @@ export default class CompareHabits extends Component {
                 ) : null}
                 {!this.state.habits[3].isChecked ? (
                   <Bar
+                    width="0.5"
                     dataKey="Zero Food Waste"
                     stackId="a"
                     fill="#b4e2f0"
@@ -146,6 +150,7 @@ export default class CompareHabits extends Component {
                 ) : null}
                 {!this.state.habits[4].isChecked ? (
                   <Bar
+                    width="0.5"
                     dataKey="Reusable Shopping Bag"
                     stackId="a"
                     fill="#ef4726"
@@ -154,6 +159,7 @@ export default class CompareHabits extends Component {
                 ) : null}
                 {!this.state.habits[5].isChecked ? (
                   <Bar
+                    width="0.5"
                     dataKey="Local Food"
                     stackId="a"
                     fill="#f6a2b6"
@@ -162,6 +168,7 @@ export default class CompareHabits extends Component {
                 ) : null}
                 {!this.state.habits[6].isChecked ? (
                   <Bar
+                    width="0.5"
                     dataKey="Car Free"
                     stackId="a"
                     fill="#87d8d6"

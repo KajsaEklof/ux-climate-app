@@ -71,6 +71,7 @@ h2.heading {
   line-height: 2em;
   font-size: 3.125em;
   color: var(--bright-pink);
+  width: 100%;
 }
 
 h3.heading {
@@ -82,6 +83,23 @@ h3.heading {
   line-height: 2em;
   font-size: 2.25em;
   color: var(--cosmo-red);
+  width: 100%;
+}
+
+h4.heading {
+  text-align: left;
+  font-family: "futura-pt", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 0.2em;
+  line-height: 1.5em;
+  font-size: 1.8em;
+  color: var(--turquoise);
+  width: 100%;
+}
+
+.spacing {
+  margin-bottom: 7%;
 }
 
 span {
@@ -139,8 +157,7 @@ div.alignRight {
   text-align: right;
 }
 
-.diagram,
-.infoP {
+.diagram {
   border-width: 0.6em;
   border-style: solid;
   border-color: var(--light-blue);
@@ -150,13 +167,14 @@ div.alignRight {
 }
 
 .beforeAfter {
-  max-width: 80%;
+  border-width: 0.4em;
+  border-style: solid;
+  border-color: var(--bright-pink);
+  background-color: white;
+  padding: 3%;
 }
 
 .infoP {
-  border-width: 0.4em;
-  border-color: var(--bright-pink);
-  font-weight: bold;
   padding: 2%;
   margin-top: 2% !important;
 }

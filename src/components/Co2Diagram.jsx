@@ -56,7 +56,7 @@ class Co2Diagram extends Component {
 
     dataBarChart = filterData(dataBarChart, 3);
     return (
-      <div>
+      <div className="spacing">
         {this.state.showPopup ? (
           <PopupCard
             closePopup={this.togglePopUp.bind(this)}

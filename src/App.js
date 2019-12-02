@@ -125,7 +125,10 @@ class App extends Component {
           picture={content.glaciers.picture}
           altText={content.glaciers.altText}
         />
-        <BeforeAfter text={content.beforeAfter.info1} />
+        <BeforeAfter
+          heading={content.beforeAfter.heading}
+          text={content.beforeAfter.info1}
+        />
 
         <AreaCharts
           heading={content.icevsSea.heading}

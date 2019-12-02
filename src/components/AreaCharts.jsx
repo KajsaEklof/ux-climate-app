@@ -49,7 +49,7 @@ class AreaCharts extends Component {
     );
 
     return (
-      <div className="Diagram">
+      <div className="Diagram spacing">
         {this.state.showPopup ? (
           <PopupCard
             closePopup={this.togglePopUp.bind(this)}

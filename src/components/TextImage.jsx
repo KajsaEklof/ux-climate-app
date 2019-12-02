@@ -56,7 +56,7 @@ class TextImage extends Component {
     }
 
     return (
-      <div>
+      <div className="spacing">
         <Container className="container main">
           <Row className="headerRow">
             <Col className="container" xs={6}>

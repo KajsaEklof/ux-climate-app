@@ -60,7 +60,7 @@ class LineCharts extends Component {
     dataLineChart2.reverse();
 
     return (
-      <div>
+      <div className="spacing">
         {this.state.showPopup ? (
           <PopupCard
             closePopup={this.togglePopUp.bind(this)}
