@@ -27,9 +27,9 @@
     "heading": "CO2 vs Temperature Heading"
   },
   "glaciers": {
-    "heading": "Ice Heading",
-    "info1": "First information about melting glaciers that altered to match the convolutions of the room where Case waited. Case felt the edge of the spherical chamber. A graphic representation of data abstracted from the banks of every computer in the coffin for Armitage’s call. Case felt the edge of the Flatline as a construct, a hardwired ROM cassette replicating a dead man’s skills, obsessions, kneejerk responses. The two surviving.",
-    "info2": "Second information about melting glaciers that altered to match the convolutions of the room where Case waited. Case felt the edge of the spherical chamber. A graphic representation of data abstracted from the banks of every computer in the coffin for Armitage’s call. Case felt the edge of the Flatline as a construct, a hardwired ROM cassette replicating a dead man’s skills, obsessions, kneejerk responses. The two surviving.",
+    "heading": "Warmer earth = less ice",
+    "info1": "Glaciers are melting five times faster today than they did in the 1960s. The cause is attributed to global warming in a new study at the glacier research center “World Glacier Monitoring Service”. But what happens when the ice melts?",
+    "info2": "When temperatures rise and ice melts, more water flows into the sea from glaciers and ice caps, and ocean water warms and expands in volume. This combination of effects has played a major role in raising average global sea level between 10 and 20 centimeters in the past hundred years. At least 30 glaciers have already disappeared, and more are about to melt. The question is, how many are left in another 100 years if we do not act now?",
     "picture": "https://raw.githubusercontent.com/KajsaEklof/ux-climate-app/implementation1/src/components/images/introImage.png",
     "altText": "Three women talk about melting glaciers."
   },
