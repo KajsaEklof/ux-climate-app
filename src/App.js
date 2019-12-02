@@ -6,6 +6,7 @@ import LineCharts from "./components/LineCharts";
 import AreaCharts from "./components/AreaCharts";
 import BeforeAfter from "./components/BeforeAfter";
 import CompareHabits from "./components/CompareHabits";
+import Footer from "./components/Footer";
 import data from "./components/Content.json"; /*This is the json file with all our content and copy text for the applicaiton*/
 import icejsonData from "./components/iceData.json";
 import seajsonData from "./components/seaData.json";
@@ -55,7 +56,6 @@ class App extends Component {
     const iceData = data4.filter(x => x.Year > 1989 && x.Year < 2014);
 
     seaData.map(x => (x.Time = x.Time.substring(0, 4)));
-    console.log(seaData);
 
     this.setState({
       globalTemp: tempData,
@@ -73,6 +73,7 @@ class App extends Component {
       <div id="App">
         <Header />
         <TextImage
+          headingStyle={2}
           layout={2}
           heading={content.introduction.heading}
           textData1={content.introduction.info1}
@@ -89,6 +90,7 @@ class App extends Component {
         />
 
         <TextImage
+          headingStyle={3}
           layout={1}
           heading={content.co2Food.heading}
           textData1={content.co2Food.info1}
@@ -98,6 +100,7 @@ class App extends Component {
         />
 
         <TextImage
+          headingStyle={3}
           layout={2}
           heading={content.co2Clothes.heading}
           textData1={content.co2Clothes.info1}
@@ -118,6 +121,7 @@ class App extends Component {
           <span>What happens when the earth gets warmer?</span>
         </h2>
         <TextImage
+          headingStyle={3}
           layout={1}
           heading={content.glaciers.heading}
           textData1={content.glaciers.info1}
@@ -138,6 +142,7 @@ class App extends Component {
         />
 
         <TextImage
+          headingStyle={3}
           layout={2}
           heading={content.seaLevel.heading}
           textData1={content.seaLevel.info1}
@@ -146,6 +151,8 @@ class App extends Component {
           altText={content.seaLevel.altText}
         />
         <CompareHabits />
+
+        <Footer />
       </div>
     );
   }

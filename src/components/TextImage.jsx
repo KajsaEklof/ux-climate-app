@@ -9,15 +9,32 @@ class TextImage extends Component {
     this.state = {
       data2: this.props.textData
     };
-    console.log(this.state.data2);
   }
   render() {
-    let heading1 = (
+    let heading1;
+
+    if(this.props.headingStyle === 2) {
+      heading1 = (
+        <h2 className="heading">
+          <span>{this.props.heading}</span>
+        </h2>
+      );
+    }
+
+    if (this.props.headingStyle === 3) {
+      heading1 = (
+        <h3 className="heading">
+          <span>{this.props.heading}</span>
+        </h3>
+      );
+    }
+
+   /* let heading1 = (
       <h3 className="heading">
         <span>{this.props.heading}</span>
       </h3>
-    );
-    let heading2 = <h3> </h3>;
+    );*/
+    /*let heading2 = <h3> </h3>;*/
     let thisStyle = this.props.border;
 
     let imageTag = (
@@ -38,22 +55,27 @@ class TextImage extends Component {
       </p>
     );
 
-    let hbox1 = heading1;
-    let hbox2 = heading2;
-    let box1 = imageTag;
-    let box2 = textTag;
+    let hbox1;
+    let hbox2;
+    let box1;
+    let box2;
+
+    
 
     if (this.props.layout === 2) {
       hbox1 = heading1;
-      hbox2 = heading2;
+      /*hbox2 = heading2;*/
       box1 = textTag;
       box2 = imageTag;
-    } else {
-      hbox1 = heading2;
+    } 
+    
+    if(this.props.layout === 1){
+      /*hbox1 = heading2;*/
       hbox2 = heading1;
       box1 = imageTag;
       box2 = textTag;
     }
+
 
     return (
       <div className="spacing">
