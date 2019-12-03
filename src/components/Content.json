@@ -24,13 +24,13 @@
     "altText": "Three women talk about clothes."
   },
   "co2vsTemp": {
-    "heading": "CO2 vs Temperature Heading"
+    "heading": "Increased Emissions = Rising Temperature"
   },
   "glaciers": {
     "heading": "Warmer earth = less ice",
     "info1": "Glaciers are melting five times faster today than they did in the 1960s. The cause is attributed to global warming in a new study at the glacier research center “World Glacier Monitoring Service”. But what happens when the ice melts?",
     "info2": "When temperatures rise and ice melts, more water flows into the sea from glaciers and ice caps, and ocean water warms and expands in volume. This combination of effects has played a major role in raising average global sea level between 10 and 20 centimeters in the past hundred years. At least 30 glaciers have already disappeared, and more are about to melt. The question is, how many are left in another 100 years if we do not act now?",
-    "picture": "https://raw.githubusercontent.com/KajsaEklof/ux-climate-app/implementation1/src/components/images/introImage.png",
+    "picture": "https://raw.githubusercontent.com/KajsaEklof/ux-climate-app/implementation1/src/components/images/iceBerg.png",
     "altText": "Three women talk about melting glaciers."
   },
   "beforeAfter": {
@@ -41,9 +41,9 @@
     "heading": "When the glaciers melt... Sea Levels Rise"
   },
   "seaLevel": {
-    "heading": "Sea level Heading",
-    "info1": "First information about sea level rising that altered to match the convolutions of the room where Case waited. Case felt the edge of the spherical chamber. A graphic representation of data abstracted from the banks of every computer in the coffin for Armitage’s call. Case felt the edge of the Flatline as a construct, a hardwired ROM cassette replicating a dead man’s skills, obsessions, kneejerk responses. The two surviving.",
-    "info2": "Second information about sea level rising that altered to match the convolutions of the room where Case waited. Case felt the edge of the spherical chamber. A graphic representation of data abstracted from the banks of every computer in the coffin for Armitage’s call. Case felt the edge of the Flatline as a construct, a hardwired ROM cassette replicating a dead man’s skills, obsessions, kneejerk responses. The two surviving.",
+    "heading": "Consequences of sea levels rising",
+    "info1": "Even a small change in sea levels can have a disastrous effect on those living close to the sea but also everyone else. Higher sea levels can bring on more dangerous hurricanes and typhoons that move slower than usual and drop more rain. There are already millions of people around the world who are at risk of floods and many are being forced to move to higher ground. Already people on the coast of Wales in Great Britain are at risk of becoming climate refugees in the next few years, and most likely not the last. You might think this is only a problem in countries far away but this is a problem which will have consequences all over the world.",
+    "info2": "Rising sea levels could impact your internet access since much of our communications infrastructure is in places where the sea is rising!",
     "picture": "https://raw.githubusercontent.com/KajsaEklof/ux-climate-app/implementation1/src/components/images/introImage.png",
     "altText": "Three women talk about sea level rising."
   },
@@ -53,14 +53,14 @@
     "cardText2": "This means that the more carbon dioxide we release, the more heat is absorbed into the Earth's atmosphere, which means that the planet is warming up. A heated planet in turn causes animals to become endangered and an increased number of natural disasters! Ouch!"
   },
   "co2vsTempPopup": {
-    "cardTitle": "Title 2",
-    "cardText1": "This diagram shows how much carbon dioxide is emitted using various fossil fuels. It is difficult to understand what the different fuels are, but one thing becomes quite clear. Emissions are increasing. Increased greenhouse gas emissions lead to an enhanced greenhouse effect. You have heard that. But what does that mean?",
-    "cardText2": "This means that the more carbon dioxide we release, the more heat is absorbed into the Earth's atmosphere, which means that the planet is warming up. A heated planet in turn causes animals to become endangered and an increased number of natural disasters! Ouch!"
+    "cardTitle": "Is it true?",
+    "cardText1": "Yes, is it really true that carbon dioxide emissions cause the Earth's temperature to rise? How do you know what's true in this jungle of information? How to know?",
+    "cardText2": "Sometimes it’s really overwhelming to even try to get into all the facts, but here the charts speak their clear language. By inserting actual statistics into two simple line diagrams, the strong link between increased emissions and rising temperature is clearly visible. Scary, right?!"
   },
   "icevsSeaPopup": {
-    "cardTitle": "Consequences of sea levels rising",
-    "cardText1": "Even a small change in sea levels can have a disastrous effect on those living close to the sea but also everyone else. Higher sea levels can bring on more dangerous hurricanes and typhoons that move slower than usual and drop more rain. There are already millions of people around the world who are at risk of floods and many are being forced to move to higher ground. Already people on the coast of Wales in Great Britain are at risk of becoming climate refugees in the next few years, and most likely not the last. You might think this is only a problem in countries far away but this is a problem which will have consequences all over the world.",
-    "cardText2": "Rising sea levels could impact your internet access since much of our communications infrastructure is in places where the sea is rising!"
+    "cardTitle": "The relationship between ice and sea",
+    "cardText1": "When the glacier melts the sea level will rice, and on top of that ocean water warms and expands in volume. The ice is melting faster and faster and the seas are getting warmer, which means that sea levels rise twice as fast as in the 20th century. ",
+    "cardText2": "The truth is, that the sea ​​level will rise about 80 meters if all ice on the earth melts!!!"
   }, 
   "habits" :{
     "heading": "How much does your everyday habits impact the climate?",

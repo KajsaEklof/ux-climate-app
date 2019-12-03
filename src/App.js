@@ -112,7 +112,7 @@ class App extends Component {
         />
 
         <h2 className="heading separate">
-            <span>CO2 vs Temperature Heading</span>
+            <span>Increased Emissions = Rising Temperature</span>
           </h2>
         <LineCharts
           CO2Emission={this.state.CO2Emission}

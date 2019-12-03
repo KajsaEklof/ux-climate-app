@@ -65,7 +65,8 @@ class LineCharts extends Component {
           <PopupCard
             closePopup={this.togglePopUp.bind(this)}
             cardTitle={textData.cardTitle}
-            cardText={textData.cardText}
+            cardText1={textData.cardText1}
+            cardText2={textData.cardText2}
           />
         ) : null}
         
