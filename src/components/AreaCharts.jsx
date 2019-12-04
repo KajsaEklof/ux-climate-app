@@ -4,6 +4,8 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import PopupCard from "./PopupCard";
 import Button from "react-bootstrap/Button";
+import { Icon } from 'semantic-ui-react';
+
 
 import { AreaChart, Area, XAxis, YAxis, Tooltip } from "recharts";
 
@@ -76,13 +78,13 @@ class AreaCharts extends Component {
             <Row className="doubleDiagram">
               <Col className="container" xs={6}>
                 <AreaChart
-                  width={500}
-                  height={400}
+                  width={450}
+                  height={300}
                   data={dataLineChart1}
                   margin={{
                     top: 5,
-                    right: 30,
-                    left: 20,
+                    right: 20,
+                    left: 0,
                     bottom: 5
                   }}
                 >
@@ -99,13 +101,13 @@ class AreaCharts extends Component {
               </Col>
               <Col className="container" xs={6}>
                 <AreaChart
-                  width={500}
-                  height={400}
+                  width={450}
+                  height={300}
                   data={dataLineChart2}
                   margin={{
                     top: 5,
-                    right: 30,
-                    left: 20,
+                    right: 20,
+                    left: 0,
                     bottom: 5
                   }}
                 >
@@ -124,10 +126,10 @@ class AreaCharts extends Component {
             </Row>
             <Row>
               <Col className="container" xs={6}>
-                <p className="label">Average Glacier Thickness</p>
+              <p className="label-center"> <Icon name='certificate' className="icon-ice" />Average Glacier Thickness</p>
               </Col>
               <Col className="container" xs={6}>
-                <p className="label">Average Sea Level</p>
+              <p className="label-center"> <Icon name='certificate' className="icon-sea" />Average Sea Level</p>
               </Col>
             </Row>
           </div>

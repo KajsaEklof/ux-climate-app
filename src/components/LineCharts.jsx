@@ -4,6 +4,8 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import PopupCard from "./PopupCard";
 import Button from "react-bootstrap/Button";
+import { Icon } from 'semantic-ui-react';
+
 
 import {
   LineChart,
@@ -85,52 +87,56 @@ class LineCharts extends Component {
             <Row className="doubleDiagram">
               <Col className="container" xs={6}>
                 <LineChart
-                  width={500}
+                  width={450}
                   height={300}
                   data={dataLineChart1}
-                  margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
+                  margin={{ top: 5, right: 20, left: 0, bottom: 5 }}
                   activeDot={{ r: 8 }}
                 >
                   <XAxis dataKey="Year" />
                   <YAxis />
                   <CartesianGrid strokeDasharray="3 3" />
                   <Tooltip />
-                  <Legend />
+                  
                   <Line
                     type="monotone"
                     dataKey="Total CO2 Emission"
                     stroke="#EF0E7C"
                   />
                 </LineChart>
+                
               </Col>
               <Col className="container" xs={6}>
                 <LineChart
-                  width={500}
+                  width={450}
                   height={300}
                   data={dataLineChart2}
-                  margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
+                  margin={{ top: 5, right: 20, left: 0, bottom: 5 }}
                   activeDot={{ r: 8 }}
                 >
                   <XAxis dataKey="Year" />
                   <YAxis />
                   <CartesianGrid strokeDasharray="3 3" />
                   <Tooltip />
-                  <Legend />
+                 
                   <Line
                     type="monotone"
                     dataKey="Average Temperature"
                     stroke="#00A99D"
                   />
                 </LineChart>
+               
               </Col>
             </Row>
             <Row className="centeredContent">
               <Col className="container" xs={6}>
-                <p className="label">Million Metric Tons of CO2 Emission</p>
+             
+                <p className="label-center"> <Icon name='certificate' className="icon-emission" />Million Metric Tons of CO2 Emission</p>
               </Col>
 
               <Col className="container" xs={6}>
-                <p className="label">Global Temperature </p>
+              
+                <p className="label-center"> <Icon name='certificate' className="icon-temp" />Global Average Temperature </p>
               </Col>
             </Row>
           </div>

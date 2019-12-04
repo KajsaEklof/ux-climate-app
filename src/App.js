@@ -72,6 +72,8 @@ class App extends Component {
     return (
       <div id="App">
         <Header />
+
+        <div id="page-content">
         <TextImage
           headingStyle={2}
           layout={2}
@@ -157,7 +159,7 @@ class App extends Component {
         subHeading={content.habits.subheading}
         text={content.habits.info1}
         />
-
+        </div>
         <Footer />
       </div>
     );

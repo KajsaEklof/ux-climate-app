@@ -103,7 +103,7 @@ class Co2Diagram extends Component {
               </ComposedChart>
             </Row>
             <Row>
-              <p className="label">Million Metric Tons of CO2 Emission</p>
+              <p className="label-center">Million Metric Tons of CO2 Emission</p>
             </Row>
           </div>
         </Container>

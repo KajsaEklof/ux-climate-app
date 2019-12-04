@@ -8,15 +8,22 @@ Reference them by typing for example var(--light-pink) */
   --turquoise: #00a99d;
   --light-turquoise: #87d8d6;
   --light-blue: #b4e2f0;
-  --yellow: #ffd400;
+  --cosmo-yellow: #ffd400;
 }
 
 #App {
-  width: 90%;
-  margin: 0% auto 0% auto;
+  width: 100%;
   text-align: center;
   background-color: var(--light-pink);
+  
 }
+
+#page-content {
+  width: 80%;
+  margin: 0% auto 0% auto;
+ 
+}
+
 p::selection {
   color: black;
   background: var(--middle-pink);
@@ -126,12 +133,18 @@ h2.separate {
   margin-bottom: 2%;
 }
 
-p.label {
+p.label-center {
   margin-left: auto;
   margin-right: auto;
   padding: 1% 0 0 0;
   font-weight: bold;
   text-align: center;
+}
+
+p.label-left {
+  padding: 1% 0 0 0;
+  font-weight: bold;
+  text-align: left;
 }
 
 p {
@@ -216,8 +229,8 @@ div.styles_handle__33IZp {
 button.btn-info,
 .popupBtn {
   color: black;
-  background-color: var(--yellow);
-  border-color: var(--yellow);
+  background-color: var(--cosmo-yellow);
+  border-color: var(--cosmo-yellow);
   font-weight: bold;
 }
 
@@ -270,3 +283,18 @@ li  {
   font-size: 105%;
 }
 
+.icon-emission {
+  color: var(--bright-pink);
+}
+
+.icon-temp {
+  color: var(--turquoise);
+}
+
+.icon-ice {
+  color: var(--light-turquoise);
+}
+
+.icon-sea {
+  color: var(--light-blue);
+}
