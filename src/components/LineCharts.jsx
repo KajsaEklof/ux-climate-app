@@ -4,8 +4,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import PopupCard from "./PopupCard";
 import Button from "react-bootstrap/Button";
-import { Icon } from 'semantic-ui-react';
-
+import { Icon } from "semantic-ui-react";
 
 import {
   LineChart,
@@ -13,8 +12,7 @@ import {
   XAxis,
   YAxis,
   CartesianGrid,
-  Tooltip,
-  Legend
+  Tooltip
 } from "recharts";
 
 class LineCharts extends Component {
@@ -71,7 +69,7 @@ class LineCharts extends Component {
             cardText2={textData.cardText2}
           />
         ) : null}
-        
+
         <Container className="container main">
           <div className="diagram">
             <Row className="alignRight">
@@ -97,14 +95,13 @@ class LineCharts extends Component {
                   <YAxis />
                   <CartesianGrid strokeDasharray="3 3" />
                   <Tooltip />
-                  
+
                   <Line
                     type="monotone"
                     dataKey="Total CO2 Emission"
                     stroke="#EF0E7C"
                   />
                 </LineChart>
-                
               </Col>
               <Col className="container" xs={6}>
                 <LineChart
@@ -118,25 +115,30 @@ class LineCharts extends Component {
                   <YAxis />
                   <CartesianGrid strokeDasharray="3 3" />
                   <Tooltip />
-                 
+
                   <Line
                     type="monotone"
                     dataKey="Average Temperature"
                     stroke="#00A99D"
                   />
                 </LineChart>
-               
               </Col>
             </Row>
             <Row className="centeredContent">
               <Col className="container" xs={6}>
-             
-                <p className="label-center"> <Icon name='certificate' className="icon-emission" />Million Metric Tons of CO2 Emission</p>
+                <p className="label-center">
+                  {" "}
+                  <Icon name="certificate" className="icon-emission" />
+                  Million Metric Tons of CO2 Emission
+                </p>
               </Col>
 
               <Col className="container" xs={6}>
-              
-                <p className="label-center"> <Icon name='certificate' className="icon-temp" />Global Average Temperature </p>
+                <p className="label-center">
+                  {" "}
+                  <Icon name="certificate" className="icon-temp" />
+                  Global Average Temperature{" "}
+                </p>
               </Col>
             </Row>
           </div>

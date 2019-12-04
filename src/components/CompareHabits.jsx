@@ -36,9 +36,12 @@ export default class CompareHabits extends Component {
         { id: 2, value: "Recycle all waste", isChecked: false },
         { id: 3, value: "Only using LED lights", isChecked: false },
         { id: 4, value: "Get down to zero foodwaste", isChecked: false },
-        { id: 5, value: "Use reusable shoppnig bags", isChecked: false },
-        { id: 6, value: "Eat locally produced food", isChecked: false },
-        { id: 7, value: "Minimise your driving to max 30km a day", isChecked: false }
+        { id: 5, value: "Eat locally produced food", isChecked: false },
+        {
+          id: 6,
+          value: "Minimise your driving to max 30km a day",
+          isChecked: false
+        }
       ]
     };
   }
@@ -61,7 +64,6 @@ export default class CompareHabits extends Component {
         "Recycle all waste": 0.21,
         "Only using LED lights": 0.06,
         "Get down to zero foodwaste": 0.37,
-        "Use reusable shoppnig bags": 0.005,
         "Eat locally produced food": 0.36,
         "Minimise your driving to max 30km a day": 1.33
       }
@@ -85,15 +87,12 @@ export default class CompareHabits extends Component {
 
     return (
       <Container className="spacing">
-        <Row>
-          <h2 className="heading">
-            <span>{this.props.heading}</span>
-          </h2>
-        </Row>
         <div className="diagram">
           <Row className="alignMiddle">
             <Col xs={3}>
-            <h4 className="heading"><span>{this.props.subHeading}</span></h4>
+              <h4 className="heading">
+                <span>{this.props.subHeading}</span>
+              </h4>
               <p>{this.props.text}</p>
             </Col>
 
@@ -114,7 +113,7 @@ export default class CompareHabits extends Component {
                 <Tooltip />
                 {!this.state.habits[0].isChecked ? (
                   <Bar
-                  barSize={80}
+                    barSize={80}
                     dataKey="Go vegetarian"
                     stackId="a"
                     fill="#ef0e7c"
@@ -123,7 +122,7 @@ export default class CompareHabits extends Component {
                 ) : null}
                 {!this.state.habits[1].isChecked ? (
                   <Bar
-                  barSize={80}
+                    barSize={80}
                     dataKey="Recycle all waste"
                     stackId="a"
                     fill="#00a99d"
@@ -132,7 +131,7 @@ export default class CompareHabits extends Component {
                 ) : null}
                 {!this.state.habits[2].isChecked ? (
                   <Bar
-                  barSize={50}
+                    barSize={50}
                     dataKey="Only using LED lights"
                     stackId="a"
                     fill="#ffd400"
@@ -141,7 +140,7 @@ export default class CompareHabits extends Component {
                 ) : null}
                 {!this.state.habits[3].isChecked ? (
                   <Bar
-                  barSize={80}
+                    barSize={80}
                     dataKey="Get down to zero foodwaste"
                     stackId="a"
                     fill="#b4e2f0"
@@ -150,23 +149,14 @@ export default class CompareHabits extends Component {
                 ) : null}
                 {!this.state.habits[4].isChecked ? (
                   <Bar
-                  barSize={80}
-                    dataKey="Use reusable shoppnig bags"
-                    stackId="a"
-                    fill="#ef4726"
-                    isAnimationActive={false}
-                  />
-                ) : null}
-                {!this.state.habits[5].isChecked ? (
-                  <Bar
-                  barSize={80}
+                    barSize={80}
                     dataKey="Eat locally produced food"
                     stackId="a"
                     fill="#f6a2b6"
                     isAnimationActive={false}
                   />
                 ) : null}
-                {!this.state.habits[6].isChecked ? (
+                {!this.state.habits[5].isChecked ? (
                   <Bar
                     barSize={80}
                     dataKey="Minimise your driving to max 30km a day"
@@ -175,10 +165,15 @@ export default class CompareHabits extends Component {
                     isAnimationActive={false}
                   />
                 ) : null}
-                <Legend layout="vertical" verticalAlign="middle" align="right" width={200} style={{right: "2px"}}/>
+                <Legend
+                  layout="vertical"
+                  verticalAlign="middle"
+                  align="right"
+                  width={200}
+                  style={{ right: "2px" }}
+                />
               </BarChart>
             </Col>
-            
           </Row>
         </div>
       </Container>

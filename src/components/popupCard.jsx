@@ -13,7 +13,6 @@ class PopupCard extends Component {
             </Card.Title>
             <Card.Text>{this.props.cardText1}</Card.Text>
             <Card.Text>{this.props.cardText2}</Card.Text>
-
             <button className="popupBtn" onClick={this.props.closePopup}>
               close me
             </button>

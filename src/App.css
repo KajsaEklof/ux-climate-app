@@ -15,13 +15,11 @@ Reference them by typing for example var(--light-pink) */
   width: 100%;
   text-align: center;
   background-color: var(--light-pink);
-  
 }
 
 #page-content {
   width: 80%;
   margin: 0% auto 0% auto;
- 
 }
 
 p::selection {
@@ -66,7 +64,7 @@ h1.heading {
   font-style: normal;
   letter-spacing: 0.2em;
   font-size: 4.5em;
-  color: var(--bright-pink);
+  color: var(--turquoise);
 }
 
 h1 span {
@@ -121,12 +119,12 @@ h4.heading {
 
 span {
   background-color: white;
-  padding: 2%;
+  padding: 1%;
 }
 
 h2.separate {
-  margin-left: 5%;
-  line-height: 2.5em;
+  margin-bottom: 2%;
+  line-height: 2em;
 }
 
 .headerRow {
@@ -211,10 +209,9 @@ div.styles_handle__33IZp {
 
 .checkList {
   text-align: left;
-
 }
 
-.alignMiddle{
+.alignMiddle {
   align-items: flex-end;
 }
 
@@ -261,7 +258,7 @@ li {
   list-style-type: none;
 }
 
-div.recharts-legend-wrapper  {
+div.recharts-legend-wrapper {
   right: 2px !important;
 }
 
@@ -278,7 +275,7 @@ div.recharts-legend-wrapper  {
   letter-spacing: -0.1em;
 }
 
-li  {
+li {
   font-family: "futura-pt", sans-serif;
   font-size: 105%;
 }

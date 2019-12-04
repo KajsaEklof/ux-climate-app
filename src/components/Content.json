@@ -1,13 +1,10 @@
 {
   "introduction": {
-    "heading": "Wanna get climate smart?",
+    "heading": "Wanna Get Climate Smart?",
     "info1": "The earth's average temperature rises, as does the water level that threatens to drown parts of the planet. It's burning and everywhere we see pictures of dying polar bears… Are you also starting to get frightened by recent climate change updates? And do you want to stop this negative trend?",
     "info2": "In this article, we will explain a few different concepts in climate change and give you tips on concrete changes you can make for a better climate yourself. Where to start, you wonder and when? Here and now, we say!",
     "picture": "https://raw.githubusercontent.com/KajsaEklof/ux-climate-app/implementation1/src/components/images/introImage.png",
     "altText": "Three women talk about climate change."
-  },
-  "co2Diagram": {
-    "heading": "What increased emissions?"
   },
   "co2Food": {
     "heading": "Choose Wisely!",
@@ -17,53 +14,49 @@
     "altText": "Three women talk about food."
   },
   "co2Clothes": {
-    "heading": "Your t-shirt = 2700 liters of water",
+    "heading": "Your T-shirt = 2700 Liters of Water",
     "info1": "Clothes contain materials that require large resources to produce. They have gone through several manufacturing steps and often crossed several countries. The cotton in a t-shirt, for example, may have been grown in India, the fabric is knit in Pakistan, dyed in Bangladesh and sewn up in Turkey before finally reaching the store in England.",
     "info2": "…and on top of that, 2700 liters of water are needed to make one cotton shirt. So next time you might consider buying your t-shirt second hand instead…",
     "picture": "https://raw.githubusercontent.com/KajsaEklof/ux-climate-app/implementation1/src/components/images/clothesImage.png",
     "altText": "Three women talk about clothes."
   },
-  "co2vsTemp": {
-    "heading": "Increased Emissions = Rising Temperature"
-  },
   "glaciers": {
-    "heading": "Warmer earth = less ice",
+    "heading": "Warmer Earth = Less Ice",
     "info1": "Glaciers are melting five times faster today than they did in the 1960s. The cause is attributed to global warming in a new study at the glacier research center “World Glacier Monitoring Service”. But what happens when the ice melts?",
     "info2": "When temperatures rise and ice melts, more water flows into the sea from glaciers and ice caps, and ocean water warms and expands in volume. This combination of effects has played a major role in raising average global sea level between 10 and 20 centimeters in the past hundred years. At least 30 glaciers have already disappeared, and more are about to melt. The question is, how many are left in another 100 years if we do not act now?",
     "picture": "https://raw.githubusercontent.com/KajsaEklof/ux-climate-app/implementation1/src/components/images/iceBerg.png",
     "altText": "Three women talk about melting glaciers."
   },
   "beforeAfter": {
-    "heading": "1km of ice melting every year",
+    "heading": "1km of Ice Melting Every Year",
     "info1": "Glaciers all over the world are reducing in size as the ice is melting away faster and faster each year. The Columbia Glacier in Alaska has shrunk by about 6.5 km (4 miles) between 2009 and 2015. It’s difficult to understand how much ice this actually is, but when comparing the images taken of the glacier in 2009 and 20015 it’s easy to see the enormous difference that’s happened in only 6 years. That’s a lot of ice that’s melted into the sea!"
   },
   "icevsSea": {
-    "heading": "When the glaciers melt... Sea Levels Rise"
+    "heading": "When the Glaciers Melt... Sea Levels Rise"
   },
   "seaLevel": {
-    "heading": "Consequences of sea levels rising",
+    "heading": "Consequences of Sea Levels Rising",
     "info1": "Even a small change in sea levels can have a disastrous effect on those living close to the sea but also everyone else. Higher sea levels can bring on more dangerous hurricanes and typhoons that move slower than usual and drop more rain. There are already millions of people around the world who are at risk of floods and many are being forced to move to higher ground. Already people on the coast of Wales in Great Britain are at risk of becoming climate refugees in the next few years, and most likely not the last. You might think this is only a problem in countries far away but this is a problem which will have consequences all over the world.",
     "info2": "Rising sea levels could impact your internet access since much of our communications infrastructure is in places where the sea is rising!",
-    "picture": "https://raw.githubusercontent.com/KajsaEklof/ux-climate-app/implementation1/src/components/images/introImage.png",
+    "picture": "https://raw.githubusercontent.com/KajsaEklof/ux-climate-app/implementation1/src/components/images/map.png",
     "altText": "Three women talk about sea level rising."
   },
   "co2Popup": {
-    "cardTitle": "CO2 = Carbon dioxide.",
+    "cardTitle": "CO2 = Carbon Dioxide.",
     "cardText1": "This diagram shows how much carbon dioxide is emitted using various fossil fuels. It is difficult to understand what the different fuels are, but one thing becomes quite clear. Emissions are increasing. Increased greenhouse gas emissions lead to an enhanced greenhouse effect. You have heard that. But what does that mean?",
     "cardText2": "This means that the more carbon dioxide we release, the more heat is absorbed into the Earth's atmosphere, which means that the planet is warming up. A heated planet in turn causes animals to become endangered and an increased number of natural disasters! Ouch!"
   },
   "co2vsTempPopup": {
-    "cardTitle": "Is it true?",
+    "cardTitle": "Is It True?",
     "cardText1": "Yes, is it really true that carbon dioxide emissions cause the Earth's temperature to rise? How do you know what's true in this jungle of information? How to know?",
     "cardText2": "Sometimes it’s really overwhelming to even try to get into all the facts, but here the charts speak their clear language. By inserting actual statistics into two simple line diagrams, the strong link between increased emissions and rising temperature is clearly visible. Scary, right?!"
   },
   "icevsSeaPopup": {
-    "cardTitle": "The relationship between ice and sea",
+    "cardTitle": "The Relationship Between Ice and Sea",
     "cardText1": "When the glacier melts the sea level will rice, and on top of that ocean water warms and expands in volume. The ice is melting faster and faster and the seas are getting warmer, which means that sea levels rise twice as fast as in the 20th century. ",
     "cardText2": "The truth is, that the sea ​​level will rise about 80 meters if all ice on the earth melts!!!"
-  }, 
-  "habits" :{
-    "heading": "How much does your everyday habits impact the climate?",
+  },
+  "habits": {
     "subheading": "Check how your choices measures up",
     "info1": "Here you can see the total of an average adults yearly carbon emissions for these chosen lifestyle choices. See what changes you can make to lower your environmental impact!"
   }
