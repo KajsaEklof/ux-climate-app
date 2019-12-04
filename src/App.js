@@ -85,7 +85,7 @@ class App extends Component {
             border={content.introduction.border}
           />
           <h2 className="heading separate">
-            <span>What Increased Emissions?</span>
+            <span>What are CO2 Emissions Anyway?</span>
           </h2>
           <Co2Diagram
             CO2Emission={this.state.CO2Emission}
