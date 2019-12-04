@@ -1,5 +1,7 @@
 /* These are CSS varibles for our colors in the application.
 Reference them by typing for example var(--light-pink) */
+
+
 :root {
   --bright-pink: #ef0e7c;
   --middle-pink: #f6a2b6;
@@ -15,6 +17,7 @@ Reference them by typing for example var(--light-pink) */
   width: 100%;
   text-align: center;
   background-color: var(--light-pink);
+  
 }
 
 #page-content {

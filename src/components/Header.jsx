@@ -11,7 +11,7 @@ class Header extends Component {
   render() {
     return (
       <Jumbotron fluid className="jumbo-header">
-      <Image id="logo" src={Logo}/>
+      <a target="_blank" href="https://www.cosmopolitan.com/"><Image id="logo" src={Logo} /></a>
         <Image className="header-image" src={headerImage} fluid />
         <h1 className="heading">
           <span>Simple Climate School</span>
