@@ -52,6 +52,12 @@ img.header-image {
   padding: 0em;
 }
 
+#logo {
+  width: 12%;
+  position: absolute;
+  margin: 2%;
+}
+
 h1.heading {
   font-family: "futura-pt", sans-serif;
   font-weight: 700;
@@ -257,9 +263,9 @@ li {
   list-style-type: none;
 }
 
- div.recharts-legend-wrapper {
+div.recharts-legend-wrapper {
   right: 12px !important;
-} 
+}
 
 .footerText {
   font-family: "futura-pt", sans-serif;
