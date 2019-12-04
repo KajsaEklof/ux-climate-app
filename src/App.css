@@ -68,6 +68,7 @@ h1.heading {
   letter-spacing: 0.2em;
   font-size: 4.5em;
   color: var(--turquoise);
+  line-height: 1.8em;
 }
 
 h1 span {

@@ -14,7 +14,7 @@ class Header extends Component {
       <a target="_blank" href="https://www.cosmopolitan.com/"><Image id="logo" src={Logo} /></a>
         <Image className="header-image" src={headerImage} fluid />
         <h1 className="heading">
-          <span>Simple Climate School</span>
+          <span>Cosmopolitan’s guide to climate change</span>
         </h1>
       </Jumbotron>
 
