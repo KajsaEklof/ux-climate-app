@@ -206,7 +206,12 @@ div.styles_handle__33IZp {
 }
 
 .alignMiddle {
-  align-items: flex-end;
+  align-items: center;
+}
+
+.compare-container {
+  padding-right: 0px !important;
+  padding-left: 0px !important;
 }
 
 .doubleDiagram {
@@ -252,9 +257,9 @@ li {
   list-style-type: none;
 }
 
-div.recharts-legend-wrapper {
-  right: 2px !important;
-}
+ div.recharts-legend-wrapper {
+  right: 12px !important;
+} 
 
 .footerText {
   font-family: "futura-pt", sans-serif;

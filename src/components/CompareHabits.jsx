@@ -88,19 +88,23 @@ export default class CompareHabits extends Component {
     return (
       <Container className="spacing">
         <div className="diagram">
-          <Row className="alignMiddle">
-            <Col xs={3}>
+          <Row>
+            <Col xs={6}>
               <h4 className="heading">
                 <span>{this.props.subHeading}</span>
               </h4>
+            </Col>
+          </Row>
+          <Row className="alignMiddle">
+            <Col xs={3} className="compare-container">
               <p>{this.props.text}</p>
             </Col>
 
-            <Col className="container checkList" xs={3}>
+            <Col className="container checkList compare-container" xs={3}>
               {checkList}
             </Col>
 
-            <Col className="container" xs={6}>
+            <Col className="container compare-container" xs={6}>
               <BarChart
                 width={500}
                 height={300}
