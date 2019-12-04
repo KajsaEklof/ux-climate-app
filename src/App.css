@@ -32,12 +32,6 @@ h4::selection {
   background: var(--middle-pink);
 }
 
-/* .container {
-  border-color: red;
-  border-width: 0.2em;
-  border-style: solid;
-} */
-
 .centeredContent {
   margin-left: auto;
   margin-right: auto;
