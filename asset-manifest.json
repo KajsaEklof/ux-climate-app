@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/ux-climate-app.git/static/css/main.7f7e5ea9.chunk.css",
+    "main.js": "/ux-climate-app.git/static/js/main.9ce5ef39.chunk.js",
+    "main.js.map": "/ux-climate-app.git/static/js/main.9ce5ef39.chunk.js.map",
+    "runtime-main.js": "/ux-climate-app.git/static/js/runtime-main.94e221e4.js",
+    "runtime-main.js.map": "/ux-climate-app.git/static/js/runtime-main.94e221e4.js.map",
+    "static/css/2.86917b92.chunk.css": "/ux-climate-app.git/static/css/2.86917b92.chunk.css",
+    "static/js/2.5ae72029.chunk.js": "/ux-climate-app.git/static/js/2.5ae72029.chunk.js",
+    "static/js/2.5ae72029.chunk.js.map": "/ux-climate-app.git/static/js/2.5ae72029.chunk.js.map",
+    "index.html": "/ux-climate-app.git/index.html",
+    "precache-manifest.5d51883d7b81d1b8fd6b1fe8bd58fb86.js": "/ux-climate-app.git/precache-manifest.5d51883d7b81d1b8fd6b1fe8bd58fb86.js",
+    "service-worker.js": "/ux-climate-app.git/service-worker.js",
+    "static/css/2.86917b92.chunk.css.map": "/ux-climate-app.git/static/css/2.86917b92.chunk.css.map",
+    "static/css/main.7f7e5ea9.chunk.css.map": "/ux-climate-app.git/static/css/main.7f7e5ea9.chunk.css.map",
+    "static/media/after.jpg": "/ux-climate-app.git/static/media/after.042bd24e.jpg",
+    "static/media/before.jpg": "/ux-climate-app.git/static/media/before.02aeee85.jpg",
+    "static/media/semantic.min.css": "/ux-climate-app.git/static/media/outline-icons.ef60a4f6.woff",
+    "static/media/headerImage4.png": "/ux-climate-app.git/static/media/headerImage4.f3d20cac.png",
+    "static/media/logo.png": "/ux-climate-app.git/static/media/logo.32924da0.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.94e221e4.js",
+    "static/css/2.86917b92.chunk.css",
+    "static/js/2.5ae72029.chunk.js",
+    "static/css/main.7f7e5ea9.chunk.css",
+    "static/js/main.9ce5ef39.chunk.js"
+  ]
+}
