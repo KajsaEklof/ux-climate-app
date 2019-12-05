@@ -238,6 +238,7 @@ button.btn-info,
   background-color: var(--cosmo-yellow);
   border-color: var(--cosmo-yellow);
   font-weight: bold;
+  text-align: center;
 }
 
 button.btn-info:hover,
