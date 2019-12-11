@@ -4,7 +4,7 @@ import TextImage from "./components/TextImage";
 import Co2Diagram from "./components/Co2Diagram";
 import LineCharts from "./components/LineCharts";
 import AreaCharts from "./components/AreaCharts";
-import BeforeAfter from "./components/BeforeAfter";
+import BeforeAfterSlider from "./components/BeforeAfterSlider";
 import CompareHabits from "./components/CompareHabits";
 import Footer from "./components/Footer";
 import data from "./components/Content.json"; /*This is the json file with all our content and copy text for the applicaiton*/
@@ -142,12 +142,12 @@ class App extends Component {
               picture={content.glaciers.picture}
               altText={content.glaciers.altText}
             />
-            <BeforeAfter
+            <BeforeAfterSlider
               heading={content.beforeAfter.heading}
               text={content.beforeAfter.info1}
             />
-            </div>
-            <div className="section-white">
+          </div>
+          <div className="section-white">
             <h2 className="heading separate">
               <span>When The Glaciers Melt... Sea Levels Rise</span>
             </h2>
@@ -156,8 +156,7 @@ class App extends Component {
               iceVolume={this.state.iceVolume}
               textData={content.icevsSeaPopup}
             />
-         
-         
+
             <TextImage
               headingStyle={3}
               layout={2}

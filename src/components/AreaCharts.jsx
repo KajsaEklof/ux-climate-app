@@ -4,8 +4,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import PopupCard from "./PopupCard";
 import Button from "react-bootstrap/Button";
-import { Icon } from 'semantic-ui-react';
-
+import { Icon } from "semantic-ui-react";
 
 import { AreaChart, Area, XAxis, YAxis, Tooltip } from "recharts";
 
@@ -97,6 +96,7 @@ class AreaCharts extends Component {
                     dataKey="Average Glacier Thickness"
                     stroke="#02958a"
                     fill="#02958a"
+                    activeDot={{ r: 8 }}
                   />
                 </AreaChart>
               </Col>
@@ -122,16 +122,25 @@ class AreaCharts extends Component {
                     dataKey="Average Sea Level"
                     stroke="#207C97"
                     fill="#207C97"
+                    activeDot={{ r: 8 }}
                   />
                 </AreaChart>
               </Col>
             </Row>
             <Row>
               <Col className="container" xs={6}>
-              <p className="label-center"> <Icon name='certificate' className="icon-ice" />Average Glacier Thickness</p>
+                <p className="label-center">
+                  {" "}
+                  <Icon name="certificate" className="icon-ice" />
+                  Average Glacier Thickness
+                </p>
               </Col>
               <Col className="container" xs={6}>
-              <p className="label-center"> <Icon name='certificate' className="icon-sea" />Average Sea Level</p>
+                <p className="label-center">
+                  {" "}
+                  <Icon name="certificate" className="icon-sea" />
+                  Average Sea Level
+                </p>
               </Col>
             </Row>
           </div>

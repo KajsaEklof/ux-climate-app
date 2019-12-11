@@ -99,11 +99,18 @@ class Co2Diagram extends Component {
                 <Bar dataKey="LiquidFuel" stackId="a" fill={COLORS[2]} />
                 <Bar dataKey="Cement" stackId="a" fill={COLORS[3]} />
                 <Bar dataKey="SolidFuel" stackId="a" fill={COLORS[4]} />
-                <Line type="monotone" dataKey="Total" stroke="#EF4726" />
+                <Line
+                  type="monotone"
+                  dataKey="Total"
+                  stroke="#EF4726"
+                  activeDot={{ r: 8 }}
+                />
               </ComposedChart>
             </Row>
             <Row>
-              <p className="label-center">Million Metric Tons of CO2 Emission</p>
+              <p className="label-center">
+                Million Metric Tons of CO2 Emission
+              </p>
             </Row>
           </div>
         </Container>

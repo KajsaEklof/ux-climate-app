@@ -88,7 +88,7 @@ h2.heading {
   line-height: 2em;
   font-size: 3.125em;
   color: var(--bright-pink);
-  width: 100%;
+  width: 90%;
 }
 
 h3.heading {
@@ -126,12 +126,13 @@ span {
   padding: 1%;
 }
 
-.section-white span {
+.section-white h2 span,
+.section-white h3 span {
   background-color: var(--light-pink);
 }
 
 h2.separate {
-  margin: 0% 0% 2% 10%;
+  margin: 0% auto 2% auto;
   line-height: 2em;
 }
 

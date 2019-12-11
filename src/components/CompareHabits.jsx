@@ -135,7 +135,7 @@ export default class CompareHabits extends Component {
                 ) : null}
                 {!this.state.habits[2].isChecked ? (
                   <Bar
-                    barSize={50}
+                    barSize={80}
                     dataKey="Only using LED lights"
                     stackId="a"
                     fill="#ffd400"

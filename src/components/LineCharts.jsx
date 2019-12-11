@@ -101,6 +101,7 @@ class LineCharts extends Component {
                     type="monotone"
                     dataKey="Total CO2 Emission"
                     stroke="#EF0E7C"
+                    activeDot={{ r: 8 }}
                   />
                 </LineChart>
               </Col>
@@ -122,6 +123,7 @@ class LineCharts extends Component {
                     type="monotone"
                     dataKey="Average Temperature"
                     stroke="#00A99D"
+                    activeDot={{ r: 8 }}
                   />
                 </LineChart>
               </Col>
