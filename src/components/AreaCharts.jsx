@@ -61,9 +61,9 @@ class AreaCharts extends Component {
           />
         ) : null}
         <Container className="container main">
-          <h3 className="heading">
+          {/* <h3 className="heading">
             <span>{this.props.heading}</span>
-          </h3>
+        </h3> */}
           <div className="diagram">
             <Row className="alignRight">
               <Button
@@ -95,8 +95,8 @@ class AreaCharts extends Component {
                   <Area
                     type="monotone"
                     dataKey="Average Glacier Thickness"
-                    stroke="#87d8d6"
-                    fill="#87d8d6"
+                    stroke="#02958a"
+                    fill="#02958a"
                   />
                 </AreaChart>
               </Col>
@@ -120,8 +120,8 @@ class AreaCharts extends Component {
                   <Area
                     type="monotone"
                     dataKey="Average Sea Level"
-                    stroke="#b4e2f0"
-                    fill="#b4e2f0"
+                    stroke="#207C97"
+                    fill="#207C97"
                   />
                 </AreaChart>
               </Col>

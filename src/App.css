@@ -1,13 +1,12 @@
 /* These are CSS varibles for our colors in the application.
 Reference them by typing for example var(--light-pink) */
 
-
 :root {
   --bright-pink: #ef0e7c;
   --middle-pink: #f6a2b6;
   --light-pink: #fff5f2;
   --cosmo-red: #ef4726;
-  --turquoise: #00a99d;
+  --turquoise: #02958a; /* OLD #00a99d; */
   --light-turquoise: #87d8d6;
   --light-blue: #b4e2f0;
   --cosmo-yellow: #ffd400;
@@ -17,11 +16,10 @@ Reference them by typing for example var(--light-pink) */
   width: 100%;
   text-align: center;
   background-color: var(--light-pink);
-  
 }
 
 #page-content {
-  width: 80%;
+  width: 100%;
   margin: 0% auto 0% auto;
 }
 
@@ -49,6 +47,7 @@ h4::selection {
 div.jumbotron-fluid {
   padding: 0em 0em 3em 0em;
   background-color: var(--light-blue);
+  margin-bottom: 0px;
 }
 
 img.header-image {
@@ -118,7 +117,8 @@ h4.heading {
 }
 
 .spacing {
-  margin-bottom: 7%;
+  width: 80%;
+  margin: 0% auto 7% auto;
 }
 
 span {
@@ -126,8 +126,12 @@ span {
   padding: 1%;
 }
 
+.section-white span {
+  background-color: var(--light-pink);
+}
+
 h2.separate {
-  margin-bottom: 2%;
+  margin: 0% 0% 2% 10%;
   line-height: 2em;
 }
 
@@ -162,9 +166,9 @@ p {
 
 .borderImage {
   max-width: 25vw;
-  border-width: 1em;
+  /* border-width: 0.5em;
   border-style: solid;
-  border-color: var(--turquoise);
+  border-color: var(--turquoise); */
 }
 
 .popup {
@@ -192,9 +196,9 @@ div.alignRight {
 }
 
 .beforeAfter {
-  border-width: 0.4em;
+  /* border-width: 0.4em;
   border-style: solid;
-  border-color: var(--bright-pink);
+  border-color: var(--bright-pink); */
   background-color: white;
   padding: 3%;
 }
@@ -301,9 +305,23 @@ li {
 }
 
 .icon-ice {
-  color: var(--light-turquoise);
+  color: var(--turquoise);
 }
 
 .icon-sea {
-  color: var(--light-blue);
+  color: #207c97;
+}
+
+.section-white {
+  background-color: white;
+  width: 100%;
+  margin: 0% auto 0% auto;
+  padding: 3em 0em 1em 0em;
+}
+
+.section-pink {
+  background-color: var(--light-pink);
+  width: 100%;
+  margin: 0% auto 0% auto;
+  padding: 3em 0em 1em 0em;
 }

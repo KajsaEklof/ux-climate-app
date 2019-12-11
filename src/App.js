@@ -46,7 +46,9 @@ class App extends Component {
 
     const co2data = data.filter(x => x.Year > 1944 && x.Year < 2014);
 
-    const yearFilteredTempData = data2.filter(x => x.Year > 1944 && x.Year < 2014);
+    const yearFilteredTempData = data2.filter(
+      x => x.Year > 1944 && x.Year < 2014
+    );
     const tempData = yearFilteredTempData.filter(p => p.Source === "GISTEMP"); //only rows that have source GISTEMP
 
     const seaData = data3.filter(
@@ -76,92 +78,107 @@ class App extends Component {
         <Header />
 
         <div id="page-content">
-          <TextImage
-            headingStyle={2}
-            layout={2}
-            heading={content.introduction.heading}
-            textData1={content.introduction.info1}
-            textData2={content.introduction.info2}
-            picture={content.introduction.picture}
-            altText={content.introduction.altText}
-            border={content.introduction.border}
-          />
-          <h2 className="heading separate">
-            <span>What are CO2 Emissions Anyway?</span>
-          </h2>
-          <Co2Diagram
-            CO2Emission={this.state.CO2Emission}
-            textData={content.co2Popup}
-          />
+          <div className="section-white">
+            <TextImage
+              headingStyle={2}
+              layout={2}
+              heading={content.introduction.heading}
+              textData1={content.introduction.info1}
+              textData2={content.introduction.info2}
+              picture={content.introduction.picture}
+              altText={content.introduction.altText}
+              border={content.introduction.border}
+            />
+          </div>
+          <div className="section-pink">
+            <h2 className="heading separate">
+              <span>What are CO2 Emissions Anyway?</span>
+            </h2>
+            <Co2Diagram
+              CO2Emission={this.state.CO2Emission}
+              textData={content.co2Popup}
+            />
 
-          <TextImage
-            headingStyle={3}
-            layout={1}
-            heading={content.co2Food.heading}
-            textData1={content.co2Food.info1}
-            textData2={content.co2Food.info2}
-            picture={content.co2Food.picture}
-            altText={content.co2Food.altText}
-          />
+            <TextImage
+              headingStyle={3}
+              layout={1}
+              heading={content.co2Food.heading}
+              textData1={content.co2Food.info1}
+              textData2={content.co2Food.info2}
+              picture={content.co2Food.picture}
+              altText={content.co2Food.altText}
+            />
 
-          <TextImage
-            headingStyle={3}
-            layout={2}
-            heading={content.co2Clothes.heading}
-            textData1={content.co2Clothes.info1}
-            textData2={content.co2Clothes.info2}
-            picture={content.co2Clothes.picture}
-            altText={content.co2Clothes.altText}
-          />
-
-          <h2 className="heading separate">
-            <span>Increased Emissions = Rising Temperature</span>
-          </h2>
-          <LineCharts
-            CO2Emission={this.state.CO2Emission}
-            globalTemp={this.state.globalTemp}
-            textData={content.co2vsTempPopup}
-          />
-          <h2 className="heading separate">
-            <span>What Happens When the Earth Gets Warmer?</span>
-          </h2>
-          <TextImage
-            headingStyle={3}
-            layout={1}
-            heading={content.glaciers.heading}
-            textData1={content.glaciers.info1}
-            textData2={content.glaciers.info2}
-            picture={content.glaciers.picture}
-            altText={content.glaciers.altText}
-          />
-          <BeforeAfter
-            heading={content.beforeAfter.heading}
-            text={content.beforeAfter.info1}
-          />
-
-          <AreaCharts
-            heading={content.icevsSea.heading}
-            seaLevel={this.state.seaLevel}
-            iceVolume={this.state.iceVolume}
-            textData={content.icevsSeaPopup}
-          />
-
-          <TextImage
-            headingStyle={3}
-            layout={2}
-            heading={content.seaLevel.heading}
-            textData1={content.seaLevel.info1}
-            textData2={content.seaLevel.info2}
-            picture={content.seaLevel.picture}
-            altText={content.seaLevel.altText}
-          />
-          <h2 className="heading separate">
-            <span>How Much Does Your Everyday Habits Impact the Climate?</span>
-          </h2>
-          <CompareHabits
-            subHeading={content.habits.subheading}
-            text={content.habits.info1}
-          />
+            <TextImage
+              headingStyle={3}
+              layout={2}
+              heading={content.co2Clothes.heading}
+              textData1={content.co2Clothes.info1}
+              textData2={content.co2Clothes.info2}
+              picture={content.co2Clothes.picture}
+              altText={content.co2Clothes.altText}
+            />
+          </div>
+          <div className="section-white">
+            <h2 className="heading separate">
+              <span>Increased Emissions = Rising Temperature</span>
+            </h2>
+            <LineCharts
+              CO2Emission={this.state.CO2Emission}
+              globalTemp={this.state.globalTemp}
+              textData={content.co2vsTempPopup}
+            />
+          </div>
+          <div className="section-pink">
+            <h2 className="heading separate">
+              <span>What Happens When the Earth Gets Warmer?</span>
+            </h2>
+            <TextImage
+              headingStyle={3}
+              layout={1}
+              heading={content.glaciers.heading}
+              textData1={content.glaciers.info1}
+              textData2={content.glaciers.info2}
+              picture={content.glaciers.picture}
+              altText={content.glaciers.altText}
+            />
+            <BeforeAfter
+              heading={content.beforeAfter.heading}
+              text={content.beforeAfter.info1}
+            />
+            </div>
+            <div className="section-white">
+            <h2 className="heading separate">
+              <span>When The Glaciers Melt... Sea Levels Rise</span>
+            </h2>
+            <AreaCharts
+              seaLevel={this.state.seaLevel}
+              iceVolume={this.state.iceVolume}
+              textData={content.icevsSeaPopup}
+            />
+         
+         
+            <TextImage
+              headingStyle={3}
+              layout={2}
+              heading={content.seaLevel.heading}
+              textData1={content.seaLevel.info1}
+              textData2={content.seaLevel.info2}
+              picture={content.seaLevel.picture}
+              altText={content.seaLevel.altText}
+            />
+          </div>
+          <div className="section-pink">
+            <h2 className="heading separate">
+              <span>
+                How Much Does Your Everyday Habits Impact the Climate?
+              </span>
+            </h2>
+            <CompareHabits
+              subHeading={content.habits.subheading}
+              text={content.habits.info1}
+            />
+          </div>
         </div>
         <Footer />
       </div>
