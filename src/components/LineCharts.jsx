@@ -90,6 +90,7 @@ class LineCharts extends Component {
                   data={dataLineChart1}
                   margin={{ top: 5, right: 20, left: 0, bottom: 5 }}
                   activeDot={{ r: 8 }}
+                  syncId="syncID"
                 >
                   <XAxis dataKey="Year" />
                   <YAxis />
@@ -110,6 +111,7 @@ class LineCharts extends Component {
                   data={dataLineChart2}
                   margin={{ top: 5, right: 20, left: 0, bottom: 5 }}
                   activeDot={{ r: 8 }}
+                  syncId="syncID"
                 >
                   <XAxis dataKey="Year" />
                   <YAxis />

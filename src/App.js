@@ -45,7 +45,9 @@ class App extends Component {
     const data4 = icejsonData;
 
     const co2data = data.filter(x => x.Year > 1944 && x.Year < 2014);
-    const tempData = data2.filter(x => x.Year > 1944 && x.Year < 2014);
+
+    const yearFilteredTempData = data2.filter(x => x.Year > 1944 && x.Year < 2014);
+    const tempData = yearFilteredTempData.filter(p => p.Source === "GISTEMP"); //only rows that have source GISTEMP
 
     const seaData = data3.filter(
       x =>

@@ -70,7 +70,7 @@ class Co2Diagram extends Component {
             <Row className="alignRight">
               <Button
                 variant="info"
-                className="popup"
+                // className="popup"
                 onClick={this.togglePopUp.bind(this)}
               >
                 What does this mean?

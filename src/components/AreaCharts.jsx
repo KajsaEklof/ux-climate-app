@@ -87,6 +87,7 @@ class AreaCharts extends Component {
                     left: 0,
                     bottom: 5
                   }}
+                  syncId="syncID2"
                 >
                   <XAxis dataKey="Year" />
                   <YAxis />
@@ -110,6 +111,7 @@ class AreaCharts extends Component {
                     left: 0,
                     bottom: 5
                   }}
+                  syncId="syncID2"
                 >
                   <XAxis dataKey="Year" />
                   <YAxis />
