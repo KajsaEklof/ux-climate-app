@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4d7b23c1b97fbf3c8a00a90e8eb90f51",
+    "revision": "6eff73138b9463d8c3ffd4cc820dc271",
     "url": "/ux-climate-app/index.html"
   },
   {
@@ -8,16 +8,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ux-climate-app/static/css/2.e41eec26.chunk.css"
   },
   {
-    "revision": "42f69936858d6759d97b",
-    "url": "/ux-climate-app/static/css/main.1a560036.chunk.css"
+    "revision": "4138e4bc4fb5072e0f10",
+    "url": "/ux-climate-app/static/css/main.a1540b11.chunk.css"
   },
   {
     "revision": "c4285b6422aa4d78ce3f",
     "url": "/ux-climate-app/static/js/2.5ae72029.chunk.js"
   },
   {
-    "revision": "42f69936858d6759d97b",
-    "url": "/ux-climate-app/static/js/main.b6d3cae9.chunk.js"
+    "revision": "4138e4bc4fb5072e0f10",
+    "url": "/ux-climate-app/static/js/main.d1999565.chunk.js"
   },
   {
     "revision": "9cee6fe5088ffaac73d4",
