@@ -239,6 +239,7 @@ button.btn-info,
   border-color: var(--cosmo-yellow);
   font-weight: bold;
   text-align: center;
+  box-shadow: 2px 2px 4px grey;
 }
 
 button.btn-info:hover,
@@ -251,6 +252,7 @@ button.btn-info:focus,
   background-color: var(--middle-pink);
   border-color: var(--middle-pink);
   font-weight: bold;
+  box-shadow: 2px 2px 4px grey;
 }
 
 div.popup_inner {
