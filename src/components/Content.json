@@ -10,7 +10,7 @@
     "heading": "Choose Wisely!",
     "info1": "Eating beef 1-2 times a week contributes to 604 kg of greenhouse gas emissions per year. That's more than four times as much as choosing chicken. And guess what, vegetarian options like beans have almost no climate impact at all! How about a varied, well thought out diet?",
     "info2": "...and what about wine? 3-5 glasses of wine per week gives half as much climate impact as the same amount of beer. In addition, wine has a lower climate impact than coffee. Skip the extra cup of coffee, and have a glass of wine on Friday! PS. Don't forget to choose organic.",
-    "picture": "https://raw.githubusercontent.com/KajsaEklof/ux-climate-app/implementation1/src/components/images/foodImage.png",
+    "picture": "https://raw.githubusercontent.com/KajsaEklof/ux-climate-app/implementation2/src/components/images/foodImage.png",
     "altText": "A woman thinking about food."
   },
   "co2Clothes": {
@@ -24,7 +24,7 @@
     "heading": "Warmer Earth = Less Ice",
     "info1": "Glaciers are melting five times faster today than they did in the 1960s. The cause is attributed to global warming in a new study at the glacier research center “World Glacier Monitoring Service”. But what happens when the ice melts?",
     "info2": "When temperatures rise and ice melts, more water flows into the sea from glaciers and ice caps, and ocean water warms and expands in volume. This combination of effects has played a major role in raising average global sea level between 10 and 20 centimeters in the past hundred years. At least 30 glaciers have already disappeared, and more are about to melt. The question is, how many are left in another 100 years if we do not act now?",
-    "picture": "https://raw.githubusercontent.com/KajsaEklof/ux-climate-app/implementation2/src/components/images/iceImage2.png",
+    "picture": "https://raw.githubusercontent.com/KajsaEklof/ux-climate-app/implementation2/src/components/images/iceImage5.png",
     "altText": "A couple of icebergs."
   },
   "beforeAfter": {
