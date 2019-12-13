@@ -6,15 +6,16 @@ import Image from "react-bootstrap/Image";
 import Logo from "./images/logo.png";
 
 
+
 class Header extends Component {
   state = {};
   render() {
     return (
-      <Jumbotron fluid className="jumbo-header">
+      <Jumbotron fluid className="jumbo-header" id="home">
       <a target="_blank" rel="noopener noreferrer" href="https://www.cosmopolitan.com/"><Image id="logo" src={Logo} /></a>
         <Image className="header-image" src={headerImage} fluid />
         <h1 className="heading">
-          <span>Cosmopolitan’s guide to climate change</span>
+          <span>This is climate change</span>
         </h1>
       </Jumbotron>
 

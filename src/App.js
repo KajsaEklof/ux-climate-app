@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, createRef } from "react";
 import Header from "./components/Header";
 import TextImage from "./components/TextImage";
 import Co2Diagram from "./components/Co2Diagram";
@@ -12,6 +12,11 @@ import icejsonData from "./components/iceData.json";
 import seajsonData from "./components/seaData.json";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
+import MenuBar from './components/MenuBar';
+import Tips from './components/Tips';
+
+
+
 
 class App extends Component {
   constructor(props) {
@@ -68,15 +73,16 @@ class App extends Component {
       seaLevel: seaData
     });
   }
+  contextRef = createRef();
 
   render() {
     const content = this.state
       .textData; /* Saves this.state.textData in a constent */
 
     return (
-      <div id="App">
+      <div id="App" ref={this.contextRef}>
         <Header />
-
+      <MenuBar context={this.contextRef}/>
         <div id="page-content">
           <div className="section-white">
             <TextImage
@@ -90,9 +96,9 @@ class App extends Component {
               border={content.introduction.border}
             />
           </div>
-          <div className="section-pink">
+          <div className="section-pink" id="co2">
             <h2 className="heading separate">
-              <span>What are CO2 Emissions Anyway?</span>
+             What are CO2 Emissions Anyway?
             </h2>
             <Co2Diagram
               CO2Emission={this.state.CO2Emission}
@@ -119,8 +125,8 @@ class App extends Component {
               altText={content.co2Clothes.altText}
             />
           </div>
-          <div className="section-white">
-            <h2 className="heading separate">
+          <div className="section-white" id="temp">
+            <h2 className="heading separate" >
               <span>Increased Emissions = Rising Temperature</span>
             </h2>
             <LineCharts
@@ -129,7 +135,7 @@ class App extends Component {
               textData={content.co2vsTempPopup}
             />
           </div>
-          <div className="section-pink">
+          <div className="section-pink" id="iceSea">
             <h2 className="heading separate">
               <span>What Happens When the Earth Gets Warmer?</span>
             </h2>
@@ -167,16 +173,17 @@ class App extends Component {
               altText={content.seaLevel.altText}
             />
           </div>
-          <div className="section-pink">
+          <div className="section-pink" id="tips">
             <h2 className="heading separate">
               <span>
-                How Much Does Your Everyday Habits Impact the Climate?
+                What You Can Do To Impact the Climate
               </span>
             </h2>
             <CompareHabits
               subHeading={content.habits.subheading}
               text={content.habits.info1}
             />
+            <Tips />
           </div>
         </div>
         <Footer />

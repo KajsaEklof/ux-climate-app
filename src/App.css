@@ -38,6 +38,9 @@ h4::selection {
   margin-right: auto;
   justify-content: center;
 }
+div.ui.card { 
+  margin: 0 auto 2em auto;
+}
 
 .main {
   margin-bottom: 5%;
@@ -86,9 +89,25 @@ h2.heading {
   font-style: normal;
   letter-spacing: 0.2em;
   line-height: 2em;
-  font-size: 3.125em;
-  color: var(--bright-pink);
+  font-size: 2.8em;
+  color: black;
   width: 90%;
+}
+
+h2.separate {
+  margin: 0% 5% 2% 5%;
+  line-height: 2em;
+  width: fit-content;
+text-align: left;
+}
+
+h2::after {
+  content: "";
+  background: url(https://assets.hearstapps.com/sites/cosmopolitan/assets/images/svgs/underline-black.ca9ae59.svg) repeat center center;
+  -webkit-filter: invert(49%) sepia(20%) saturate(7345%) hue-rotate(303deg) brightness(97%) contrast(92%);
+  filter: invert(49%) sepia(20%) saturate(7345%) hue-rotate(303deg) brightness(97%) contrast(92%);
+  display: block;
+  height: 2rem;
 }
 
 h3.heading {
@@ -121,20 +140,18 @@ h4.heading {
   margin: 0% auto 7% auto;
 }
 
-span {
+h1 span,
+h3 span {
   background-color: white;
   padding: 1%;
 }
 
-.section-white h2 span,
+
 .section-white h3 span {
   background-color: var(--light-pink);
 }
 
-h2.separate {
-  margin: 0% auto 2% auto;
-  line-height: 2em;
-}
+
 
 .headerRow {
   margin-bottom: 2%;
@@ -179,6 +196,10 @@ p {
 
 div.card-title {
   font-weight: bold;
+}
+
+.cardrow {
+  margin: 3em 0em 0em 0em ;
 }
 
 div.alignRight {
@@ -326,3 +347,38 @@ li {
   margin: 0% auto 0% auto;
   padding: 3em 0em 1em 0em;
 }
+
+.menubar {
+  background-color: white;
+  border-bottom: solid 2px var(--bright-pink);
+  padding: 0% 3%;
+}
+
+.ui.menu .item>img:not(.ui) {
+  width: 100% !important;
+}
+
+.menu-logo {
+  width: 150px;
+}
+
+a.item a {
+  color: black;
+  font-size: 130%;
+  font-weight: bold;
+  font-family: "futura-pt", sans-serif;
+  text-transform: lowercase;
+}
+
+a.item a:hover {
+  color: var(--cosmo-red);
+}
+
+.ui.secondary.pointing.menu, .ui.secondary.pointing.menu.menu { 
+  border-bottom: none;
+}
+
+.ui.secondary.pointing.menu .active.item {
+  border-width: 3px;
+}
+

@@ -12,6 +12,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
+
 const CheckBox = props => {
   return (
     <li>
@@ -86,6 +87,7 @@ export default class CompareHabits extends Component {
     );
 
     return (
+      
       <Container className="spacing">
         <div className="diagram">
           <Row>
