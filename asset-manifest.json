@@ -1,29 +1,30 @@
 {
   "files": {
-    "main.css": "/ux-climate-app/static/css/main.729d6b88.chunk.css",
-    "main.js": "/ux-climate-app/static/js/main.4f362079.chunk.js",
-    "main.js.map": "/ux-climate-app/static/js/main.4f362079.chunk.js.map",
+    "main.css": "/ux-climate-app/static/css/main.51ac0e09.chunk.css",
+    "main.js": "/ux-climate-app/static/js/main.fd8a82d3.chunk.js",
+    "main.js.map": "/ux-climate-app/static/js/main.fd8a82d3.chunk.js.map",
     "runtime-main.js": "/ux-climate-app/static/js/runtime-main.26175a23.js",
     "runtime-main.js.map": "/ux-climate-app/static/js/runtime-main.26175a23.js.map",
-    "static/css/2.e41eec26.chunk.css": "/ux-climate-app/static/css/2.e41eec26.chunk.css",
-    "static/js/2.5ae72029.chunk.js": "/ux-climate-app/static/js/2.5ae72029.chunk.js",
-    "static/js/2.5ae72029.chunk.js.map": "/ux-climate-app/static/js/2.5ae72029.chunk.js.map",
+    "static/css/2.f28be0ff.chunk.css": "/ux-climate-app/static/css/2.f28be0ff.chunk.css",
+    "static/js/2.5085d414.chunk.js": "/ux-climate-app/static/js/2.5085d414.chunk.js",
+    "static/js/2.5085d414.chunk.js.map": "/ux-climate-app/static/js/2.5085d414.chunk.js.map",
     "index.html": "/ux-climate-app/index.html",
-    "precache-manifest.4d8653118a3ca000b9a01f8d677bdf7f.js": "/ux-climate-app/precache-manifest.4d8653118a3ca000b9a01f8d677bdf7f.js",
+    "precache-manifest.4448857c8d55d3ccdc8bff7638c0bd3f.js": "/ux-climate-app/precache-manifest.4448857c8d55d3ccdc8bff7638c0bd3f.js",
     "service-worker.js": "/ux-climate-app/service-worker.js",
-    "static/css/2.e41eec26.chunk.css.map": "/ux-climate-app/static/css/2.e41eec26.chunk.css.map",
-    "static/css/main.729d6b88.chunk.css.map": "/ux-climate-app/static/css/main.729d6b88.chunk.css.map",
+    "static/css/2.f28be0ff.chunk.css.map": "/ux-climate-app/static/css/2.f28be0ff.chunk.css.map",
+    "static/css/main.51ac0e09.chunk.css.map": "/ux-climate-app/static/css/main.51ac0e09.chunk.css.map",
     "static/media/after.jpg": "/ux-climate-app/static/media/after.042bd24e.jpg",
     "static/media/before.jpg": "/ux-climate-app/static/media/before.02aeee85.jpg",
     "static/media/semantic.min.css": "/ux-climate-app/static/media/outline-icons.ef60a4f6.woff",
     "static/media/headerImage4.png": "/ux-climate-app/static/media/headerImage4.f3d20cac.png",
-    "static/media/logo.png": "/ux-climate-app/static/media/logo.32924da0.png"
+    "static/media/logo.png": "/ux-climate-app/static/media/logo.32924da0.png",
+    "static/media/logopink.png": "/ux-climate-app/static/media/logopink.61f42c57.png"
   },
   "entrypoints": [
     "static/js/runtime-main.26175a23.js",
-    "static/css/2.e41eec26.chunk.css",
-    "static/js/2.5ae72029.chunk.js",
-    "static/css/main.729d6b88.chunk.css",
-    "static/js/main.4f362079.chunk.js"
+    "static/css/2.f28be0ff.chunk.css",
+    "static/js/2.5085d414.chunk.js",
+    "static/css/main.51ac0e09.chunk.css",
+    "static/js/main.fd8a82d3.chunk.js"
   ]
 }
