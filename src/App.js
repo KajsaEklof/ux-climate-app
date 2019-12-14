@@ -103,6 +103,7 @@ class App extends Component {
             <Co2Diagram
               CO2Emission={this.state.CO2Emission}
               textData={content.co2Popup}
+              heading=" What are CO2 Emissions Anyway?"
             />
 
             <TextImage
