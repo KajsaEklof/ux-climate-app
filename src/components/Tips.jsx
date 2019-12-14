@@ -103,7 +103,7 @@ class Tips extends Component {
           <Col xs={4} className="centeredContent">
             <Card>
               <Image
-                src="https://raw.githubusercontent.com/KajsaEklof/ux-climate-app/implementation2/src/components/images/tip6.png"
+                src="https://raw.githubusercontent.com/KajsaEklof/ux-climate-app/implementation2/src/components/images/tip7.png"
                 wrapped
                 ui={false}
               />
