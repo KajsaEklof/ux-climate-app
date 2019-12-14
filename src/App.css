@@ -1,6 +1,5 @@
 /* These are CSS varibles for our colors in the application.
 Reference them by typing for example var(--light-pink) */
-
 :root {
   --bright-pink: #ef0e7c;
   --middle-pink: #f6a2b6;
@@ -12,6 +11,7 @@ Reference them by typing for example var(--light-pink) */
   --cosmo-yellow: #ffd400;
 }
 
+/* Setting background and app styles */
 #App {
   width: 100%;
   text-align: center;
@@ -23,6 +23,9 @@ Reference them by typing for example var(--light-pink) */
   margin: 0% auto 0% auto;
 }
 
+/* */
+
+/* Highlight effect on all text */
 p::selection {
   color: black;
   background: var(--middle-pink);
@@ -33,20 +36,29 @@ h4::selection {
   background: var(--middle-pink);
 }
 
+/* Centering content in containers and rows*/
 .centeredContent {
   margin-left: auto;
   margin-right: auto;
   justify-content: center;
 }
+
+/* Centering content in cards in tips component */
 div.ui.card { 
   margin: 0 auto 2em auto;
 }
 
+/* Adding spacing between components and sections */
 .main {
   margin-bottom: 5%;
 }
 
-/* This is the header image */
+.spacing {
+  width: 80%;
+  margin: 0% auto 7% auto;
+}
+
+/* Header styles */
 div.jumbotron-fluid {
   padding: 0em 0em 3em 0em;
   background-color: var(--light-blue);
@@ -82,6 +94,45 @@ div#headerHeading {
   margin: 0 auto;
 }
 
+/* Navigation Bar Styles in Menu component */
+
+.menubar {
+  background-color: white;
+  border-bottom: solid 2px var(--bright-pink);
+  padding: 0% 3%;
+}
+
+/* setting logo menu item width*/
+.ui.menu .item>img:not(.ui) {
+  width: 100% !important;
+}
+
+.menu-logo {
+  width: 150px;
+}
+
+a.item a {
+  color: black;
+  font-size: 130%;
+  font-weight: bold;
+  font-family: "futura-pt", sans-serif;
+  text-transform: lowercase;
+}
+
+a.item a:hover {
+  color: var(--cosmo-red);
+}
+
+.ui.secondary.pointing.menu, .ui.secondary.pointing.menu.menu { 
+  border-bottom: none;
+}
+
+.ui.secondary.pointing.menu .active.item {
+  border-width: 3px;
+}
+
+
+/* Heading styles */
 h2.heading {
   text-align: left;
   font-family: "futura-pt", sans-serif;
@@ -94,13 +145,15 @@ h2.heading {
   width: 90%;
 }
 
+/* h2 headings in app.js */
 h2.separate {
   margin: 0% 5% 2% 5%;
   line-height: 2em;
   width: fit-content;
-text-align: left;
+  text-align: left;
 }
 
+/* Adding the wave after headings */
 h2::after {
   content: "";
   background: url(https://assets.hearstapps.com/sites/cosmopolitan/assets/images/svgs/underline-black.ca9ae59.svg) repeat center center;
@@ -135,28 +188,23 @@ h4.heading {
   width: 100%;
 }
 
-.spacing {
-  width: 80%;
-  margin: 0% auto 7% auto;
-}
-
 h1 span,
 h3 span {
   background-color: white;
   padding: 1%;
 }
 
-
+/* Adding white backgrond on h3 headings in pink sections */
 .section-white h3 span {
   background-color: var(--light-pink);
 }
 
-
-
+/* First row in textImage component */
 .headerRow {
   margin-bottom: 2%;
 }
 
+/* Legend lables in diagrams */
 p.label-center {
   margin-left: auto;
   margin-right: auto;
@@ -165,7 +213,7 @@ p.label-center {
   text-align: center;
 }
 
-p.label-left {
+p.label-left { 
   padding: 1% 0 0 0;
   font-weight: bold;
   text-align: left;
@@ -182,6 +230,7 @@ p {
   padding: 3%;
 }
 
+/* Image width in TextImage component */
 .borderImage {
   max-width: 25vw;
   /* border-width: 0.5em;
@@ -189,11 +238,12 @@ p {
   border-color: var(--turquoise); */
 }
 
-.popup {
+/* .popup {
   text-align: right !important;
   padding: 0 5% 0 0;
-}
+} */
 
+/* Card styles in Tips component */
 div.card-title {
   font-weight: bold;
 }
@@ -202,12 +252,14 @@ div.card-title {
   margin: 3em 0em 0em 0em ;
 }
 
+/* What does this mean button row */
 div.alignRight {
   display: block;
   padding: 0 5% 0 0;
   text-align: right;
 }
 
+/* All diagram containers */
 .diagram {
   border-width: 0.6em;
   border-style: solid;
@@ -217,6 +269,7 @@ div.alignRight {
   background-color: white;
 }
 
+/* BeforeAfterSlider Container */
 .beforeAfter {
   /* border-width: 0.4em;
   border-style: solid;
@@ -224,23 +277,25 @@ div.alignRight {
   background-color: white;
   padding: 3%;
 }
-
+/* BeforeAfterSlider Slider Bar */
 div.styles_handle__33IZp {
   top: -20px;
   height: 520px;
   width: 0.3em;
   background: var(--light-turquoise);
 }
-
+/* BeforeAfterSlider p */
 .infoP {
   padding: 2%;
   margin-top: 2% !important;
 }
 
+/* CompareHabits Checkboxes */
 .checkList {
   text-align: left;
 }
 
+/* CompareHabits Component styles */ 
 .alignMiddle {
   align-items: center;
 }
@@ -250,10 +305,38 @@ div.styles_handle__33IZp {
   padding-left: 0px !important;
 }
 
+li {
+  list-style-type: none;
+}
+
+div.recharts-legend-wrapper {
+  right: 12px !important;
+}
+
+/* Styles for containers with two diagrams */
 .doubleDiagram {
   padding-top: 3%;
 }
 
+/* Legend icons in double diagrams */
+.icon-emission {
+  color: var(--bright-pink);
+}
+
+.icon-temp {
+  color: var(--turquoise);
+}
+
+.icon-ice {
+  color: var(--turquoise);
+}
+
+.icon-sea {
+  color: #207c97;
+}
+
+
+/* Button styles */
 .popupBtn {
   border-radius: 0.25rem;
 }
@@ -292,14 +375,8 @@ div.popup_inner {
   border-color: var(--bright-pink);
 }
 
-li {
-  list-style-type: none;
-}
 
-div.recharts-legend-wrapper {
-  right: 12px !important;
-}
-
+/*Footer styles*/
 .footerText {
   font-family: "futura-pt", sans-serif;
   font-weight: 700;
@@ -318,22 +395,8 @@ li {
   font-size: 105%;
 }
 
-.icon-emission {
-  color: var(--bright-pink);
-}
 
-.icon-temp {
-  color: var(--turquoise);
-}
-
-.icon-ice {
-  color: var(--turquoise);
-}
-
-.icon-sea {
-  color: #207c97;
-}
-
+/* Section styles */
 .section-white {
   background-color: white;
   width: 100%;
@@ -348,37 +411,5 @@ li {
   padding: 3em 0em 1em 0em;
 }
 
-.menubar {
-  background-color: white;
-  border-bottom: solid 2px var(--bright-pink);
-  padding: 0% 3%;
-}
 
-.ui.menu .item>img:not(.ui) {
-  width: 100% !important;
-}
-
-.menu-logo {
-  width: 150px;
-}
-
-a.item a {
-  color: black;
-  font-size: 130%;
-  font-weight: bold;
-  font-family: "futura-pt", sans-serif;
-  text-transform: lowercase;
-}
-
-a.item a:hover {
-  color: var(--cosmo-red);
-}
-
-.ui.secondary.pointing.menu, .ui.secondary.pointing.menu.menu { 
-  border-bottom: none;
-}
-
-.ui.secondary.pointing.menu .active.item {
-  border-width: 3px;
-}
 
