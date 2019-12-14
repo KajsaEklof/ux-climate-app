@@ -69,7 +69,7 @@ class Tips extends Component {
           <Col xs={4} className="centeredContent">
             <Card>
               <Image
-                src="https://react.semantic-ui.com/images/avatar/large/matthew.png"
+                src="https://raw.githubusercontent.com/KajsaEklof/ux-climate-app/implementation2/src/components/images/tip4.png"
                 wrapped
                 ui={false}
               />
@@ -86,7 +86,7 @@ class Tips extends Component {
           <Col xs={4} className="centeredContent">
             <Card>
               <Image
-                src="https://react.semantic-ui.com/images/avatar/large/matthew.png"
+                src="https://raw.githubusercontent.com/KajsaEklof/ux-climate-app/implementation2/src/components/images/tip5.png"
                 wrapped
                 ui={false}
               />
@@ -103,7 +103,7 @@ class Tips extends Component {
           <Col xs={4} className="centeredContent">
             <Card>
               <Image
-                src="https://react.semantic-ui.com/images/avatar/large/matthew.png"
+                src="https://raw.githubusercontent.com/KajsaEklof/ux-climate-app/implementation2/src/components/images/tip6.png"
                 wrapped
                 ui={false}
               />
