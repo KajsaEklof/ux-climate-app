@@ -13,9 +13,26 @@ class Tips extends Component {
         </h3>
         <Row className="cardrow">
           <Col xs={4} className="centeredContent">
+          <Card>
+              <Image
+                src="https://raw.githubusercontent.com/KajsaEklof/ux-climate-app/implementation2/src/components/images/tipsImage1.png"
+                wrapped
+                ui={false}
+              />
+              <Card.Content>
+                <Card.Header> Recycling saves emissions</Card.Header>
+                <Card.Description>
+                  Recycling 1 kg of paper instead of landfilling it avoids
+                  almost 1 kg of CO2 emissions, as well as methane emissions.
+                </Card.Description>
+              </Card.Content>
+            </Card>
+          </Col>
+          <Col xs={4} className="centeredContent">
+            
             <Card>
               <Image
-                src="https://react.semantic-ui.com/images/avatar/large/matthew.png"
+                src="https://raw.githubusercontent.com/KajsaEklof/ux-climate-app/implementation2/src/components/images/tipsImage2.png"
                 wrapped
                 ui={false}
               />
@@ -33,24 +50,7 @@ class Tips extends Component {
           <Col xs={4} className="centeredContent">
             <Card>
               <Image
-                src="https://react.semantic-ui.com/images/avatar/large/matthew.png"
-                wrapped
-                ui={false}
-              />
-              <Card.Content>
-                <Card.Header> Recycling saves emissions</Card.Header>
-
-                <Card.Description>
-                  Recycling 1 kg of paper instead of landfilling it avoids
-                  almost 1 kg of CO2 emissions, as well as methane emissions.
-                </Card.Description>
-              </Card.Content>
-            </Card>
-          </Col>
-          <Col xs={4} className="centeredContent">
-            <Card>
-              <Image
-                src="https://react.semantic-ui.com/images/avatar/large/matthew.png"
+                src="https://raw.githubusercontent.com/KajsaEklof/ux-climate-app/implementation2/src/components/images/tipsImage3.png"
                 wrapped
                 ui={false}
               />
