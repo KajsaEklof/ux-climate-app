@@ -97,13 +97,13 @@ class App extends Component {
             />
           </div>
           <div className="section-pink" id="co2">
-            <h2 className="heading separate">
+           {/*} <h2 className="heading separate">
              What are CO2 Emissions Anyway?
-            </h2>
+    </h2>*/}
             <Co2Diagram
               CO2Emission={this.state.CO2Emission}
               textData={content.co2Popup}
-              heading=" What are CO2 Emissions Anyway?"
+              heading="What are CO2 Emissions Anyway?"
             />
 
             <TextImage
@@ -128,18 +128,19 @@ class App extends Component {
           </div>
           <div className="section-white" id="temp">
             <h2 className="heading separate" >
-              <span>Increased Emissions = Rising Temperature</span>
+              {/*<span>Increased Emissions = Rising Temperature</span>*/}
             </h2>
             <LineCharts
               CO2Emission={this.state.CO2Emission}
               globalTemp={this.state.globalTemp}
               textData={content.co2vsTempPopup}
+              heading="Increased Emissions = Rising Temperature"
             />
           </div>
           <div className="section-pink" id="iceSea">
             <h2 className="heading separate">
               <span>What Happens When the Earth Gets Warmer?</span>
-            </h2>
+  </h2>
             <TextImage
               headingStyle={3}
               layout={1}
@@ -155,13 +156,14 @@ class App extends Component {
             />
           </div>
           <div className="section-white">
-            <h2 className="heading separate">
+            {/*<h2 className="heading separate">
               <span>When The Glaciers Melt... Sea Levels Rise</span>
-            </h2>
+  </h2>*/}
             <AreaCharts
               seaLevel={this.state.seaLevel}
               iceVolume={this.state.iceVolume}
               textData={content.icevsSeaPopup}
+              heading="When The Glaciers Melt... Sea Levels Rise"
             />
 
             <TextImage
@@ -175,14 +177,15 @@ class App extends Component {
             />
           </div>
           <div className="section-pink" id="tips">
-            <h2 className="heading separate">
+            {/*<h2 className="heading separate">
               <span>
                 What You Can Do To Impact the Climate
               </span>
-            </h2>
+</h2>*/}
             <CompareHabits
               subHeading={content.habits.subheading}
               text={content.habits.info1}
+              heading=" What You Can Do To Impact the Climate"
             />
             <Tips />
           </div>

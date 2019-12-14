@@ -89,6 +89,9 @@ export default class CompareHabits extends Component {
     return (
       
       <Container className="spacing">
+        <Row>
+            <h2 className="heading separate">{this.props.heading}</h2>
+          </Row>
         <div className="diagram">
           <Row>
             <Col xs={6}>

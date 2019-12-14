@@ -63,6 +63,9 @@ class AreaCharts extends Component {
           {/* <h3 className="heading">
             <span>{this.props.heading}</span>
         </h3> */}
+        <Row>
+            <h2 className="heading separate">{this.props.heading}</h2>
+          </Row>
           <div className="diagram">
             <Row className="alignRight">
               <Button
