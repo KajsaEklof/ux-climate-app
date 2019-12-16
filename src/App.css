@@ -70,7 +70,7 @@ img.header-image {
 }
 
 #logo {
-  width: 12%;
+  width: 9%;
   position: absolute;
   margin: 2%;
 }
@@ -98,7 +98,7 @@ div#headerHeading {
 
 .menubar {
   background-color: white;
-  border-bottom: solid 2px var(--bright-pink);
+  border-bottom: solid 1px var(--bright-pink);
   padding: 0% 3%;
 }
 

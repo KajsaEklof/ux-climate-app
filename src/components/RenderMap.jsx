@@ -12,11 +12,11 @@ function RenderMap() {
     <div className="spacing">
       <Container className="container main">
         <Row className="headerRow">
-          <Col className="container" xs={6}>
+          
             <h3 className="heading">
               <span>Consequences Of Rising Seas</span>
             </h3>
-          </Col>
+          
           <Col className="container" xs={6}></Col>
         </Row>
         <Row>
