@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e29c186ed92523e166a6478872343bd6",
+    "revision": "09ec4a2645004c415308ac9358c9fc1e",
     "url": "/ux-climate-app/index.html"
   },
   {
-    "revision": "c3f8d6178a9be5044726",
+    "revision": "0d4b848c5e50f3835aab",
     "url": "/ux-climate-app/static/css/2.1ed69a66.chunk.css"
   },
   {
-    "revision": "0f8326e292709b939ddc",
+    "revision": "776fd1e7223bba76fc9b",
     "url": "/ux-climate-app/static/css/main.6cb2d28d.chunk.css"
   },
   {
-    "revision": "c3f8d6178a9be5044726",
-    "url": "/ux-climate-app/static/js/2.32b64f07.chunk.js"
+    "revision": "0d4b848c5e50f3835aab",
+    "url": "/ux-climate-app/static/js/2.68a1fe7f.chunk.js"
   },
   {
-    "revision": "0f8326e292709b939ddc",
-    "url": "/ux-climate-app/static/js/main.e82edfa7.chunk.js"
+    "revision": "776fd1e7223bba76fc9b",
+    "url": "/ux-climate-app/static/js/main.c0b6911c.chunk.js"
   },
   {
     "revision": "9cee6fe5088ffaac73d4",

@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/ux-climate-app/static/css/main.6cb2d28d.chunk.css",
-    "main.js": "/ux-climate-app/static/js/main.e82edfa7.chunk.js",
-    "main.js.map": "/ux-climate-app/static/js/main.e82edfa7.chunk.js.map",
+    "main.js": "/ux-climate-app/static/js/main.c0b6911c.chunk.js",
+    "main.js.map": "/ux-climate-app/static/js/main.c0b6911c.chunk.js.map",
     "runtime-main.js": "/ux-climate-app/static/js/runtime-main.26175a23.js",
     "runtime-main.js.map": "/ux-climate-app/static/js/runtime-main.26175a23.js.map",
     "static/css/2.1ed69a66.chunk.css": "/ux-climate-app/static/css/2.1ed69a66.chunk.css",
-    "static/js/2.32b64f07.chunk.js": "/ux-climate-app/static/js/2.32b64f07.chunk.js",
-    "static/js/2.32b64f07.chunk.js.map": "/ux-climate-app/static/js/2.32b64f07.chunk.js.map",
+    "static/js/2.68a1fe7f.chunk.js": "/ux-climate-app/static/js/2.68a1fe7f.chunk.js",
+    "static/js/2.68a1fe7f.chunk.js.map": "/ux-climate-app/static/js/2.68a1fe7f.chunk.js.map",
     "index.html": "/ux-climate-app/index.html",
-    "precache-manifest.c50c569c6fbe243c30bf8724fcb366e6.js": "/ux-climate-app/precache-manifest.c50c569c6fbe243c30bf8724fcb366e6.js",
+    "precache-manifest.0f944feb5c55c7cf8d350baa86a2afce.js": "/ux-climate-app/precache-manifest.0f944feb5c55c7cf8d350baa86a2afce.js",
     "service-worker.js": "/ux-climate-app/service-worker.js",
     "static/css/2.1ed69a66.chunk.css.map": "/ux-climate-app/static/css/2.1ed69a66.chunk.css.map",
     "static/css/main.6cb2d28d.chunk.css.map": "/ux-climate-app/static/css/main.6cb2d28d.chunk.css.map",
@@ -23,8 +23,8 @@
   "entrypoints": [
     "static/js/runtime-main.26175a23.js",
     "static/css/2.1ed69a66.chunk.css",
-    "static/js/2.32b64f07.chunk.js",
+    "static/js/2.68a1fe7f.chunk.js",
     "static/css/main.6cb2d28d.chunk.css",
-    "static/js/main.e82edfa7.chunk.js"
+    "static/js/main.c0b6911c.chunk.js"
   ]
 }
