@@ -136,7 +136,7 @@ class AreaCharts extends Component {
                   <Icon name="certificate" className="icon-ice" />
                   Average Mass Of Measured Glacier
                 </p>
-                <p className="description">
+                <p className="chartDescription">
                   * In this diagram negative values indicate a net loss of ice and snow compared
                   with the base year of 1945. For consistency, measurements are
                   in meters of water equivalent, which represent changes in the
@@ -148,7 +148,7 @@ class AreaCharts extends Component {
                   <Icon name="certificate" className="icon-sea" />
                   Average Global Sea Level In mm
                 </p>
-                <p className="description">
+                <p className="chartDescription">
                  * This diagram shows cumulative changes in sea level for the
                   world’s oceans since 1880, based on a combination of long-term
                   tide gauge measurements and recent satellite measurements.
