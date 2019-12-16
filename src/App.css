@@ -44,7 +44,7 @@ h4::selection {
 }
 
 /* Centering content in cards in tips component */
-div.ui.card { 
+div.ui.card {
   margin: 0 auto 2em auto;
 }
 
@@ -103,7 +103,7 @@ div#headerHeading {
 }
 
 /* setting logo menu item width*/
-.ui.menu .item>img:not(.ui) {
+.ui.menu .item > img:not(.ui) {
   width: 100% !important;
 }
 
@@ -123,14 +123,14 @@ a.item a:hover {
   color: var(--cosmo-red);
 }
 
-.ui.secondary.pointing.menu, .ui.secondary.pointing.menu.menu { 
+.ui.secondary.pointing.menu,
+.ui.secondary.pointing.menu.menu {
   border-bottom: none;
 }
 
 .ui.secondary.pointing.menu .active.item {
   border-width: 3px;
 }
-
 
 /* Heading styles */
 h2.heading {
@@ -147,7 +147,7 @@ h2.heading {
 
 /* h2 headings in app.js */
 h2.separate {
-  margin: 0% 5% 2% 5%;
+  margin: 0% 0% 2% 0%;
   line-height: 2em;
   width: fit-content;
   text-align: left;
@@ -156,9 +156,12 @@ h2.separate {
 /* Adding the wave after headings */
 h2::after {
   content: "";
-  background: url(https://assets.hearstapps.com/sites/cosmopolitan/assets/images/svgs/underline-black.ca9ae59.svg) repeat center center;
-  -webkit-filter: invert(49%) sepia(20%) saturate(7345%) hue-rotate(303deg) brightness(97%) contrast(92%);
-  filter: invert(49%) sepia(20%) saturate(7345%) hue-rotate(303deg) brightness(97%) contrast(92%);
+  background: url(https://assets.hearstapps.com/sites/cosmopolitan/assets/images/svgs/underline-black.ca9ae59.svg)
+    repeat center center;
+  -webkit-filter: invert(49%) sepia(20%) saturate(7345%) hue-rotate(303deg)
+    brightness(97%) contrast(92%);
+  filter: invert(49%) sepia(20%) saturate(7345%) hue-rotate(303deg)
+    brightness(97%) contrast(92%);
   display: block;
   height: 2rem;
 }
@@ -213,7 +216,7 @@ p.label-center {
   text-align: center;
 }
 
-p.label-left { 
+p.label-left {
   padding: 1% 0 0 0;
   font-weight: bold;
   text-align: left;
@@ -249,7 +252,7 @@ div.card-title {
 }
 
 .cardrow {
-  margin: 3em 0em 0em 0em ;
+  margin: 3em 0em 0em 0em;
 }
 
 /* What does this mean button row */
@@ -295,7 +298,7 @@ div.styles_handle__33IZp {
   text-align: left;
 }
 
-/* CompareHabits Component styles */ 
+/* CompareHabits Component styles */
 .alignMiddle {
   align-items: center;
 }
@@ -334,7 +337,6 @@ div.recharts-legend-wrapper {
 .icon-sea {
   color: #207c97;
 }
-
 
 /* Button styles */
 .popupBtn {
@@ -375,7 +377,6 @@ div.popup_inner {
   border-color: var(--bright-pink);
 }
 
-
 /*Footer styles*/
 .footerText {
   font-family: "futura-pt", sans-serif;
@@ -395,7 +396,6 @@ li {
   font-size: 105%;
 }
 
-
 /* Section styles */
 .section-white {
   background-color: white;
@@ -411,5 +411,6 @@ li {
   padding: 3em 0em 1em 0em;
 }
 
-
-
+.mapText {
+  color: var(--bright-pink);
+}

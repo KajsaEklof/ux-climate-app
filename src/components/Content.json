@@ -34,13 +34,6 @@
   "icevsSea": {
     "heading": "When the Glaciers Melt... Sea Levels Rise"
   },
-  "seaLevel": {
-    "heading": "Consequences of Rising Seas",
-    "info1": "Even a small change in sea levels can have a disastrous effect on those living close to the sea but also everyone else. Higher sea levels can bring on more dangerous hurricanes and typhoons that move slower than usual and drop more rain. There are already millions of people around the world who are at risk of floods and many are being forced to move to higher ground. Already people on the coast of Wales in Great Britain are at risk of becoming climate refugees in the next few years, and most likely not the last. You might think this is only a problem in countries far away but this is a problem which will have consequences all over the world.",
-    "info2": "Rising sea levels could impact your internet access since much of our communications infrastructure is in places where the sea is rising!",
-    "picture": "https://raw.githubusercontent.com/KajsaEklof/ux-climate-app/implementation1/src/components/images/map.png",
-    "altText": "World map with areas higlighted for risk of flooding."
-  },
   "co2Popup": {
     "cardTitle": "CO2 = Carbon Dioxide.",
     "cardText1": "This diagram shows how much carbon dioxide is emitted using various fossil fuels. It’s difficult to understand what the different fuels are, but one thing becomes quite clear. Emissions are increasing. Increased greenhouse gas emissions lead to an enhanced greenhouse effect. You have heard that. But what does that mean?",

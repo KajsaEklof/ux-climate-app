@@ -1,4 +1,5 @@
 import React, { Component, createRef } from "react";
+import RenderMap from "./components/RenderMap";
 import Header from "./components/Header";
 import TextImage from "./components/TextImage";
 import Co2Diagram from "./components/Co2Diagram";
@@ -12,11 +13,10 @@ import icejsonData from "./components/iceData.json";
 import seajsonData from "./components/seaData.json";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-import MenuBar from './components/MenuBar';
-import Tips from './components/Tips';
-
-
-
+import MenuBar from "./components/MenuBar";
+import Tips from "./components/Tips";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
 
 class App extends Component {
   constructor(props) {
@@ -26,7 +26,8 @@ class App extends Component {
       CO2Emission: [],
       globalTemp: [],
       seaLevel: [],
-      iceVolume: []
+      iceVolume: [],
+      mapContent: ""
     };
   }
 
@@ -78,11 +79,12 @@ class App extends Component {
   render() {
     const content = this.state
       .textData; /* Saves this.state.textData in a constent */
+    /*const [mapContent, setContent] = useState("");*/
 
     return (
       <div id="App" ref={this.contextRef}>
         <Header />
-      <MenuBar context={this.contextRef}/>
+        <MenuBar context={this.contextRef} />
         <div id="page-content">
           <div className="section-white">
             <TextImage
@@ -97,9 +99,6 @@ class App extends Component {
             />
           </div>
           <div className="section-pink" id="co2">
-           {/*} <h2 className="heading separate">
-             What are CO2 Emissions Anyway?
-    </h2>*/}
             <Co2Diagram
               CO2Emission={this.state.CO2Emission}
               textData={content.co2Popup}
@@ -127,9 +126,6 @@ class App extends Component {
             />
           </div>
           <div className="section-white" id="temp">
-            <h2 className="heading separate" >
-              {/*<span>Increased Emissions = Rising Temperature</span>*/}
-            </h2>
             <LineCharts
               CO2Emission={this.state.CO2Emission}
               globalTemp={this.state.globalTemp}
@@ -137,10 +133,14 @@ class App extends Component {
               heading="Increased Emissions = Rising Temperature"
             />
           </div>
-          <div className="section-pink" id="iceSea">
-            <h2 className="heading separate">
-              <span>What Happens When the Earth Gets Warmer?</span>
-  </h2>
+          <div className="section-pink" id="ice">
+            <Container className="container main">
+              <Row>
+                <h2 className="heading separate">
+                  <span>What Happens When the Earth Gets Warmer?</span>
+                </h2>
+              </Row>
+            </Container>
             <TextImage
               headingStyle={3}
               layout={1}
@@ -155,10 +155,7 @@ class App extends Component {
               text={content.beforeAfter.info1}
             />
           </div>
-          <div className="section-white">
-            {/*<h2 className="heading separate">
-              <span>When The Glaciers Melt... Sea Levels Rise</span>
-  </h2>*/}
+          <div className="section-white" id="sea">
             <AreaCharts
               seaLevel={this.state.seaLevel}
               iceVolume={this.state.iceVolume}
@@ -166,22 +163,9 @@ class App extends Component {
               heading="When The Glaciers Melt... Sea Levels Rise"
             />
 
-            <TextImage
-              headingStyle={3}
-              layout={2}
-              heading={content.seaLevel.heading}
-              textData1={content.seaLevel.info1}
-              textData2={content.seaLevel.info2}
-              picture={content.seaLevel.picture}
-              altText={content.seaLevel.altText}
-            />
+            <RenderMap />
           </div>
           <div className="section-pink" id="tips">
-            {/*<h2 className="heading separate">
-              <span>
-                What You Can Do To Impact the Climate
-              </span>
-</h2>*/}
             <CompareHabits
               subHeading={content.habits.subheading}
               text={content.habits.info1}
