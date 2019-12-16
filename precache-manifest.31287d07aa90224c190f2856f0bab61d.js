@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "09ec4a2645004c415308ac9358c9fc1e",
+    "revision": "2d06876d3dffe79fdfda68afb52be0a8",
     "url": "/ux-climate-app/index.html"
   },
   {
-    "revision": "0d4b848c5e50f3835aab",
+    "revision": "42fe4b1c4b6c6efa8245",
     "url": "/ux-climate-app/static/css/2.1ed69a66.chunk.css"
   },
   {
-    "revision": "776fd1e7223bba76fc9b",
-    "url": "/ux-climate-app/static/css/main.6cb2d28d.chunk.css"
+    "revision": "d15dd4bc6b7fa4d09d3c",
+    "url": "/ux-climate-app/static/css/main.4786892c.chunk.css"
   },
   {
-    "revision": "0d4b848c5e50f3835aab",
-    "url": "/ux-climate-app/static/js/2.68a1fe7f.chunk.js"
+    "revision": "42fe4b1c4b6c6efa8245",
+    "url": "/ux-climate-app/static/js/2.22eafef3.chunk.js"
   },
   {
-    "revision": "776fd1e7223bba76fc9b",
-    "url": "/ux-climate-app/static/js/main.c0b6911c.chunk.js"
+    "revision": "d15dd4bc6b7fa4d09d3c",
+    "url": "/ux-climate-app/static/js/main.42ee9162.chunk.js"
   },
   {
     "revision": "9cee6fe5088ffaac73d4",
