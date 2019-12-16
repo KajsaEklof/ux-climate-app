@@ -9,8 +9,10 @@ import BeforeAfterSlider from "./components/BeforeAfterSlider";
 import CompareHabits from "./components/CompareHabits";
 import Footer from "./components/Footer";
 import data from "./components/Content.json"; /*This is the json file with all our content and copy text for the applicaiton*/
-import icejsonData from "./components/iceData.json";
-import seajsonData from "./components/seaData.json";
+import icejsonData from "./Data/iceData.json";
+import seajsonData from "./Data/seaData.json";
+import co2Data from "./Data/co2Data.json";
+import tempjsonData from "./Data/tempData.json";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import MenuBar from "./components/MenuBar";
@@ -32,49 +34,58 @@ class App extends Component {
   }
 
   async componentDidMount() {
-    const url =
-      "https://my.api.mockaroo.com/co2.json?key=8eb9e6f0"; /* This is the Co2 Emission API */
-    const response = await fetch(url);
-    const data = await response.json();
+    // const url =
+    //   "https://my.api.mockaroo.com/co2.json?key=8eb9e6f0"; /* This is the Co2 Emission API */
+    // const response = await fetch(url);
+    // const data = await response.json();
 
-    const url2 =
-      "https://my.api.mockaroo.com/temp.json?key=8eb9e6f0"; /* This is the Global Temperature API */
-    const response2 = await fetch(url2);
-    const data2 = await response2.json();
+    // const url2 =
+    //   "https://my.api.mockaroo.com/temp.json?key=8eb9e6f0"; /* This is the Global Temperature API */
+    // const response2 = await fetch(url2);
+    // const data2 = await response2.json();
 
     /* const url3 = "https://my.api.mockaroo.com/glaciersize.json?key=8eb9e6f0";
     const response3 = await fetch(url3); */
-    const data3 = seajsonData;
 
     /* const url4 = "https://my.api.mockaroo.com/sealevel.json?key=8eb9e6f0"; 
     const response4 = await fetch(url4); */
-    const data4 = icejsonData;
 
-    const co2data = data.filter(x => x.Year > 1944 && x.Year < 2014);
+    // Importing co2 json data and filtering on year
+    const emissions = co2Data;
+    const emissionData = emissions.filter(x => x.Year > 1944 && x.Year < 2014);
 
-    const yearFilteredTempData = data2.filter(
-      x => x.Year > 1944 && x.Year < 2014
-    );
-    const tempData = yearFilteredTempData.filter(p => p.Source === "GISTEMP"); //only rows that have source GISTEMP
+    // Importing Glacier data from json and filtering
+    const iceData = icejsonData;
+    const glacierData = iceData.filter(x => x.Year > 1989 && x.Year < 2014);
 
-    const seaData = data3.filter(
+    //Importing Sea level data from json and filtering
+    const seaDataJson = seajsonData;
+    const seaData = seaDataJson.filter(
       x =>
         Date.parse(x.Time) > Date.parse("1990-01-01") &&
         Date.parse(x.Time) < Date.parse("2014-01-01")
     );
-
-    const iceData = data4.filter(x => x.Year > 1989 && x.Year < 2014);
-
     seaData.map(x => (x.Time = x.Time.substring(0, 4)));
 
+    // Importing temperature json data and filtering on year
+    const temperatureData = tempjsonData;
+    const yearFilteredTempData = temperatureData.filter(
+      x => x.Year > 1944 && x.Year < 2014
+    );
+    const tempData = yearFilteredTempData.filter(p => p.Source === "GISTEMP"); //only rows that have source GISTEMP
+
+    // Setting state with all filtered data
     this.setState({
       globalTemp: tempData,
-      CO2Emission: co2data,
-      iceVolume: iceData,
+      CO2Emission: emissionData,
+      iceVolume: glacierData,
       seaLevel: seaData
     });
   }
+
+  // Createting a reference for the menu bar 
   contextRef = createRef();
+ 
 
   render() {
     const content = this.state
