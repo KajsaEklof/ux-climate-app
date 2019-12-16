@@ -12,7 +12,8 @@ import {
   XAxis,
   YAxis,
   CartesianGrid,
-  Tooltip
+  Tooltip,
+  ReferenceLine
 } from "recharts";
 
 class LineCharts extends Component {
@@ -128,13 +129,14 @@ class LineCharts extends Component {
                     stroke="#00A99D"
                     activeDot={{ r: 8 }}
                   />
+                  <ReferenceLine x="Page C" stroke="red" label="Max PV PAGE"/>
+                  <ReferenceLine y={1.5} label="Paris Agreement" stroke="red"/>
                 </LineChart>
               </Col>
             </Row>
             <Row className="centeredContent">
               <Col className="container" xs={6}>
                 <p className="label-center">
-                  {" "}
                   <Icon name="certificate" className="icon-emission" />
                   Million Metric Tons of CO2 Emission
                 </p>
@@ -142,7 +144,6 @@ class LineCharts extends Component {
 
               <Col className="container" xs={6}>
                 <p className="label-center">
-                  {" "}
                   <Icon name="certificate" className="icon-temp" />
                   Global Average Temperature{" "}
                 </p>
