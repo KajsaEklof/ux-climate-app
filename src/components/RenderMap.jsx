@@ -12,11 +12,10 @@ function RenderMap() {
     <div className="spacing">
       <Container className="container main">
         <Row className="headerRow">
-          
-            <h3 className="heading">
-              <span>Consequences Of Rising Seas</span>
-            </h3>
-          
+          <h3 className="heading">
+            <span>Consequences Of Rising Seas</span>
+          </h3>
+
           <Col className="container" xs={6}></Col>
         </Row>
         <Row>
@@ -47,7 +46,15 @@ function RenderMap() {
               our communications infrastructure is in places where the sea is
               rising!
             </p>
-            <p className="mapText">The areas marked on the map...</p>
+            <p className="mapText">
+              The areas marked on the map are some of the most vulnerable in the
+              world that will be affected by rising sea levels. All coastal
+              communities across the world will be affected, and some will get
+              hit harder than others. More than 90 coastal cities in the US are
+              already experiencing flooding and three-quarters of all European
+              cities will be at risk, especially in the Netherlands, Spain and
+              Italy.{" "}
+            </p>
           </Col>
         </Row>
       </Container>
