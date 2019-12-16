@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c2b4f132d9ef8c5ceaf4d94d207d2c4a",
+    "revision": "e29c186ed92523e166a6478872343bd6",
     "url": "/ux-climate-app/index.html"
   },
   {
-    "revision": "9614a3762acac3567150",
-    "url": "/ux-climate-app/static/css/2.f28be0ff.chunk.css"
+    "revision": "c3f8d6178a9be5044726",
+    "url": "/ux-climate-app/static/css/2.1ed69a66.chunk.css"
   },
   {
-    "revision": "322999e048a5e678a1fe",
-    "url": "/ux-climate-app/static/css/main.51ac0e09.chunk.css"
+    "revision": "0f8326e292709b939ddc",
+    "url": "/ux-climate-app/static/css/main.6cb2d28d.chunk.css"
   },
   {
-    "revision": "9614a3762acac3567150",
-    "url": "/ux-climate-app/static/js/2.5085d414.chunk.js"
+    "revision": "c3f8d6178a9be5044726",
+    "url": "/ux-climate-app/static/js/2.32b64f07.chunk.js"
   },
   {
-    "revision": "322999e048a5e678a1fe",
-    "url": "/ux-climate-app/static/js/main.fd8a82d3.chunk.js"
+    "revision": "0f8326e292709b939ddc",
+    "url": "/ux-climate-app/static/js/main.e82edfa7.chunk.js"
   },
   {
     "revision": "9cee6fe5088ffaac73d4",
@@ -56,8 +56,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ux-climate-app/static/media/flags.9c74e172.png"
   },
   {
-    "revision": "f3d20cacc1fd898a7f1c3ca35fdd5651",
-    "url": "/ux-climate-app/static/media/headerImage4.f3d20cac.png"
+    "revision": "4e0af23e640d88b8239ba8d8bff642d3",
+    "url": "/ux-climate-app/static/media/headerbackground.4e0af23e.png"
   },
   {
     "revision": "0ab54153eeeca0ce03978cc463b257f7",
