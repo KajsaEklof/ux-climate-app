@@ -17,8 +17,12 @@ export default class MenuBar extends Component {
           <Menu pointing secondary>
             <Menu.Item href="#home" className="menu-logo">
               <AnchorLink href="#home">
-                {" "}
-                <img src={Logo} height="100%" width="100%" />
+                <img
+                  src={Logo}
+                  height="100%"
+                  width="100%"
+                  alt="Cosmopolitan's logo"
+                />
               </AnchorLink>
             </Menu.Item>
 

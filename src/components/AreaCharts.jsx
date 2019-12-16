@@ -63,7 +63,7 @@ class AreaCharts extends Component {
           {/* <h3 className="heading">
             <span>{this.props.heading}</span>
         </h3> */}
-        <Row>
+          <Row>
             <h2 className="heading separate">{this.props.heading}</h2>
           </Row>
           <div className="diagram">
@@ -133,16 +133,25 @@ class AreaCharts extends Component {
             <Row>
               <Col className="container" xs={6}>
                 <p className="label-center">
-                  {" "}
                   <Icon name="certificate" className="icon-ice" />
-                  Average Glacier Thickness
+                  Average Mass Of Measured Glacier
+                </p>
+                <p className="description">
+                  * In this diagram negative values indicate a net loss of ice and snow compared
+                  with the base year of 1945. For consistency, measurements are
+                  in meters of water equivalent, which represent changes in the
+                  average thickness of a glacier.
                 </p>
               </Col>
               <Col className="container" xs={6}>
                 <p className="label-center">
-                  {" "}
                   <Icon name="certificate" className="icon-sea" />
-                  Average Sea Level
+                  Average Global Sea Level In mm
+                </p>
+                <p className="description">
+                 * This diagram shows cumulative changes in sea level for the
+                  world’s oceans since 1880, based on a combination of long-term
+                  tide gauge measurements and recent satellite measurements.
                 </p>
               </Col>
             </Row>
