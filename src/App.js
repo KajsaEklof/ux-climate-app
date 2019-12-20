@@ -1,24 +1,25 @@
 import React, { Component, createRef } from "react";
-import RenderMap from "./components/RenderMap";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
 import Header from "./components/Header";
-import TextImage from "./components/TextImage";
-import Co2Diagram from "./components/Co2Diagram";
-import LineCharts from "./components/LineCharts";
-import AreaCharts from "./components/AreaCharts";
-import BeforeAfterSlider from "./components/BeforeAfterSlider";
-import CompareHabits from "./components/CompareHabits";
-import Footer from "./components/Footer";
+import MenuBar from "./components/MenuBar";
 import data from "./components/Content.json"; /*This is the json file with all our content and copy text for the applicaiton*/
 import icejsonData from "./Data/iceData.json";
 import seajsonData from "./Data/seaData.json";
 import co2Data from "./Data/co2Data.json";
 import tempjsonData from "./Data/tempData.json";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "./App.css";
-import MenuBar from "./components/MenuBar";
+import TextImage from "./components/TextImage";
+import Co2Diagram from "./components/Co2Diagram";
+import LineCharts from "./components/LineCharts";
+import AreaCharts from "./components/AreaCharts";
+import BeforeAfterSlider from "./components/BeforeAfterSlider";
+import RenderMap from "./components/RenderMap";
+import CompareHabits from "./components/CompareHabits";
+
 import Tips from "./components/Tips";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
+import Footer from "./components/Footer";
 
 class App extends Component {
   constructor(props) {
@@ -174,7 +175,7 @@ class App extends Component {
               heading="When The Glaciers Melt... Sea Levels Rise"
             />
 
-            <RenderMap />
+          <RenderMap />
           </div>
           <div className="section-pink" id="tips">
             <CompareHabits

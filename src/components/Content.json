@@ -4,28 +4,28 @@
     "info1": "The earth's average temperature is rising, and so is the sea level that threatens to drown parts of the planet. Forests are burning and everywhere we see pictures of dying polar bears… Are you also starting to get frightened by recent climate change updates? And do you want to stop this negative trend?",
     "info2": "In this article, we will explain a few different concepts in climate change and give you tips on concrete changes you can make for a better climate yourself. Where to start, you wonder and when? Here and now, we say!",
     "picture": "https://raw.githubusercontent.com/KajsaEklof/ux-climate-app/implementation2/src/components/images/introImage2.png",
-    "altText": "Three women talk about climate change."
+    "altText": "A young woman thinking about climate change infront of a chimney emitting emissions."
   },
   "co2Food": {
     "heading": "Choose Wisely!",
     "info1": "Eating beef 1-2 times a week contributes to 604 kg of greenhouse gas emissions per year. That's more than four times as much as choosing chicken. And guess what, vegetarian options like beans have almost no climate impact at all! How about a varied, well thought out diet?",
     "info2": "...and what about wine? 3-5 glasses of wine per week gives half as much climate impact as the same amount of beer. In addition, wine has a lower climate impact than coffee. Skip the extra cup of coffee, and have a glass of wine on Friday! PS. Don't forget to choose organic.",
     "picture": "https://raw.githubusercontent.com/KajsaEklof/ux-climate-app/implementation2/src/components/images/foodImage.png",
-    "altText": "A woman thinking about food."
+    "altText": "Illustration of the environmental impact wine has on the climate"
   },
   "co2Clothes": {
     "heading": "Your T-shirt = 2700 Liters of Water",
     "info1": "Clothes contain materials that require large resources to produce. They have gone through several manufacturing steps and often crossed several countries. The cotton in a t-shirt, for example, may have been grown in India, the fabric is knit in Pakistan, dyed in Bangladesh and sewn up in Turkey before finally reaching the store in England.",
     "info2": "…and on top of that, 2700 liters of water are needed to make one cotton shirt. So next time you might consider buying your t-shirt second hand instead…",
     "picture": "https://raw.githubusercontent.com/KajsaEklof/ux-climate-app/implementation2/src/components/images/clothesImage.png",
-    "altText": "A woman points at a t-shirt, a waterdrop and world wide shipment."
+    "altText": "Illustration of the environmental impact the clothes industry has on the climate"
   },
   "glaciers": {
     "heading": "Warmer Earth = Less Ice",
     "info1": "Glaciers are melting five times faster today than they did in the 1960s. The cause is attributed to global warming in a new study at the glacier research center “World Glacier Monitoring Service”. But what happens when the ice melts?",
     "info2": "When temperatures rise and ice melts, more water flows into the sea from glaciers and ice caps, and ocean water warms and expands in volume. This combination of effects has played a major role in raising average global sea level between 10 and 20 centimeters in the past hundred years. At least 30 glaciers have already disappeared, and more are about to melt. The question is, how many are left in another 100 years if we do not act now?",
     "picture": "https://raw.githubusercontent.com/KajsaEklof/ux-climate-app/implementation2/src/components/images/iceImage7.png",
-    "altText": "A couple of icebergs."
+    "altText": "A crying polar bear behind the tips of icebergs"
   },
   "beforeAfter": {
     "heading": "1km of Ice is Melting Every Year",
@@ -46,7 +46,7 @@
   },
   "icevsSeaPopup": {
     "cardTitle": "The Relationship Between Ice and Sea",
-    "cardText1": "When the glacier melts the sea level will rice, and on top of that ocean water warms and expands in volume. The ice is melting faster and faster and the seas are getting warmer, which means that sea levels rise twice as fast as in the 20th century.",
+    "cardText1": "When the glacier melts the sea level will rise, and on top of that ocean water warms and expands in volume. The ice is melting faster and faster and the seas are getting warmer, which means that sea levels rise twice as fast as in the 20th century.",
     "cardText2": "The truth is, that the sea ​​level will rise about 80 meters if all ice on the earth melts!!!"
   },
   "habits": {

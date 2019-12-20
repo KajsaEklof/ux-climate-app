@@ -185,7 +185,6 @@ export default class CompareHabits extends Component {
             </Col>
           </Row>
           <Row>
-            <Col className="container compare-container" xs={6}></Col>
             <Col className="container compare-container" xs={6}>
               <p className="label-center"> Tons of CO2 Emissions</p>
             </Col>

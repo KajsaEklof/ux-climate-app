@@ -97,11 +97,11 @@ class Co2Diagram extends Component {
                 <Tooltip content={dataBarChart.Year} />
                 <Legend />
 
-                <Bar dataKey="GasFuel" stackId="a" fill={COLORS[0]} />
-                <Bar dataKey="GasFlaring" stackId="a" fill={COLORS[1]} />
-                <Bar dataKey="LiquidFuel" stackId="a" fill={COLORS[2]} />
-                <Bar dataKey="Cement" stackId="a" fill={COLORS[3]} />
-                <Bar dataKey="SolidFuel" stackId="a" fill={COLORS[4]} />
+                <Bar dataKey="GasFuel" stackId="a" fill={COLORS[0]} name="Gas Fuel" />
+                <Bar dataKey="GasFlaring" stackId="a" fill={COLORS[1]} name="Gas Flaring" />
+                <Bar dataKey="LiquidFuel" stackId="a" fill={COLORS[2]} name="Liquid Fuel" />
+                <Bar dataKey="Cement" stackId="a" fill={COLORS[3]} name="Cement" />
+                <Bar dataKey="SolidFuel" stackId="a" fill={COLORS[4]} name="Solid Fuel" />
                 <Line
                   type="monotone"
                   dataKey="Total"

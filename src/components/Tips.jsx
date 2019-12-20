@@ -18,6 +18,7 @@ class Tips extends Component {
                 src="https://raw.githubusercontent.com/KajsaEklof/ux-climate-app/implementation2/src/components/images/tipsImage1.png"
                 wrapped
                 ui={false}
+                alt="A hand holding stacks of egg cartons"
               />
               <Card.Content>
                 <Card.Header> Recycling saves emissions</Card.Header>
@@ -35,6 +36,7 @@ class Tips extends Component {
                 src="https://raw.githubusercontent.com/KajsaEklof/ux-climate-app/implementation2/src/components/images/tipsImage2.png"
                 wrapped
                 ui={false}
+                alt="Plastic packaging rainging down in the foreground, a women in a trendy outfit in the background"
               />
               <Card.Content>
                 <Card.Header>Be picky about packaging</Card.Header>
@@ -53,6 +55,7 @@ class Tips extends Component {
                 src="https://raw.githubusercontent.com/KajsaEklof/ux-climate-app/implementation2/src/components/images/tipsImage3.png"
                 wrapped
                 ui={false}
+                alt="A picture from above of a plate with fresh fruit and vegetables"
               />
               <Card.Content>
                 <Card.Header>Buy products in season</Card.Header>
@@ -72,6 +75,7 @@ class Tips extends Component {
                 src="https://raw.githubusercontent.com/KajsaEklof/ux-climate-app/implementation2/src/components/images/tip4.png"
                 wrapped
                 ui={false}
+                alt="A women carrying a large box filled with clothes labled donations"
               />
               <Card.Content>
                 <Card.Header>Swap, sell or donate clothes</Card.Header>
@@ -89,6 +93,7 @@ class Tips extends Component {
                 src="https://raw.githubusercontent.com/KajsaEklof/ux-climate-app/implementation2/src/components/images/tip5.png"
                 wrapped
                 ui={false}
+                alt="A close up of someone scraping food of a plate"
               />
               <Card.Content>
                 <Card.Header> Don't waste food </Card.Header>
@@ -106,7 +111,8 @@ class Tips extends Component {
                 src="https://raw.githubusercontent.com/KajsaEklof/ux-climate-app/implementation2/src/components/images/tip7.png"
                 wrapped
                 ui={false}
-              />
+                alt="A hand holding a canvas tote bag"
+                />
               <Card.Content>
                 <Card.Header>Use reusable shopping bags</Card.Header>
 

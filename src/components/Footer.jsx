@@ -8,7 +8,12 @@ class Footer extends Component {
     return (
       <Container>
         <Row className="centeredContent">
-          <p className="footerText">©{new Date().getFullYear()} <span className="footerText cosmo">COSMOPOLITAN</span></p>
+          <p className="footerText">
+            ©{new Date().getFullYear()}{" "}
+            <span className="footerText">
+              Group D2. Annelie Fallkvist, Emma Björk, Kajsa Eklöf & Linnea Rydh. 
+            </span>
+          </p>
         </Row>
       </Container>
     );
