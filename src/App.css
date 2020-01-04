@@ -23,8 +23,6 @@ Reference them by typing for example var(--light-pink) */
   margin: 0% auto 0% auto;
 }
 
-/* */
-
 /* Highlight effect on all text */
 p::selection {
   color: black;
@@ -101,6 +99,19 @@ div#headerHeading {
 }
 
 /* Navigation Bar Styles in Menu component */
+
+.navlist {
+  display: flex;
+  justify-content: flex-end;
+  flex-flow: row;
+  align-items: center;
+  margin-bottom: 0rem;
+}
+
+.is-current a {
+  border-bottom: solid;
+  border-width: 3px;
+} 
 
 .menubar {
   background-color: white;
