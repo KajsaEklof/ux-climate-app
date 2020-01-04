@@ -8,7 +8,7 @@ import TipsImage2 from "./images/tipsImage2.png";
 import TipsImage3 from "./images/tipsImage3.png";
 import TipsImage4 from "./images/tip4.png";
 import TipsImage5 from "./images/tip5.png";
-import TipsImage6 from "./images/tip7_small.png";
+import TipsImage6 from "./images/tip7.png";
 
 
 class Tips extends Component {

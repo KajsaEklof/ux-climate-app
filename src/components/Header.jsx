@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import headerImage from "./images/headerbackground_small.png";
+import headerImage from "./images/headerbackground.png";
 import "../App.css";
 import Jumbotron from "react-bootstrap/Jumbotron";
 import Image from "react-bootstrap/Image";
