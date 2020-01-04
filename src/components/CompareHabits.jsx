@@ -54,7 +54,6 @@ export default class CompareHabits extends Component {
         habit.isChecked = event.target.checked;
     });
     this.setState({ habits: habits });
-    console.log(this.state.habits);
   };
 
   render() {
@@ -104,7 +103,7 @@ export default class CompareHabits extends Component {
             <Col xs={3} className="compare-container">
               <p>{this.props.text}</p>
             </Col>
-
+           
             <Col className="container checkList compare-container" xs={3}>
               {checkList}
             </Col>
@@ -115,6 +114,7 @@ export default class CompareHabits extends Component {
                 height={300}
                 data={data}
                 margin={{ top: 20, right: 30, left: 20, bottom: 5 }}
+                
               >
                 <CartesianGrid strokeDasharray="3 3" />
                 <XAxis dataKey="Habits" />

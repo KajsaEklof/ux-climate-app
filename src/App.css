@@ -41,6 +41,7 @@ h4::selection {
   margin-left: auto;
   margin-right: auto;
   justify-content: center;
+ 
 }
 
 /* Centering content in cards in tips component */
@@ -284,6 +285,7 @@ div.alignRight {
   border-color: var(--bright-pink); */
   background-color: white;
   padding: 3%;
+  align-items: center;
 }
 /* BeforeAfterSlider Slider Bar */
 div.styles_handle__33IZp {

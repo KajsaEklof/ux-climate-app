@@ -3,6 +3,13 @@ import { Card, Image } from "semantic-ui-react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import TipsImage1 from "./images/tipsImage1.png";
+import TipsImage2 from "./images/tipsImage2.png";
+import TipsImage3 from "./images/tipsImage3.png";
+import TipsImage4 from "./images/tip4.png";
+import TipsImage5 from "./images/tip5.png";
+import TipsImage6 from "./images/tip7_small.png";
+
 
 class Tips extends Component {
   render() {
@@ -15,7 +22,7 @@ class Tips extends Component {
           <Col xs={4} className="centeredContent">
           <Card>
               <Image
-                src="https://raw.githubusercontent.com/KajsaEklof/ux-climate-app/implementation2/src/components/images/tipsImage1.png"
+                src={TipsImage1}
                 wrapped
                 ui={false}
                 alt="A hand holding stacks of egg cartons"
@@ -33,7 +40,7 @@ class Tips extends Component {
             
             <Card>
               <Image
-                src="https://raw.githubusercontent.com/KajsaEklof/ux-climate-app/implementation2/src/components/images/tipsImage2.png"
+                src={TipsImage2}
                 wrapped
                 ui={false}
                 alt="Plastic packaging rainging down in the foreground, a women in a trendy outfit in the background"
@@ -52,7 +59,7 @@ class Tips extends Component {
           <Col xs={4} className="centeredContent">
             <Card>
               <Image
-                src="https://raw.githubusercontent.com/KajsaEklof/ux-climate-app/implementation2/src/components/images/tipsImage3.png"
+                src={TipsImage3}
                 wrapped
                 ui={false}
                 alt="A picture from above of a plate with fresh fruit and vegetables"
@@ -72,7 +79,7 @@ class Tips extends Component {
           <Col xs={4} className="centeredContent">
             <Card>
               <Image
-                src="https://raw.githubusercontent.com/KajsaEklof/ux-climate-app/implementation2/src/components/images/tip4.png"
+                src={TipsImage4}
                 wrapped
                 ui={false}
                 alt="A women carrying a large box filled with clothes labled donations"
@@ -90,7 +97,7 @@ class Tips extends Component {
           <Col xs={4} className="centeredContent">
             <Card>
               <Image
-                src="https://raw.githubusercontent.com/KajsaEklof/ux-climate-app/implementation2/src/components/images/tip5.png"
+                src={TipsImage5}
                 wrapped
                 ui={false}
                 alt="A close up of someone scraping food of a plate"
@@ -108,7 +115,7 @@ class Tips extends Component {
           <Col xs={4} className="centeredContent">
             <Card>
               <Image
-                src="https://raw.githubusercontent.com/KajsaEklof/ux-climate-app/implementation2/src/components/images/tip7.png"
+                src={TipsImage6}
                 wrapped
                 ui={false}
                 alt="A hand holding a canvas tote bag"
