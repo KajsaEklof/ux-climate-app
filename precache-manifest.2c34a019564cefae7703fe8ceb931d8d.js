@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d885f9f7b24b9536bdd02f813baaf08f",
+    "revision": "dbb64c3a19c5a0dde709aa3597a12004",
     "url": "/ux-climate-app/index.html"
   },
   {
-    "revision": "c9a3c9d24dc0be4e0d8c",
-    "url": "/ux-climate-app/static/css/2.56c2a0ad.chunk.css"
+    "revision": "68cc7d73cdd221f7f275",
+    "url": "/ux-climate-app/static/css/2.93840042.chunk.css"
   },
   {
-    "revision": "d36e32c448e220143337",
-    "url": "/ux-climate-app/static/css/main.c6bb69c0.chunk.css"
+    "revision": "62b88c9cd32bea0d0c7c",
+    "url": "/ux-climate-app/static/css/main.f564771b.chunk.css"
   },
   {
-    "revision": "c9a3c9d24dc0be4e0d8c",
-    "url": "/ux-climate-app/static/js/2.22eafef3.chunk.js"
+    "revision": "68cc7d73cdd221f7f275",
+    "url": "/ux-climate-app/static/js/2.eb2ec9dd.chunk.js"
   },
   {
-    "revision": "d36e32c448e220143337",
-    "url": "/ux-climate-app/static/js/main.b2a31814.chunk.js"
+    "revision": "62b88c9cd32bea0d0c7c",
+    "url": "/ux-climate-app/static/js/main.36acd02b.chunk.js"
   },
   {
     "revision": "9cee6fe5088ffaac73d4",
@@ -56,8 +56,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ux-climate-app/static/media/flags.9c74e172.png"
   },
   {
-    "revision": "4e0af23e640d88b8239ba8d8bff642d3",
-    "url": "/ux-climate-app/static/media/headerbackground.4e0af23e.png"
+    "revision": "fabab718502b9c38a5266d10abeaa8c2",
+    "url": "/ux-climate-app/static/media/headerbackground.fabab718.png"
   },
   {
     "revision": "0ab54153eeeca0ce03978cc463b257f7",
@@ -106,5 +106,29 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "ef60a4f6c25ef7f39f2d25a748dbecfe",
     "url": "/ux-climate-app/static/media/outline-icons.ef60a4f6.woff"
+  },
+  {
+    "revision": "dd85f4c7dcc26d72c75a31e04d464a07",
+    "url": "/ux-climate-app/static/media/tip4.dd85f4c7.png"
+  },
+  {
+    "revision": "0bf311a05325087b569a5ea3e962e944",
+    "url": "/ux-climate-app/static/media/tip5.0bf311a0.png"
+  },
+  {
+    "revision": "d3cdbe517929b62d92fb0e90351f84be",
+    "url": "/ux-climate-app/static/media/tip7.d3cdbe51.png"
+  },
+  {
+    "revision": "33354020a0a86a033f4603288e6d3967",
+    "url": "/ux-climate-app/static/media/tipsImage1.33354020.png"
+  },
+  {
+    "revision": "4a80b811d7ad78c135de9f4c1a839d99",
+    "url": "/ux-climate-app/static/media/tipsImage2.4a80b811.png"
+  },
+  {
+    "revision": "8dd75791849036aa825cbabb78016529",
+    "url": "/ux-climate-app/static/media/tipsImage3.8dd75791.png"
   }
 ]);
