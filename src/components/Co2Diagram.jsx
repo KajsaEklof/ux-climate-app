@@ -1,8 +1,8 @@
 import React, { Component } from "react";
+
+import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
-import PopupCard from "./PopupCard";
-import Button from "react-bootstrap/Button";
 
 import {
   ComposedChart,
@@ -14,6 +14,8 @@ import {
   Tooltip,
   Legend
 } from "recharts";
+
+import PopupCard from "./PopupCard";
 
 class Co2Diagram extends Component {
   constructor() {
@@ -33,6 +35,8 @@ class Co2Diagram extends Component {
     let textData = this.props.textData;
 
     let co2 = this.props.CO2Emission;
+
+    // Simple error handling
     if (co2 === undefined) {
       return <p>There is no data.</p>;
     }
@@ -52,9 +56,11 @@ class Co2Diagram extends Component {
       })
     );
 
+    // Function to only show every third year
     let filterData = (arr, nth) => arr.filter((e, i) => i % nth === nth - 1);
 
     dataBarChart = filterData(dataBarChart, 3);
+
     return (
       <div className="spacing">
         {this.state.showPopup ? (
@@ -71,11 +77,7 @@ class Co2Diagram extends Component {
           </Row>
           <div className="diagram">
             <Row className="alignRight">
-              <Button
-                variant="info"
-                // className="popup"
-                onClick={this.togglePopUp.bind(this)}
-              >
+              <Button variant="info" onClick={this.togglePopUp.bind(this)}>
                 What does this mean?
               </Button>
             </Row>
@@ -96,12 +98,36 @@ class Co2Diagram extends Component {
                 <YAxis />
                 <Tooltip content={dataBarChart.Year} />
                 <Legend />
-
-                <Bar dataKey="GasFuel" stackId="a" fill={COLORS[0]} name="Gas Fuel" />
-                <Bar dataKey="GasFlaring" stackId="a" fill={COLORS[1]} name="Gas Flaring" />
-                <Bar dataKey="LiquidFuel" stackId="a" fill={COLORS[2]} name="Liquid Fuel" />
-                <Bar dataKey="Cement" stackId="a" fill={COLORS[3]} name="Cement" />
-                <Bar dataKey="SolidFuel" stackId="a" fill={COLORS[4]} name="Solid Fuel" />
+                <Bar
+                  dataKey="GasFuel"
+                  stackId="a"
+                  fill={COLORS[0]}
+                  name="Gas Fuel"
+                />
+                <Bar
+                  dataKey="GasFlaring"
+                  stackId="a"
+                  fill={COLORS[1]}
+                  name="Gas Flaring"
+                />
+                <Bar
+                  dataKey="LiquidFuel"
+                  stackId="a"
+                  fill={COLORS[2]}
+                  name="Liquid Fuel"
+                />
+                <Bar
+                  dataKey="Cement"
+                  stackId="a"
+                  fill={COLORS[3]}
+                  name="Cement"
+                />
+                <Bar
+                  dataKey="SolidFuel"
+                  stackId="a"
+                  fill={COLORS[4]}
+                  name="Solid Fuel"
+                />
                 <Line
                   type="monotone"
                   dataKey="Total"

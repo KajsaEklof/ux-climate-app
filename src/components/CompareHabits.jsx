@@ -1,4 +1,9 @@
 import React, { Component } from "react";
+
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+
 import {
   BarChart,
   Bar,
@@ -8,10 +13,6 @@ import {
   Tooltip,
   Legend
 } from "recharts";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-
 
 const CheckBox = props => {
   return (
@@ -22,7 +23,7 @@ const CheckBox = props => {
         type="checkbox"
         checked={props.isChecked}
         value={props.value}
-      />{" "}
+      />
       {props.value}
     </li>
   );
@@ -86,7 +87,6 @@ export default class CompareHabits extends Component {
     );
 
     return (
-      
       <Container className="spacing">
         <Row>
             <h2 className="heading separate">{this.props.heading}</h2>
@@ -103,18 +103,15 @@ export default class CompareHabits extends Component {
             <Col xs={3} className="compare-container">
               <p>{this.props.text}</p>
             </Col>
-           
             <Col className="container checkList compare-container" xs={3}>
               {checkList}
             </Col>
-
             <Col className="container compare-container" xs={6}>
               <BarChart
                 width={500}
                 height={300}
                 data={data}
-                margin={{ top: 20, right: 30, left: 20, bottom: 5 }}
-                
+                margin={{ top: 20, right: 30, left: 0, bottom: 5 }}
               >
                 <CartesianGrid strokeDasharray="3 3" />
                 <XAxis dataKey="Habits" />
@@ -122,7 +119,7 @@ export default class CompareHabits extends Component {
                 <Tooltip />
                 {!this.state.habits[0].isChecked ? (
                   <Bar
-                    barSize={80}
+                    barSize={110}
                     dataKey="Go vegetarian"
                     stackId="a"
                     fill="#ef0e7c"
@@ -131,7 +128,7 @@ export default class CompareHabits extends Component {
                 ) : null}
                 {!this.state.habits[1].isChecked ? (
                   <Bar
-                    barSize={80}
+                    barSize={110}
                     dataKey="Recycle all waste"
                     stackId="a"
                     fill="#00a99d"
@@ -140,7 +137,7 @@ export default class CompareHabits extends Component {
                 ) : null}
                 {!this.state.habits[2].isChecked ? (
                   <Bar
-                    barSize={80}
+                    barSize={110}
                     dataKey="Only using LED lights"
                     stackId="a"
                     fill="#ffd400"
@@ -149,7 +146,7 @@ export default class CompareHabits extends Component {
                 ) : null}
                 {!this.state.habits[3].isChecked ? (
                   <Bar
-                    barSize={80}
+                    barSize={110}
                     dataKey="Get down to zero foodwaste"
                     stackId="a"
                     fill="#b4e2f0"
@@ -158,7 +155,7 @@ export default class CompareHabits extends Component {
                 ) : null}
                 {!this.state.habits[4].isChecked ? (
                   <Bar
-                    barSize={80}
+                    barSize={110}
                     dataKey="Eat locally produced food"
                     stackId="a"
                     fill="#f6a2b6"
@@ -167,7 +164,7 @@ export default class CompareHabits extends Component {
                 ) : null}
                 {!this.state.habits[5].isChecked ? (
                   <Bar
-                    barSize={80}
+                    barSize={110}
                     dataKey="Minimise your driving to max 30km a day"
                     stackId="a"
                     fill="#87d8d6"

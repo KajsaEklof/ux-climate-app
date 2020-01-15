@@ -1,13 +1,13 @@
 import React, { Component } from "react";
-import Logo from "./images/logopink.png";
+
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { Menu, Sticky } from "semantic-ui-react";
 import Scrollspy from "react-scrollspy";
 
+import Logo from "./images/logopink.png";
+
 export default class MenuBar extends Component {
   state = { activeItem: "" };
-
-  
 
   render() {
     const { activeItem } = this.state;
@@ -26,14 +26,14 @@ export default class MenuBar extends Component {
                 />
               </AnchorLink>
             </Menu.Item>
-
             <Menu.Menu position="right">
-              <Scrollspy className="navlist"
+              <Scrollspy
+                className="navlist"
                 items={["home", "co2", "temp", "ice", "sea", "tips"]}
                 currentClassName="active"
               >
                 <Menu.Item
-                href="home"
+                  href="home"
                   name="home"
                   active={activeItem === "home"}
                   onClick={this.handleItemClick}
@@ -48,7 +48,6 @@ export default class MenuBar extends Component {
                 >
                   <AnchorLink href="#co2">Emissions</AnchorLink>
                 </Menu.Item>
-
                 <Menu.Item
                   href="temp"
                   name="temp"
@@ -57,7 +56,6 @@ export default class MenuBar extends Component {
                 >
                   <AnchorLink href="#temp">Temperature</AnchorLink>
                 </Menu.Item>
-
                 <Menu.Item
                   href="#ice"
                   name="ice"
@@ -66,7 +64,6 @@ export default class MenuBar extends Component {
                 >
                   <AnchorLink href="#ice">Glaciers</AnchorLink>
                 </Menu.Item>
-
                 <Menu.Item
                   href="#sea"
                   name="sea"
@@ -75,7 +72,6 @@ export default class MenuBar extends Component {
                 >
                   <AnchorLink href="#sea">Seas</AnchorLink>
                 </Menu.Item>
-
                 <Menu.Item
                   href="#tips"
                   name="tips"

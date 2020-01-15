@@ -1,15 +1,12 @@
 import React, { Component, createRef } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
+
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
+
 import Header from "./components/Header";
 import MenuBar from "./components/MenuBar";
-import data from "./components/Content.json"; /*This is the json file with all our content and copy text for the applicaiton*/
-import icejsonData from "./Data/iceData.json";
-import seajsonData from "./Data/seaData.json";
-import co2Data from "./Data/co2Data.json";
-import tempjsonData from "./Data/tempData.json";
 import TextImage from "./components/TextImage";
 import Co2Diagram from "./components/Co2Diagram";
 import LineCharts from "./components/LineCharts";
@@ -17,9 +14,16 @@ import AreaCharts from "./components/AreaCharts";
 import BeforeAfterSlider from "./components/BeforeAfterSlider";
 import RenderMap from "./components/RenderMap";
 import CompareHabits from "./components/CompareHabits";
-
 import Tips from "./components/Tips";
 import Footer from "./components/Footer";
+
+import data from "./components/Content.json"; /*This is the json file with all our content and copy text for the applicaiton*/
+
+// If API fails use these json files
+// import icejsonData from "./Data/iceData.json";
+// import seajsonData from "./Data/seaData.json";
+// import co2Data from "./Data/co2Data.json";
+// import tempjsonData from "./Data/tempData.json";
 
 class App extends Component {
   constructor(props) {
@@ -35,63 +39,73 @@ class App extends Component {
   }
 
   async componentDidMount() {
-    // const url =
-    //   "https://my.api.mockaroo.com/co2.json?key=8eb9e6f0"; /* This is the Co2 Emission API */
-    // const response = await fetch(url);
-    // const data = await response.json();
-
-    // const url2 =
-    //   "https://my.api.mockaroo.com/temp.json?key=8eb9e6f0"; /* This is the Global Temperature API */
-    // const response2 = await fetch(url2);
-    // const data2 = await response2.json();
-
-    /* const url3 = "https://my.api.mockaroo.com/glaciersize.json?key=8eb9e6f0";
-    const response3 = await fetch(url3); */
-
-    /* const url4 = "https://my.api.mockaroo.com/sealevel.json?key=8eb9e6f0"; 
-    const response4 = await fetch(url4); */
+    // Fetching Co2 Data
+    const url =
+      "https://my.api.mockaroo.com/co2.json?key=8eb9e6f0"; 
+    const response = await fetch(url);
+    const dataCO2 = await response.json();
 
     // Importing co2 json data and filtering on year
-    const emissions = co2Data;
+    // const emissions = co2Data;
+    const emissions = dataCO2;
     const emissionData = emissions.filter(x => x.Year > 1944 && x.Year < 2014);
 
-    // Importing Glacier data from json and filtering
-    const iceData = icejsonData;
-    const glacierData = iceData.filter(x => x.Year > 1989 && x.Year < 2014);
-
-    //Importing Sea level data from json and filtering
-    const seaDataJson = seajsonData;
-    const seaData = seaDataJson.filter(
-      x =>
-        Date.parse(x.Time) > Date.parse("1990-01-01") &&
-        Date.parse(x.Time) < Date.parse("2014-01-01")
-    );
-    seaData.map(x => (x.Time = x.Time.substring(0, 4)));
+    // Fetching Temperature Data
+    const url2 =
+      "https://my.api.mockaroo.com/temp.json?key=8eb9e6f0"; 
+    const response2 = await fetch(url2);
+    const dataTemp = await response2.json();
 
     // Importing temperature json data and filtering on year
-    const temperatureData = tempjsonData;
+    // const temperatureData = tempjsonData;
+    const temperatureData = dataTemp;
     const yearFilteredTempData = temperatureData.filter(
       x => x.Year > 1944 && x.Year < 2014
     );
     const tempData = yearFilteredTempData.filter(p => p.Source === "GISTEMP"); //only rows that have source GISTEMP
+
+    // Fetching Glacier Data
+    const url3 =
+      "https://my.api.mockaroo.com/glaciersize.json?key=8eb9e6f0"; 
+    const response3 = await fetch(url3);
+    const dataIce = await response3.json();
+
+    // Importing Glacier data from json and filtering
+    // const iceData = icejsonData; 
+    const iceData = dataIce;
+    console.log(iceData);
+    const glacierData = iceData.filter(x => x.Year > 1989 && x.Year < 2014);
+
+    // Fetching Sea level Data
+    const url4 =
+      "https://my.api.mockaroo.com/sealevel.json?key=8eb9e6f0"; 
+    const response4 = await fetch(url4);
+    const dataSea = await response4.json();
+
+    //Importing Sea level data from json and filtering
+    // const seaData = seajsonData;
+    const seaData = dataSea;
+    const seaLevelData = seaData.filter(
+      x =>
+        Date.parse(x.Time) > Date.parse("1990-01-01") &&
+        Date.parse(x.Time) < Date.parse("2014-01-01")
+    );
+    seaLevelData.map(x => (x.Time = x.Time.substring(0, 4))); // Picking only the year from the date in API
 
     // Setting state with all filtered data
     this.setState({
       globalTemp: tempData,
       CO2Emission: emissionData,
       iceVolume: glacierData,
-      seaLevel: seaData
+      seaLevel: seaLevelData
     });
   }
 
-  // Createting a reference for the menu bar 
+  // Createting a reference for the menu bar
   contextRef = createRef();
- 
 
   render() {
-    const content = this.state
-      .textData; /* Saves this.state.textData in a constent */
-    /*const [mapContent, setContent] = useState("");*/
+    const content = this.state.textData; /* Saves this.state.textData in a constent */
 
     return (
       <div id="App" ref={this.contextRef}>
@@ -175,7 +189,7 @@ class App extends Component {
               heading="When The Glaciers Melt... Sea Levels Rise"
             />
 
-          <RenderMap />
+            <RenderMap />
           </div>
           <div className="section-pink" id="tips">
             <CompareHabits

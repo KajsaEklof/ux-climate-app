@@ -1,8 +1,10 @@
 import React, { Component } from "react";
+
 import Card from "react-bootstrap/Card";
 
 class PopupCard extends Component {
   state = {};
+
   render() {
     return (
       <div className="popup_inner">

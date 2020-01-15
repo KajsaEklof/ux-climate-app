@@ -1,12 +1,14 @@
 import React, { Component } from "react";
+
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import PopupCard from "./PopupCard";
 import Button from "react-bootstrap/Button";
-import { Icon } from "semantic-ui-react";
 
+import { Icon } from "semantic-ui-react";
 import { AreaChart, Area, XAxis, YAxis, Tooltip } from "recharts";
+
+import PopupCard from "./PopupCard";
 
 class AreaCharts extends Component {
   constructor() {
@@ -26,6 +28,8 @@ class AreaCharts extends Component {
     let textData = this.props.textData;
     let ice = this.props.iceVolume;
     let sea = this.props.seaLevel;
+
+    // Simple error handling
     if (ice === undefined) {
       return <p>There is no data.</p>;
     }
@@ -60,23 +64,15 @@ class AreaCharts extends Component {
           />
         ) : null}
         <Container className="container main">
-          {/* <h3 className="heading">
-            <span>{this.props.heading}</span>
-        </h3> */}
           <Row>
             <h2 className="heading separate">{this.props.heading}</h2>
           </Row>
           <div className="diagram">
             <Row className="alignRight">
-              <Button
-                variant="info"
-                // className="popup"
-                onClick={this.togglePopUp.bind(this)}
-              >
+              <Button variant="info" onClick={this.togglePopUp.bind(this)}>
                 What does this mean?
               </Button>
             </Row>
-
             <Row className="doubleDiagram">
               <Col className="container" xs={6}>
                 <AreaChart
@@ -137,10 +133,10 @@ class AreaCharts extends Component {
                   Average Mass Of Measured Glacier
                 </p>
                 <p className="chartDescription">
-                  * In this diagram negative values indicate a net loss of ice and snow compared
-                  with the base year of 1945. For consistency, measurements are
-                  in meters of water equivalent, which represent changes in the
-                  average thickness of a glacier.
+                  * In this diagram negative values indicate a net loss of ice
+                  and snow compared with the base year of 1945. For consistency,
+                  measurements are in meters of water equivalent, which
+                  represent changes in the average thickness of a glacier.
                 </p>
               </Col>
               <Col className="container" xs={6}>
@@ -149,7 +145,7 @@ class AreaCharts extends Component {
                   Average Global Sea Level In mm
                 </p>
                 <p className="chartDescription">
-                 * This diagram shows cumulative changes in sea level for the
+                  * This diagram shows cumulative changes in sea level for the
                   world’s oceans since 1880, based on a combination of long-term
                   tide gauge measurements and recent satellite measurements.
                 </p>

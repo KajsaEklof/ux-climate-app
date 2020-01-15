@@ -5,7 +5,7 @@ Reference them by typing for example var(--light-pink) */
   --middle-pink: #f6a2b6;
   --light-pink: #fff5f2;
   --cosmo-red: #ef4726;
-  --turquoise: #02958a; /* OLD #00a99d; */
+  --turquoise: #02958a;
   --light-turquoise: #87d8d6;
   --light-blue: #b4e2f0;
   --cosmo-yellow: #ffd400;
@@ -28,6 +28,7 @@ p::selection {
   color: black;
   background: var(--middle-pink);
 }
+
 span::selection,
 h4::selection {
   color: white;
@@ -39,7 +40,6 @@ h4::selection {
   margin-left: auto;
   margin-right: auto;
   justify-content: center;
- 
 }
 
 /* Centering content in cards in tips component */
@@ -99,7 +99,6 @@ div#headerHeading {
 }
 
 /* Navigation Bar Styles in Menu component */
-
 .navlist {
   display: flex;
   justify-content: flex-end;
@@ -119,7 +118,7 @@ div#headerHeading {
   padding: 0% 3%;
 }
 
-/* setting logo menu item width*/
+/* Setting logo menu item width*/
 .ui.menu .item > img:not(.ui) {
   width: 100% !important;
 }
@@ -155,7 +154,7 @@ h2.heading {
   font-family: "futura-pt", sans-serif;
   font-weight: 700;
   font-style: normal;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.15em;
   line-height: 2em;
   font-size: 2.8em;
   color: black;
@@ -253,15 +252,7 @@ p {
 /* Image width in TextImage component */
 .borderImage {
   max-width: 25vw;
-  /* border-width: 0.5em;
-  border-style: solid;
-  border-color: var(--turquoise); */
 }
-
-/* .popup {
-  text-align: right !important;
-  padding: 0 5% 0 0;
-} */
 
 /* Card styles in Tips component */
 div.card-title {
@@ -270,6 +261,21 @@ div.card-title {
 
 .cardrow {
   margin: 3em 0em 0em 0em;
+}
+
+.tipsHeading {
+  font-family: "futura-pt", sans-serif !important; 
+  font-size: 140% !important;
+  text-align: left;
+}
+
+.tipsText {
+  font-weight: 400;
+  font-style: normal;
+  font-family: "source-serif-pro", serif;
+  font-size: 110%;
+  line-height: 1.2;
+  text-align: left;
 }
 
 /* What does this mean button row */
@@ -291,9 +297,6 @@ div.alignRight {
 
 /* BeforeAfterSlider Container */
 .beforeAfter {
-  /* border-width: 0.4em;
-  border-style: solid;
-  border-color: var(--bright-pink); */
   background-color: white;
   padding: 3%;
   align-items: center;
@@ -425,14 +428,14 @@ li {
   background-color: white;
   width: 100%;
   margin: 0% auto 0% auto;
-  padding: 3em 0em 1em 0em;
+  padding: 4em 0em 1em 0em;
 }
 
 .section-pink {
   background-color: var(--light-pink);
   width: 100%;
   margin: 0% auto 0% auto;
-  padding: 3em 0em 1em 0em;
+  padding: 3em 0em 0em 0em;
 }
 
 .mapText {

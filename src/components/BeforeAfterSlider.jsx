@@ -1,10 +1,13 @@
 import React, { Component } from "react";
-import BeforeAfterSlider from "react-before-after-slider";
-import beforeImage from "./images/before.jpg";
-import afterImage from "./images/after.jpg";
+
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+
+import BeforeAfterSlider from "react-before-after-slider";
+
+import beforeImage from "./images/before.jpg";
+import afterImage from "./images/after.jpg";
 
 class BeforeAfter extends Component {
   state = {};

@@ -1,11 +1,11 @@
 import React, { Component } from "react";
+
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import PopupCard from "./PopupCard";
 import Button from "react-bootstrap/Button";
-import { Icon } from "semantic-ui-react";
 
+import { Icon } from "semantic-ui-react";
 import {
   LineChart,
   Line,
@@ -15,6 +15,8 @@ import {
   Tooltip,
   ReferenceLine
 } from "recharts";
+
+import PopupCard from "./PopupCard";
 
 class LineCharts extends Component {
   constructor() {
@@ -35,6 +37,8 @@ class LineCharts extends Component {
 
     let co2 = this.props.CO2Emission;
     let temp = this.props.globalTemp;
+
+    // Simple error handling
     if (co2 === undefined) {
       return <p>There is no data.</p>;
     }
@@ -70,22 +74,16 @@ class LineCharts extends Component {
             cardText2={textData.cardText2}
           />
         ) : null}
-
         <Container className="container main">
-        <Row>
+          <Row>
             <h2 className="heading separate">{this.props.heading}</h2>
           </Row>
           <div className="diagram">
             <Row className="alignRight">
-              <Button
-                variant="info"
-                // className="popup"
-                onClick={this.togglePopUp.bind(this)}
-              >
+              <Button variant="info" onClick={this.togglePopUp.bind(this)}>
                 What does this mean?
               </Button>
             </Row>
-
             <Row className="doubleDiagram">
               <Col className="container" xs={6}>
                 <LineChart
@@ -100,7 +98,6 @@ class LineCharts extends Component {
                   <YAxis />
                   <CartesianGrid strokeDasharray="3 3" />
                   <Tooltip />
-
                   <Line
                     type="monotone"
                     dataKey="Total CO2 Emission"
@@ -122,15 +119,14 @@ class LineCharts extends Component {
                   <YAxis />
                   <CartesianGrid strokeDasharray="3 3" />
                   <Tooltip />
-
                   <Line
                     type="monotone"
                     dataKey="Average Temperature"
                     stroke="#00A99D"
                     activeDot={{ r: 8 }}
                   />
-                  <ReferenceLine x="Page C" stroke="red" label="Max PV PAGE"/>
-                  <ReferenceLine y={1.5} label="Paris Agreement" stroke="red"/>
+                  <ReferenceLine x="Page C" stroke="red" label="Max PV PAGE" />
+                  <ReferenceLine y={1.5} label="Paris Agreement" stroke="red" />
                 </LineChart>
               </Col>
             </Row>
@@ -141,7 +137,6 @@ class LineCharts extends Component {
                   Million Metric Tons of CO2 Emission
                 </p>
               </Col>
-
               <Col className="container" xs={6}>
                 <p className="label-center">
                   <Icon name="certificate" className="icon-temp" />

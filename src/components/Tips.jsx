@@ -1,8 +1,11 @@
 import React, { Component } from "react";
-import { Card, Image } from "semantic-ui-react";
+
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+
+import { Card, Image } from "semantic-ui-react";
+
 import TipsImage1 from "./images/tipsImage1.png";
 import TipsImage2 from "./images/tipsImage2.png";
 import TipsImage3 from "./images/tipsImage3.png";
@@ -28,8 +31,8 @@ class Tips extends Component {
                 alt="A hand holding stacks of egg cartons"
               />
               <Card.Content>
-                <Card.Header> Recycling saves emissions</Card.Header>
-                <Card.Description>
+                <Card.Header className="tipsHeading">Recycle to save emissions</Card.Header>
+                <Card.Description className="tipsText">
                   Recycling 1 kg of paper instead of landfilling it avoids
                   almost 1 kg of CO2 emissions, as well as methane emissions.
                 </Card.Description>
@@ -37,7 +40,6 @@ class Tips extends Component {
             </Card>
           </Col>
           <Col xs={4} className="centeredContent">
-            
             <Card>
               <Image
                 src={TipsImage2}
@@ -46,9 +48,8 @@ class Tips extends Component {
                 alt="Plastic packaging rainging down in the foreground, a women in a trendy outfit in the background"
               />
               <Card.Content>
-                <Card.Header>Be picky about packaging</Card.Header>
-
-                <Card.Description>
+                <Card.Header className="tipsHeading">Be picky about packaging</Card.Header>
+                <Card.Description className="tipsText">
                   Plastic packaging creates a lot of waste. Try to avoid
                   packaged products and look for refills of products like
                   shampoo.
@@ -65,9 +66,8 @@ class Tips extends Component {
                 alt="A picture from above of a plate with fresh fruit and vegetables"
               />
               <Card.Content>
-                <Card.Header>Buy products in season</Card.Header>
-
-                <Card.Description>
+                <Card.Header className="tipsHeading">Buy products in season</Card.Header>
+                <Card.Description className="tipsText">
                   Growing food outside its normal growing season requires
                   tremendous amounts of water, energy and other resources.
                 </Card.Description>
@@ -85,10 +85,9 @@ class Tips extends Component {
                 alt="A women carrying a large box filled with clothes labled donations"
               />
               <Card.Content>
-                <Card.Header>Swap, sell or donate clothes</Card.Header>
-
-                <Card.Description>
-                  Instead of buying new, consider borrowing, renting or buying
+                <Card.Header className="tipsHeading">Swap, sell or donate clothes</Card.Header>
+                <Card.Description className="tipsText">
+                  Instead of buying new, consider borrowing or buying
                   second-hand.
                 </Card.Description>
               </Card.Content>
@@ -103,9 +102,8 @@ class Tips extends Component {
                 alt="A close up of someone scraping food of a plate"
               />
               <Card.Content>
-                <Card.Header> Don't waste food </Card.Header>
-
-                <Card.Description>
+                <Card.Header className="tipsHeading"> Don't waste food </Card.Header>
+                <Card.Description className="tipsText">
                   Buy only the amount you need, and keep your leftovers for
                   later!
                 </Card.Description>
@@ -121,9 +119,8 @@ class Tips extends Component {
                 alt="A hand holding a canvas tote bag"
                 />
               <Card.Content>
-                <Card.Header>Use reusable shopping bags</Card.Header>
-
-                <Card.Description>
+                <Card.Header className="tipsHeading">Use reusable shopping bags</Card.Header>
+                <Card.Description className="tipsText">
                   And buy kitchen and toilet roll made from recycled paper.
                 </Card.Description>
               </Card.Content>

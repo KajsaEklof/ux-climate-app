@@ -1,4 +1,5 @@
 import React, { memo } from "react";
+
 import {
   ZoomableGroup,
   ComposableMap,
@@ -6,6 +7,7 @@ import {
   Geography,
   Marker
 } from "react-simple-maps";
+
 import data from "./MapData.json";
 
 const geoUrl = data;

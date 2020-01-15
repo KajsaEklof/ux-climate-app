@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -10,9 +11,11 @@ class TextImage extends Component {
       data2: this.props.textData
     };
   }
+
   render() {
     let heading1;
 
+    // Logic for the layout in component 
     if(this.props.headingStyle === 2) {
       heading1 = (
         <h2 className="heading">
@@ -29,12 +32,6 @@ class TextImage extends Component {
       );
     }
 
-   /* let heading1 = (
-      <h3 className="heading">
-        <span>{this.props.heading}</span>
-      </h3>
-    );*/
-    /*let heading2 = <h3> </h3>;*/
     let thisStyle = this.props.border;
 
     let imageTag = (
@@ -60,22 +57,17 @@ class TextImage extends Component {
     let box1;
     let box2;
 
-    
-
     if (this.props.layout === 2) {
       hbox1 = heading1;
-      /*hbox2 = heading2;*/
       box1 = textTag;
       box2 = imageTag;
     } 
     
     if(this.props.layout === 1){
-      /*hbox1 = heading2;*/
       hbox2 = heading1;
       box1 = imageTag;
       box2 = textTag;
     }
-
 
     return (
       <div className="spacing">

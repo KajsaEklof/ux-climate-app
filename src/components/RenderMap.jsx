@@ -1,10 +1,13 @@
 import React, { useState } from "react";
-import ReactTooltip from "react-tooltip";
-import InteractiveMap from "./InteractiveMap";
 
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+
+import ReactTooltip from "react-tooltip";
+
+import InteractiveMap from "./InteractiveMap";
+
 
 function RenderMap() {
   const [content, setContent] = useState("");
